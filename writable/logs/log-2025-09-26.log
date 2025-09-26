@@ -1,0 +1,28 @@
+CRITICAL - 2025-09-26 18:54:25 --> Error: Call to undefined method CodeIgniter\View\View::formatBlogContent()
+[Method: GET, Route: blog/common-security-deposit-disputes-how-to-avoid]
+in APPPATH/Views/pages/blog.php on line 123.
+ 1 SYSTEMPATH/View/View.php(226): include()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('pages/blog', [], true)
+ 4 APPPATH/Controllers/BlogController.php(47): view('pages/blog', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BlogController->show('common-security-deposit-disputes-how-to-avoid')
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')
+CRITICAL - 2025-09-26 18:54:32 --> Error: Call to undefined method CodeIgniter\View\View::formatBlogContent()
+[Method: GET, Route: blog/future-security-deposits-blockchain-rental-trust]
+in APPPATH/Views/pages/blog.php on line 123.
+ 1 SYSTEMPATH/View/View.php(226): include()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():223}()
+ 3 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('pages/blog', [], true)
+ 4 APPPATH/Controllers/BlogController.php(47): view('pages/blog', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\BlogController->show('future-security-deposits-blockchain-rental-trust')
+ 6 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 7 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')
