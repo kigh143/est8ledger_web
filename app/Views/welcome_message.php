@@ -9,7 +9,7 @@
  
 </head>
 <body>
-create a layout file with the SEO attributes  for the est8ledger website, add tailwind css, bootstrapicons,  create empty pages [home, blogs, blog,privacy policy,terms of user.  ]
+create a layout file with the SEO attributes  for the est8Ledger website, add tailwind css, bootstrapicons,  create empty pages [home, blogs, blog,privacy policy,terms of user.  ]
 
 </body>
 </html>

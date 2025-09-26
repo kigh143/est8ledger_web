@@ -11,7 +11,7 @@
                     Legal Agreement
                 </div>
                 <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Terms of Use</h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Your rights and responsibilities when using Est8Ledger's platform</p>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Your rights and responsibilities when using est8Ledger's platform</p>
                 <p class="text-sm text-gray-500 mt-4">Last updated: <?= date('F j, Y') ?></p>
             </div>
 
@@ -60,7 +60,7 @@
                     <div>
                         <h3 class="text-lg font-semibold text-amber-800 mb-2">Legal Agreement</h3>
                         <p class="text-amber-700 leading-relaxed">
-                            By accessing or using Est8Ledger's services, you agree to be bound by these Terms of Use and our Privacy Policy. Please read carefully.
+                            By accessing or using est8Ledger's services, you agree to be bound by these Terms of Use and our Privacy Policy. Please read carefully.
                         </p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-600">
                     <p class="mb-4">
-                        These Terms of Use ("Terms") constitute a legally binding agreement between you and Est8Ledger, Inc. ("Est8Ledger," "we," "us," or "our") regarding your use of our security deposit management platform and related services (the "Services").
+                        These Terms of Use ("Terms") constitute a legally binding agreement between you and est8Ledger, Inc. ("est8Ledger," "we," "us," or "our") regarding your use of our security deposit management platform and related services (the "Services").
                     </p>
                     <div class="bg-blue-50 rounded-xl p-6">
                         <div class="flex items-start">
@@ -98,7 +98,7 @@
                     <h2 class="text-2xl font-bold text-gray-800">2. Description of Services</h2>
                 </div>
 
-                <p class="text-gray-600 mb-6">Est8Ledger provides a comprehensive security deposit management platform that includes:</p>
+                <p class="text-gray-600 mb-6">est8Ledger provides a comprehensive security deposit management platform that includes:</p>
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-4">
@@ -414,7 +414,7 @@
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">Intellectual Property</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">The Services and all related content are owned by Est8Ledger and protected by intellectual property laws.</p>
+                    <p class="text-gray-600 mb-4">The Services and all related content are owned by est8Ledger and protected by intellectual property laws.</p>
                     <div class="text-sm text-gray-500">
                         <i class="bi bi-info-circle mr-1"></i>
                         You retain ownership of your uploaded content
@@ -485,7 +485,7 @@
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-600">
                     <h3 class="!text-gray-800!">7.1 Our Rights</h3>
-                    <p>The Services and all related content, features, and functionality are owned by Est8Ledger and are protected by copyright, trademark, and other intellectual property laws.</p>
+                    <p>The Services and all related content, features, and functionality are owned by est8Ledger and are protected by copyright, trademark, and other intellectual property laws.</p>
                     <h3 class="!text-gray-800!">7.2 Your Rights</h3>
                     <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable license to access and use the Services for their intended purpose.</p>
                     <h3 class="!text-gray-800!">7.3 User Content</h3>
@@ -507,7 +507,7 @@
                     <h3 class="!text-gray-800!">8.2 Third-Party Services</h3>
                     <p>Our Services may integrate with third-party services (payment processors, identity verification, etc.). We are not responsible for the availability, accuracy, or reliability of third-party services.</p>
                     <h3 class="!text-gray-800!">8.3 Limitation of Liability</h3>
-                    <p>To the maximum extent permitted by law, Est8Ledger shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Services.</p>
+                    <p>To the maximum extent permitted by law, est8Ledger shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Services.</p>
                 </div>
             </div>
 
@@ -520,7 +520,7 @@
                     <h2 class="text-2xl font-bold text-gray-800">9. Indemnification</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-600">
-                    <p>You agree to indemnify, defend, and hold harmless Est8Ledger and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from:</p>
+                    <p>You agree to indemnify, defend, and hold harmless est8Ledger and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from:</p>
                     <ul>
                         <li>Your use of the Services</li>
                         <li>Your violation of these Terms</li>
@@ -630,12 +630,12 @@
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-600">
                     <div class="bg-gray-50 p-6 rounded-lg mt-6">
-                        <h3 class="text-xl font-semibold mb-4">Est8Ledger Legal Team</h3>
+                        <h3 class="text-xl font-semibold mb-4">est8Ledger Legal Team</h3>
                         <div class="space-y-2">
-                            <p><strong>Email:</strong> <a href="mailto:legal@est8ledger.com" class="text-primary hover:underline">legal@est8ledger.com</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:legal@est8Ledger.com" class="text-primary hover:underline">legal@est8Ledger.com</a></p>
                             <p><strong>Phone:</strong> 1-800-EST-8LED</p>
                             <p><strong>Address:</strong><br>
-                            Est8Ledger, Inc.<br>
+                            est8Ledger, Inc.<br>
                             Legal Department<br>
                             123 Blockchain Avenue<br>
                             Tech City, TC 12345<br>

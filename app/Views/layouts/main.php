@@ -14,23 +14,23 @@
     </script>
     
     <!-- SEO Meta Tags -->
-    <title><?= isset($title) ? esc($title) . ' - Est8Ledger' : 'Est8Ledger | Secure & Transparent Security Deposit Management' ?></title>
-    <meta name="description" content="<?= isset($description) ? esc($description) : 'Est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
+    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?></title>
+    <meta name="description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
     <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'security deposit management, rental escrow service, tenant landlord trust, digital tenancy agreements, rental transparency, property deposit solution, move-in inspections, rental disputes solution' ?>">
-    <meta name="author" content="Est8Ledger">
+    <meta name="author" content="est8Ledger">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - Est8Ledger' : 'Est8Ledger | Secure & Transparent Security Deposit Management' ?>">
-    <meta property="og:description" content="<?= isset($description) ? esc($description) : 'Est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
+    <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?>">
+    <meta property="og:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= current_url() ?>">
-    <meta property="og:site_name" content="Est8Ledger">
+    <meta property="og:site_name" content="est8Ledger">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - Est8Ledger' : 'Est8Ledger | Secure & Transparent Security Deposit Management' ?>">
-    <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'Est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts and transparent inspections.' ?>">
+    <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?>">
+    <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts and transparent inspections.' ?>">
     
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
@@ -365,7 +365,7 @@
         <nav class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <a href="/" class="flex items-center">
-                    <img src="/long_logo.png" alt="Est8Ledger" class="h-8">
+                    <img src="/long_logo.png" alt="est8Ledger" class="h-8">
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="/" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Home</a>
@@ -401,13 +401,13 @@
         <div class="flex items-center justify-center min-h-screen p-4">
             <div class="bg-white rounded-lg max-w-md w-full p-6">
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-bold text-secondary-900">Get Started with Est8Ledger</h2>
+                    <h2 class="text-2xl font-bold text-secondary-900">Get Started with est8Ledger</h2>
                     <button onclick="closeDemoModal()" class="text-secondary-400 hover:text-secondary-600 p-1">
                         <i class="bi bi-x-lg text-xl"></i>
                     </button>
                 </div>
 
-                <p class="text-secondary-600 mb-6">Join property professionals who trust Est8Ledger for secure, transparent security deposit management.</p>
+                <p class="text-secondary-600 mb-6">Join property professionals who trust est8Ledger for secure, transparent security deposit management.</p>
 
                 <form id="demoForm" action="/request-demo" method="POST">
                     <?= csrf_field() ?>
@@ -471,10 +471,10 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <div class="col-span-2">
-                    <h3 class="text-2xl font-bold text-white mb-4">Est8Ledger</h3>
+                    <h3 class="text-2xl font-bold text-white mb-4">est8Ledger</h3>
                     <p class="text-secondary-300 mb-6 leading-relaxed">Professional security deposit management for property owners, managers, and tenants. Building trust through transparency and regulatory compliance.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">
+                        <a href="https://www.linkedin.com/company/est8ledger/" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">
                             <i class="bi bi-linkedin"></i>
                         </a>
                         <a href="#" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">
@@ -506,7 +506,7 @@
             </div>
             <div class="border-t border-secondary-700 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-secondary-400 text-sm">&copy; <?= date('Y') ?> Est8Ledger. All rights reserved.</p>
+                    <p class="text-secondary-400 text-sm">&copy; <?= date('Y') ?> est8Ledger. All rights reserved.</p>
                     <div class="flex items-center mt-4 md:mt-0 space-x-6">
                         <div class="flex items-center text-secondary-400 text-sm">
                             <i class="bi bi-shield-check mr-2 text-accent-600"></i>

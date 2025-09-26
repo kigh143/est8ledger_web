@@ -206,7 +206,7 @@
             <!-- Left side - Image -->
             <div class="relative">
                 <div class="relative z-10">
-                    <img src="/solution.png" alt="Est8Ledger Solution" class="w-full max-w-lg mx-auto rounded-2xl shadow-2xl">
+                    <img src="/solution.png" alt="est8Ledger Solution" class="w-full max-w-lg mx-auto rounded-2xl shadow-2xl">
                 </div>
                 <!-- Decorative elements -->
                 <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
@@ -223,7 +223,7 @@
                         Our Solution
                     </div>
                     <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                        Est8Ledger Brings 
+                        est8Ledger Brings 
                         <span class="text-primary">Trust</span> to Rentals
                     </h2>
                     <p class="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -582,7 +582,7 @@
 <div class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose Est8Ledger?</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose est8Ledger?</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">Designed specifically for modern rental relationships</p>
         </div>
 

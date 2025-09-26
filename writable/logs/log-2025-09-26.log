@@ -11,7 +11,7 @@ in APPPATH/Views/pages/blog.php on line 123.
  8 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-11 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8Ledger_web/public/index.php')
 CRITICAL - 2025-09-26 18:54:32 --> Error: Call to undefined method CodeIgniter\View\View::formatBlogContent()
 [Method: GET, Route: blog/future-security-deposits-blockchain-rental-trust]
 in APPPATH/Views/pages/blog.php on line 123.
@@ -25,4 +25,4 @@ in APPPATH/Views/pages/blog.php on line 123.
  8 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 10 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-11 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8Ledger_web/public/index.php')
