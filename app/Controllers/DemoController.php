@@ -6,11 +6,17 @@ use CodeIgniter\Controller;
 
 class DemoController extends Controller
 {
-    private $contactsFile;
+    private $waitingListFile;
 
     public function __construct()
     {
-        $this->contactsFile = ROOTPATH . 'contacts.json';
+        $this->waitingListFile = ROOTPATH . 'contacts/waitinglist.json';
+        
+        // Create contacts directory if it doesn't exist
+        $contactsDir = ROOTPATH . 'contacts';
+        if (!is_dir($contactsDir)) {
+            mkdir($contactsDir, 0755, true);
+        }
     }
 
     public function submit()
@@ -42,34 +48,34 @@ class DemoController extends Controller
             'timestamp' => time()
         ];
 
-        // Save to contacts.json
-        $success = $this->saveContact($data);
+        // Save to waiting list
+        $success = $this->saveToWaitingList($data);
 
         if ($success) {
-            return redirect()->to('/')->with('success', 'Thank you! Your request has been submitted. We will contact you soon.');
+            return redirect()->to('/')->with('success', 'Thank you for joining our waiting list! We will notify you as soon as est8Ledger is available.');
         } else {
-            return redirect()->back()->withInput()->with('error', 'Sorry, there was an error submitting your request. Please try again.');
+            return redirect()->back()->withInput()->with('error', 'Sorry, there was an error joining the waiting list. Please try again.');
         }
     }
 
-    private function saveContact($data)
+    private function saveToWaitingList($data)
     {
         try {
-            $contacts = [];
+            $waitingList = [];
 
-            // Load existing contacts if file exists
-            if (file_exists($this->contactsFile)) {
-                $content = file_get_contents($this->contactsFile);
-                $contacts = json_decode($content, true) ?: [];
+            // Load existing waiting list if file exists
+            if (file_exists($this->waitingListFile)) {
+                $content = file_get_contents($this->waitingListFile);
+                $waitingList = json_decode($content, true) ?: [];
             }
 
-            // Add new contact
-            $contacts[] = $data;
+            // Add new entry
+            $waitingList[] = $data;
 
             // Save back to file
-            return file_put_contents($this->contactsFile, json_encode($contacts, JSON_PRETTY_PRINT)) !== false;
+            return file_put_contents($this->waitingListFile, json_encode($waitingList, JSON_PRETTY_PRINT)) !== false;
         } catch (Exception $e) {
-            log_message('error', 'Failed to save contact: ' . $e->getMessage());
+            log_message('error', 'Failed to save to waiting list: ' . $e->getMessage());
             return false;
         }
     }

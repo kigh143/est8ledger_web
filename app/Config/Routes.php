@@ -12,7 +12,10 @@ $routes->get('/blogs', 'BlogController::index');
 $routes->get('/blog/(:segment)', 'BlogController::show/$1');
 $routes->post('/blog/comment', 'BlogController::addComment');
 
-// Demo request route
+// Waiting list route
+$routes->post('/join-waitinglist', 'DemoController::submit');
+
+// Legacy demo request route (redirect to waiting list)
 $routes->post('/request-demo', 'DemoController::submit');
 
 // Legal pages

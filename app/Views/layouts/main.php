@@ -372,8 +372,8 @@
                     <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">How it Works</a>
                     <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Blogs</a>
                     <a href="#contact" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Contact</a>
-                    <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg font-semibold text-white">
-                        Request Demo
+                    <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold text-white">
+                        Join Waiting List
                     </button>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden p-2 text-secondary-600">
@@ -389,7 +389,7 @@
                     <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Blog</a>
                     <a href="#contact" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Contact</a>
                     <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg font-semibold text-white w-full">
-                        Request Demo
+                        Join Waiting List
                     </button>
                 </div>
             </div>
@@ -401,15 +401,15 @@
         <div class="flex items-center justify-center min-h-screen p-4">
             <div class="bg-white rounded-lg max-w-md w-full p-6">
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-bold text-secondary-900">Get Started with est8Ledger</h2>
+                    <h2 class="text-2xl font-bold text-secondary-900">Join the est8Ledger Waiting List</h2>
                     <button onclick="closeDemoModal()" class="text-secondary-400 hover:text-secondary-600 p-1">
                         <i class="bi bi-x-lg text-xl"></i>
                     </button>
                 </div>
 
-                <p class="text-secondary-600 mb-6">Join property professionals who trust est8Ledger for secure, transparent security deposit management.</p>
+                <p class="text-secondary-600 mb-6">Be among the first to experience secure, transparent security deposit management when we launch.</p>
 
-                <form id="demoForm" action="/request-demo" method="POST">
+                <form id="demoForm" action="/join-waitinglist" method="POST">
                     <?= csrf_field() ?>
 
                     <div class="mb-5">
@@ -443,14 +443,14 @@
                     </div>
 
                     <div class="mb-6">
-                        <label for="message" class="block text-sm font-semibold text-secondary-700 mb-2">Property Management Requirements (Optional)</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Number of properties, current challenges with security deposits, specific requirements..."
+                        <label for="message" class="block text-sm font-semibold text-secondary-700 mb-2">What else do we need to address? (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Tell us about your specific needs, challenges, or questions about security deposit management..."
                                   class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"></textarea>
                     </div>
 
                     <div class="flex gap-3">
                         <button type="submit" class="flex-1 btn-primary px-4 py-3 rounded-lg font-semibold text-white">
-                            Request Demo
+                            Join Waiting List
                         </button>
                         <button type="button" onclick="closeDemoModal()" class="px-4 py-3 btn-secondary rounded-lg font-medium">
                             Cancel

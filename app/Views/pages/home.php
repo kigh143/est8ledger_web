@@ -43,7 +43,7 @@
         <!-- Professional CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll">
             <button onclick="openDemoModal()" class="bg-primary-700 hover:bg-primary-800 px-8 py-3 rounded-lg font-semibold text-white transition-colors">
-                Start Earning from Deposits
+                Contact Us
             </button>
 
             <button onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})" class="bg-accent-600 hover:bg-accent-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
@@ -501,11 +501,11 @@
                         <div class="space-y-2">
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                50% profits to tenant
+                                40% profits to tenant
                             </div>
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                30% profits to landlord
+                                40% profits to landlord
                             </div>
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
@@ -828,9 +828,18 @@
         <div class="mt-12 text-center">
             <p class="text-sm text-gray-500 mb-4">Trusted by landlords and tenants nationwide</p>
             <div class="flex justify-center items-center space-x-8 opacity-60">
-                <div class="text-2xl font-bold text-gray-400">🏦 Blockchain Secured</div>
-                <div class="text-2xl font-bold text-gray-400">🔒 SSL Secured</div>
-                <div class="text-2xl font-bold text-gray-400">✅ Compliant</div>
+                <div class="flex items-center text-gray-400">
+                    <i class="bi bi-shield-check mr-2 text-accent-600"></i>
+                    <span class="font-semibold">Blockchain Secured</span>
+                </div>
+                <div class="flex items-center text-gray-400">
+                    <i class="bi bi-lock mr-2 text-blue-600"></i>
+                    <span class="font-semibold">SSL Secured</span>
+                </div>
+                <div class="flex items-center text-gray-400">
+                    <i class="bi bi-check-circle mr-2 text-green-600"></i>
+                    <span class="font-semibold">Compliant</span>
+                </div>
             </div>
         </div>
     </div>
