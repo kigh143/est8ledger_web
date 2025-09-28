@@ -577,9 +577,9 @@
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-12 pt-12 mt-12 border-t border-secondary-700">
                 <div class="col-span-2">
-                    <h3 class="text-2xl font-bold text-white mb-4">est8Ledger</h3>
+                         <img src="/long_logo.png" alt="est8Ledger" class="h-14">
                     <p class="text-secondary-300 mb-6 leading-relaxed">Professional security deposit management for property owners, managers, and tenants. Building trust through transparency and regulatory compliance.</p>
                     <div class="flex space-x-4">
                         <a href="https://www.linkedin.com/company/est8ledger/" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">

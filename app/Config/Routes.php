@@ -21,3 +21,8 @@ $routes->get('/terms-of-use', 'Home::termsOfUse');
 
 // Contact form route
 $routes->post('/contact', 'ContactController::submit');
+
+// Survey routes
+$routes->get('/surveys', 'SurveyController::index');
+$routes->get('/survey/(:segment)', 'SurveyController::show/$1');
+$routes->post('/survey/(:segment)', 'SurveyController::submit/$1');
