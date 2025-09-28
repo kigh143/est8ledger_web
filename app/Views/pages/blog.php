@@ -82,10 +82,20 @@
 </style>
 
 <!-- Blog Header -->
-<div class="bg-slate-50 py-16">
-    <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="flex flex-wrap justify-center gap-2 mb-4">
+<div class="relative py-16 bg-slate-50 overflow-hidden">
+    <!-- Featured Image Background -->
+    <div class="absolute inset-0">
+        <img src="<?= esc($blog['featured_image']) ?>" 
+             alt="<?= esc($blog['title']) ?>" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <!-- Tags -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
                 <?php foreach ($blog['tags'] as $index => $tag): ?>
                     <?php 
                     $tagColors = [
@@ -94,30 +104,37 @@
                     ];
                     $colorClass = $tagColors[$index % count($tagColors)];
                     ?>
-                    <span class="<?= $colorClass ?> px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
+                    <span class="<?= $colorClass ?> px-3 py-1 rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm">
                         <?= esc($tag) ?>
                     </span>
                 <?php endforeach; ?>
             </div>
 
-            <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6"><?= esc($blog['title']) ?></h1>
+            <!-- Title -->
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center leading-tight">
+                <?= esc($blog['title']) ?>
+            </h1>
 
-            <div class="flex items-center justify-center text-slate-600 mb-6">
-                <div class="flex items-center mr-6 bg-white px-3 py-2 rounded-lg border border-[#9eff6b]">
-                    <i class="bi bi-person mr-2 text-[#0d06c8]"></i>
+            <!-- Metadata -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-6">
+                <div class="flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                    <i class="bi bi-person mr-2 text-[#9eff6b]"></i>
                     <span><?= esc($blog['author']) ?></span>
                 </div>
-                <div class="flex items-center mr-6 bg-white px-3 py-2 rounded-lg border border-[#0d06c8]">
+                <div class="flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
                     <i class="bi bi-calendar mr-2 text-[#9eff6b]"></i>
                     <span><?= date('M j, Y', strtotime($blog['published_date'])) ?></span>
                 </div>
-                <div class="flex items-center bg-white px-3 py-2 rounded-lg border border-slate-200">
-                    <i class="bi bi-eye mr-2 text-[#0d06c8]"></i>
+                <div class="flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg">
+                    <i class="bi bi-eye mr-2 text-[#9eff6b]"></i>
                     <span><?= number_format($blog['views']) ?> views</span>
                 </div>
             </div>
 
-            <p class="text-xl text-slate-700 max-w-3xl mx-auto bg-white p-4 rounded-lg border border-slate-200 shadow-sm"><?= esc($blog['excerpt']) ?></p>
+            <!-- Excerpt -->
+            <p class="text-lg max-w-3xl mx-auto text-center bg-white/20 backdrop-blur-sm p-4 rounded-lg leading-relaxed">
+                <?= esc($blog['excerpt']) ?>
+            </p>
         </div>
     </div>
 </div>
