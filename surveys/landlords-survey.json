@@ -1,0 +1,141 @@
+{
+    "id": "landlords-survey",
+    "title": "Landlord & Property Manager Survey",
+    "description": "Share your experience managing security deposits and tenant relationships",
+    "estimated_time": "6-8 minutes",
+    "version": "1.0",
+    "created_at": "2025-01-27",
+    "questions": [
+        {
+            "id": "contact_name",
+            "type": "text",
+            "question": "Full Name",
+            "required": true,
+            "placeholder": "Enter your full name"
+        },
+        {
+            "id": "contact_email",
+            "type": "email",
+            "question": "Email Address",
+            "required": true,
+            "placeholder": "your.email@example.com"
+        },
+        {
+            "id": "contact_phone",
+            "type": "tel",
+            "question": "Phone Number",
+            "required": true,
+            "placeholder": "+256 700 000 000"
+        },
+        {
+            "id": "property_type",
+            "type": "radio",
+            "question": "What type of property professional are you?",
+            "required": true,
+            "options": [
+                {"value": "individual_landlord", "label": "Individual property owner"},
+                {"value": "property_manager", "label": "Professional property manager"},
+                {"value": "real_estate_company", "label": "Real estate company"},
+                {"value": "other", "label": "Other"}
+            ]
+        },
+        {
+            "id": "property_count",
+            "type": "select",
+            "question": "How many rental properties do you manage?",
+            "required": true,
+            "options": [
+                {"value": "1_2", "label": "1-2 properties"},
+                {"value": "3_5", "label": "3-5 properties"},
+                {"value": "6_10", "label": "6-10 properties"},
+                {"value": "11_25", "label": "11-25 properties"},
+                {"value": "over_25", "label": "Over 25 properties"}
+            ]
+        },
+        {
+            "id": "deposit_challenges",
+            "type": "checkbox",
+            "question": "What challenges do you face with security deposits? (Select all that apply)",
+            "required": true,
+            "options": [
+                {"value": "tenant_resistance", "label": "Tenant resistance to paying deposits"},
+                {"value": "deposit_disputes", "label": "Frequent disputes over deductions"},
+                {"value": "cash_flow", "label": "Cash flow issues from holding deposits"},
+                {"value": "record_keeping", "label": "Difficulty tracking deposit records"},
+                {"value": "legal_compliance", "label": "Ensuring legal compliance"},
+                {"value": "trust_building", "label": "Building trust with tenants"}
+            ]
+        },
+        {
+            "id": "vacancy_impact",
+            "type": "rating",
+            "question": "How much do deposit-related issues contribute to property vacancies?",
+            "required": true,
+            "scale": 5,
+            "labels": {
+                "1": "No Impact",
+                "3": "Moderate Impact",
+                "5": "Major Impact"
+            }
+        },
+        {
+            "id": "current_deposit_management",
+            "type": "radio",
+            "question": "How do you currently manage security deposits?",
+            "required": true,
+            "options": [
+                {"value": "personal_account", "label": "Personal bank account"},
+                {"value": "business_account", "label": "Separate business account"},
+                {"value": "escrow_service", "label": "Third-party escrow service"},
+                {"value": "property_management_software", "label": "Property management software"},
+                {"value": "other", "label": "Other method"}
+            ]
+        },
+        {
+            "id": "transparency_importance",
+            "type": "rating",
+            "question": "How important is transparency in deposit management for tenant relationships?",
+            "required": true,
+            "scale": 5,
+            "labels": {
+                "1": "Not Important",
+                "3": "Somewhat Important",
+                "5": "Very Important"
+            }
+        },
+        {
+            "id": "est8ledger_features",
+            "type": "checkbox",
+            "question": "Which est8Ledger features would be most valuable to you? (Select all that apply)",
+            "required": true,
+            "options": [
+                {"value": "transparent_escrow", "label": "Transparent escrow accounts"},
+                {"value": "automated_inspections", "label": "Digital move-in/move-out inspections"},
+                {"value": "dispute_resolution", "label": "Built-in dispute resolution"},
+                {"value": "investment_returns", "label": "Earning returns on held deposits"},
+                {"value": "blockchain_security", "label": "Blockchain security and immutability"},
+                {"value": "automated_compliance", "label": "Automated legal compliance"}
+            ]
+        },
+        {
+            "id": "implementation_timeline",
+            "type": "radio",
+            "question": "When would you consider implementing a new deposit management solution?",
+            "required": true,
+            "options": [
+                {"value": "immediately", "label": "Immediately - I need a solution now"},
+                {"value": "within_3_months", "label": "Within 3 months"},
+                {"value": "within_6_months", "label": "Within 6 months"},
+                {"value": "within_year", "label": "Within a year"},
+                {"value": "not_sure", "label": "Not sure yet"}
+            ]
+        },
+        {
+            "id": "additional_comments",
+            "type": "textarea",
+            "question": "Any additional thoughts on security deposit management or est8Ledger?",
+            "required": false,
+            "placeholder": "Share your experiences, concerns, or suggestions..."
+        }
+    ]
+}

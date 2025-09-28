@@ -60,7 +60,7 @@
                     <div>
                         <h3 class="text-lg font-semibold text-blue-800 mb-2">Your Privacy Matters</h3>
                         <p class="text-blue-700 leading-relaxed">
-                            Your privacy is important to us. This policy outlines how Est8Ledger collects, uses, and protects your information when you use our security deposit management platform.
+                            Your privacy is important to us. This policy outlines how est8Ledger collects, uses, and protects your information when you use our security deposit management platform.
                         </p>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
                     <h2 class="text-2xl font-bold text-gray-800">1. Introduction</h2>
                 </div>
                 <p class="text-gray-600 leading-relaxed">
-                    Est8Ledger ("we," "our," or "us") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our security deposit management platform and related services.
+                    est8Ledger ("we," "our," or "us") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our security deposit management platform and related services.
                 </p>
             </div>
 
@@ -470,9 +470,9 @@
 
                 <div class="mt-6 text-center">
                     <p class="text-gray-600 mb-4">To exercise these rights, contact us at:</p>
-                    <a href="mailto:privacy@est8ledger.com" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                    <a href="mailto:privacy@est8Ledger.com" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                         <i class="bi bi-envelope mr-2"></i>
-                        privacy@est8ledger.com
+                        privacy@est8Ledger.com
                     </a>
                 </div>
             </div>
@@ -541,8 +541,8 @@
                     <div class="bg-white/10 rounded-xl p-6">
                         <i class="bi bi-envelope text-3xl text-primary-100 mb-3"></i>
                         <h3 class="font-semibold mb-2">Email</h3>
-                        <a href="mailto:privacy@est8ledger.com" class="text-primary-100 hover:text-white transition-colors">
-                            privacy@est8ledger.com
+                        <a href="mailto:privacy@est8Ledger.com" class="text-primary-100 hover:text-white transition-colors">
+                            privacy@est8Ledger.com
                         </a>
                     </div>
                     <div class="bg-white/10 rounded-xl p-6">
@@ -556,7 +556,7 @@
                         <i class="bi bi-geo-alt text-3xl text-primary-100 mb-3"></i>
                         <h3 class="font-semibold mb-2">Address</h3>
                         <p class="text-primary-100">
-                            Est8Ledger, Inc.<br>
+                            est8Ledger, Inc.<br>
                             Privacy Department<br>
                             Kisaasi, Bahai Road
                         </p>

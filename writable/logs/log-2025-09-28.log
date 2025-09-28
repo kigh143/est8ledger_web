@@ -1,0 +1,36 @@
+CRITICAL - 2025-09-28 09:45:48 --> ErrorException: Undefined array key "additional_comments"
+[Method: POST, Route: survey/landlords-survey]
+in APPPATH/Controllers/SurveyController.php on line 146.
+ 1 APPPATH/Controllers/SurveyController.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "additional_comments"', '/Users/ghkatende/RentalynkWork/est8ledger_web/app/Controllers/SurveyController.php', 146)
+ 2 APPPATH/Controllers/SurveyController.php(70): App\Controllers\SurveyController->validateSurveyResponses([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SurveyController->submit('landlords-survey')
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')
+CRITICAL - 2025-09-28 09:50:36 --> ErrorException: Undefined array key "additional_comments"
+[Method: POST, Route: survey/landlords-survey]
+in APPPATH/Controllers/SurveyController.php on line 148.
+ 1 APPPATH/Controllers/SurveyController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "additional_comments"', '/Users/ghkatende/RentalynkWork/est8ledger_web/app/Controllers/SurveyController.php', 148)
+ 2 APPPATH/Controllers/SurveyController.php(70): App\Controllers\SurveyController->validateSurveyResponses([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SurveyController->submit('landlords-survey')
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')
+CRITICAL - 2025-09-28 09:52:34 --> ErrorException: Undefined array key "additional_feedback"
+[Method: POST, Route: survey/tenants-survey]
+in APPPATH/Controllers/SurveyController.php on line 148.
+ 1 APPPATH/Controllers/SurveyController.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "additional_feedback"', '/Users/ghkatende/RentalynkWork/est8ledger_web/app/Controllers/SurveyController.php', 148)
+ 2 APPPATH/Controllers/SurveyController.php(70): App\Controllers\SurveyController->validateSurveyResponses([...])
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\SurveyController->submit('tenants-survey')
+ 4 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SurveyController))
+ 5 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Users/ghkatende/RentalynkWork/est8ledger_web/public/index.php')

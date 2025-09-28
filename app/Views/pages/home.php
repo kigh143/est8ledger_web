@@ -16,59 +16,38 @@
             <i class="bi bi-balance-scale text-primary text-7xl"></i>
         </div>
         <div class="absolute bottom-20 right-1/3 w-20 h-20 transform -rotate-12">
-            <i class="bi bi-check-circle text-accent text-5xl"></i>
+            <i class="bi bi-graph-up text-accent text-5xl"></i>
         </div>
-        <!-- Subtle grid pattern -->
-        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, #0d06c8 1px, transparent 0); background-size: 40px 40px; opacity: 0.3;"></div>
     </div>
 
     <div class="container mx-auto px-4 text-center relative z-10">
         <!-- Professional Badge -->
         <div class="inline-flex items-center bg-primary-50 border border-primary-200 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-8 animate-on-scroll">
             <i class="bi bi-shield-check mr-2"></i>
-            Secure • Transparent • Professional
+            Secure • Transparent • Profitable
         </div>
 
         <!-- Main Heading -->
         <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-secondary-900 mb-6 leading-tight animate-on-scroll">
-            Security Deposits Made
-            <span class="text-primary-700">Simple and Fair</span>
+            End Security Deposit Disputes
+            <span class="text-primary-700">Forever</span>
         </h1>
 
         <!-- Subheading -->
         <p class="text-lg lg:text-xl text-secondary-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-on-scroll">
-            Professional security deposit management for landlords, property managers, and tenants.
-            <span class="font-semibold text-primary-700">Blockchain Secured escrow accounts</span>
-            with complete transparency and regulatory compliance.
+            The definitive platform for secure tenancy agreements, transparent inspections, and 
+            <span class="font-semibold text-primary-700">profit-sharing security deposits</span>
+            across Uganda and East Africa. Turn idle deposits into shared wealth.
         </p>
-
-        <!-- Professional Visual Element -->
-        <div class="flex justify-center mb-12 animate-scale">
-            <div class="relative">
-                <!-- Main Icon Container -->
-                <div class="bg-primary-700 w-24 h-24 lg:w-28 lg:h-28 rounded-lg flex items-center justify-center shadow-professional-lg">
-                    <i class="bi bi-shield-check text-3xl lg:text-4xl text-white"></i>
-                </div>
-
-                <!-- Professional Accent Elements -->
-                <div class="absolute -top-2 -right-2 bg-accent-600 w-8 h-8 lg:w-10 lg:h-10 rounded-md flex items-center justify-center shadow-professional">
-                    <i class="bi bi-check text-sm lg:text-base text-white"></i>
-                </div>
-
-                <div class="absolute -bottom-2 -left-2 bg-secondary-100 w-8 h-8 lg:w-10 lg:h-10 rounded-md flex items-center justify-center shadow-professional border border-secondary-200">
-                    <i class="bi bi-house-door text-sm lg:text-base text-secondary-600"></i>
-                </div>
-            </div>
-        </div>
 
         <!-- Professional CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll">
             <button onclick="openDemoModal()" class="bg-primary-700 hover:bg-primary-800 px-8 py-3 rounded-lg font-semibold text-white transition-colors">
-                Request Demo
+                Contact Us
             </button>
 
             <button onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})" class="bg-accent-600 hover:bg-accent-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Learn More
+                See How It Works
             </button>
         </div>
 
@@ -78,32 +57,32 @@
                 <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <i class="bi bi-shield-fill-check text-accent-600 text-xl"></i>
                 </div>
-                <div class="text-sm font-medium text-secondary-900">Bank-Grade Security</div>
-                <div class="text-xs text-secondary-500 mt-1">256-bit encryption</div>
+                <div class="text-sm font-medium text-secondary-900">Dispute-Free</div>
+                <div class="text-xs text-secondary-500 mt-1">Single source of truth</div>
             </div>
 
             <div class="text-center">
                 <div class="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="bi bi-file-spreadsheet-fill text-primary-600 text-xl"></i>
+                    <i class="bi bi-graph-up-arrow text-primary-600 text-xl"></i>
                 </div>
-                <div class="text-sm font-medium text-secondary-900">Blockchain Secured</div>
-                <div class="text-xs text-secondary-500 mt-1"><a href="https://xrpl.org/" target="_blank">XRP Ledger</a></div>
+                <div class="text-sm font-medium text-secondary-900">Profit Sharing</div>
+                <div class="text-xs text-secondary-500 mt-1">Deposits earn returns</div>
             </div>
 
             <div class="text-center">
                 <div class="w-12 h-12 bg-secondary-50 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="bi bi-lightning-fill text-secondary-600 text-xl"></i>
+                    <i class="bi bi-camera-fill text-secondary-600 text-xl"></i>
                 </div>
-                <div class="text-sm font-medium text-secondary-900">Instant Processing</div>
-                <div class="text-xs text-secondary-500 mt-1">Real-time transfers</div>
+                <div class="text-sm font-medium text-secondary-900">Verified Inspections</div>
+                <div class="text-xs text-secondary-500 mt-1">Geo-tagged evidence</div>
             </div>
 
             <div class="text-center">
-                <div class="w-12 h-12 bg-accent-50 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <i class="bi bi-people text-accent-600 text-xl"></i>
+                <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <i class="bi bi-phone-fill text-green-600 text-xl"></i>
                 </div>
-                <div class="text-sm font-medium text-secondary-900">24/7 Support</div>
-                <div class="text-xs text-secondary-500 mt-1">Always available</div>
+                <div class="text-sm font-medium text-secondary-900">Mobile-First</div>
+                <div class="text-xs text-secondary-500 mt-1">Built for East Africa</div>
             </div>
         </div>
     </div>
@@ -113,121 +92,166 @@
 <div class="section-padding bg-neutral-50">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16 animate-on-scroll">
-            <div class="inline-flex items-center bg-primary-50 text-primary-700 px-4 py-2 rounded-lg text-sm font-medium mb-6">
-                <i class="bi bi-exclamation-circle mr-2"></i>
-                Industry Challenges
+            <div class="inline-flex items-center bg-red-50 text-red-700 px-4 py-2 rounded-lg text-sm font-medium mb-6">
+                <i class="bi bi-exclamation-triangle mr-2"></i>
+                The East African Rental Crisis
             </div>
             <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
-                Traditional Security Deposit Challenges
+                Security Deposits Are Broken
             </h2>
             <p class="text-lg text-secondary-600 max-w-3xl mx-auto">
-                Current security deposit processes create inefficiencies and disputes that impact both property owners and tenants
+                Across Uganda and East Africa, the same deposit conflicts repeat endlessly, 
+                creating stress for tenants and headaches for property owners
             </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 animate-stagger">
-            <!-- Problem 1 -->
+            <!-- Problem 1 - Tenants -->
             <div class="stagger-item">
                 <div class="card-professional p-8 h-full">
-                    <!-- Professional Icon -->
-                    <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="bi bi-graph-down text-2xl text-primary-600"></i>
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="bi bi-person-x text-2xl text-red-600"></i>
                     </div>
 
-                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Extended Vacancy Periods</h3>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Tenant Frustration</h3>
                     <p class="text-secondary-600 leading-relaxed mb-6">
-                        High security deposit requirements deter qualified tenants, resulting in longer vacancy periods and reduced rental income for property owners.
+                        Unfair deductions, non-refunds, and zero transparency create financial strain. 
+                        Money sits idle while tenants stress about recovery.
                     </p>
 
-                    <!-- Professional Stats -->
-                    <div class="bg-primary-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-primary-700">Average Impact</span>
-                            <span class="text-sm font-bold text-primary-900">+30% vacancy time</span>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-red-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Unfair deposit deductions
+                        </div>
+                        <div class="flex items-center text-sm text-red-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            No inspection transparency
+                        </div>
+                        <div class="flex items-center text-sm text-red-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Idle capital earning nothing
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Problem 2 -->
+            <!-- Problem 2 - Landlords -->
             <div class="stagger-item">
                 <div class="card-professional p-8 h-full">
-                    <!-- Professional Icon -->
-                    <div class="w-14 h-14 bg-accent-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="bi bi-shield-exclamation text-2xl text-accent-700"></i>
+                    <div class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="bi bi-building-exclamation text-2xl text-orange-600"></i>
                     </div>
 
-                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Tenant Deposit Concerns</h3>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Landlord Headaches</h3>
                     <p class="text-secondary-600 leading-relaxed mb-6">
-                        Tenants experience anxiety about deposit recovery due to lack of transparency in traditional deposit management systems.
+                        Endless disputes consume time and resources while damaging reputations. 
+                        Deposit management becomes an administrative burden.
                     </p>
 
-                    <!-- Professional Stats -->
-                    <div class="bg-accent-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-accent-700">Tenant Concern Rate</span>
-                            <span class="text-sm font-bold text-accent-900">85% report anxiety</span>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-orange-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Time-consuming disputes
+                        </div>
+                        <div class="flex items-center text-sm text-orange-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Cash flow complications
+                        </div>
+                        <div class="flex items-center text-sm text-orange-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Missed investment opportunities
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Problem 3 -->
+            <!-- Problem 3 - Property Managers -->
             <div class="stagger-item">
                 <div class="card-professional p-8 h-full">
-                    <!-- Professional Icon -->
-                    <div class="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="bi bi-exclamation-triangle text-2xl text-primary-600"></i>
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="bi bi-briefcase-fill text-2xl text-purple-600"></i>
                     </div>
 
-                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Dispute Resolution Issues</h3>
+                    <h3 class="text-xl font-bold text-secondary-900 mb-4">Manager Overwhelm</h3>
                     <p class="text-secondary-600 leading-relaxed mb-6">
-                        Limited transparency in traditional systems leads to disputes, legal complications, and damaged landlord-tenant relationships.
+                        Managing multiple properties means multiplied deposit disputes, 
+                        administrative chaos, and constant conflict resolution.
                     </p>
 
-                    <!-- Professional Stats -->
-                    <div class="bg-primary-50 p-4 rounded-lg">
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-primary-700">Dispute Rate</span>
-                            <span class="text-sm font-bold text-primary-900">60% of deposits</span>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-purple-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Multiplied disputes
+                        </div>
+                        <div class="flex items-center text-sm text-purple-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Administrative chaos
+                        </div>
+                        <div class="flex items-center text-sm text-purple-600">
+                            <i class="bi bi-x-circle mr-2"></i>
+                            Reputation damage
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
 <!-- Solution Section -->
-<div class="py-20 bg-white">
+<div class="section-padding bg-white">
     <div class="container mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <!-- Left side - Image -->
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Left side - Visual -->
             <div class="relative">
-                <div class="relative z-10">
-                    <img src="/solution.png" alt="Est8Ledger Solution" class="w-full max-w-lg mx-auto rounded-2xl shadow-2xl">
+                <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 relative overflow-hidden">
+                    <!-- Background pattern -->
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="absolute top-4 right-4 w-20 h-20">
+                            <i class="bi bi-shield-check text-primary text-4xl"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4 w-16 h-16">
+                            <i class="bi bi-graph-up text-accent text-3xl"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Solution visual elements -->
+                    <div class="relative z-10 text-center">
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <i class="bi bi-file-earmark-check text-2xl text-primary mb-2"></i>
+                                <div class="text-xs font-medium">Digital Agreements</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <i class="bi bi-camera text-2xl text-accent mb-2"></i>
+                                <div class="text-xs font-medium">Verified Inspections</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <i class="bi bi-piggy-bank text-2xl text-green-600 mb-2"></i>
+                                <div class="text-xs font-medium">Profit Sharing</div>
+                            </div>
+                        </div>
+                        <div class="text-4xl font-bold text-primary mb-2">est8Ledger</div>
+                        <div class="text-sm text-secondary-600">The Complete Solution</div>
+                    </div>
                 </div>
-                <!-- Decorative elements -->
-                <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
-                <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-xl"></div>
-                <div class="absolute top-1/2 -left-8 w-4 h-4 bg-accent rounded-full animate-pulse"></div>
-                <div class="absolute top-1/4 -right-6 w-6 h-6 bg-primary/30 rounded-full animate-bounce"></div>
             </div>
 
             <!-- Right side - Content -->
             <div class="space-y-8">
                 <div>
-                    <div class="inline-flex items-center bg-primary-50 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-                        <i class="bi bi-shield-check mr-2"></i>
+                    <div class="inline-flex items-center bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <i class="bi bi-lightbulb mr-2"></i>
                         Our Solution
                     </div>
                     <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                        Est8Ledger Brings 
-                        <span class="text-primary">Trust</span> to Rentals
+                        Turn Deposits Into 
+                        <span class="text-primary">Shared Wealth</span>
                     </h2>
                     <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                        Our secure escrow system and transparent processes protect both landlords and tenants, building trust from day one
+                        We eliminate disputes with a single source of truth and unlock the potential of idle capital 
+                        through transparent, profit-sharing investments
                     </p>
                 </div>
 
@@ -235,31 +259,31 @@
                 <div class="space-y-6">
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                            <i class="bi bi-bank text-primary text-xl"></i>
+                            <i class="bi bi-shield-lock text-primary text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Secure Escrow Accounts</h3>
-                            <p class="text-gray-600">Deposits are held in secure, regulated escrow accounts, ensuring funds are protected and available when needed</p>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Secured Deposits with Profit Sharing</h3>
+                            <p class="text-gray-600">Deposits held in transparent, third-party accounts. With mutual agreement, we invest in low-risk ventures and share profits between tenant, landlord, and Est8Ledger</p>
                         </div>
                     </div>
 
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center">
-                            <i class="bi bi-file-earmark-text text-green-600 text-xl"></i>
+                            <i class="bi bi-file-earmark-check text-accent-700 text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Digital Tenancy Agreements</h3>
-                            <p class="text-gray-600">Streamlined digital contracts make onboarding faster and ensure all terms are clearly documented</p>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Digital Agreements</h3>
+                            <p class="text-gray-600">All lease documents signed, stored, and accessible securely on our mobile-first platform built for East Africa</p>
                         </div>
                     </div>
 
                     <div class="flex items-start space-x-4">
                         <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="bi bi-search text-blue-600 text-xl"></i>
+                            <i class="bi bi-camera text-blue-600 text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Transparent Inspections</h3>
-                            <p class="text-gray-600">Move-in and move-out inspections with photo documentation ensure fair and transparent deposit release</p>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Irrefutable Inspections</h3>
+                            <p class="text-gray-600">Guided inspection tool with timestamped, geo-tagged photos and videos creates an unalterable record of property condition</p>
                         </div>
                     </div>
                 </div>
@@ -267,7 +291,7 @@
                 <!-- CTA Button -->
                 <div class="pt-4">
                     <button onclick="openDemoModal()" class="bg-accent hover:bg-accent/90 text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center">
-                        Get Started Today
+                        Start Earning Today
                         <i class="bi bi-arrow-right ml-2"></i>
                     </button>
                 </div>
@@ -477,11 +501,11 @@
                         <div class="space-y-2">
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                50% profits to tenant
+                                40% profits to tenant
                             </div>
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                30% profits to landlord
+                                40% profits to landlord
                             </div>
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
@@ -577,12 +601,72 @@
     </div>
 </div>
 
+<!-- XRPL Integration Section -->
+<div class="section-padding bg-gradient-to-br from-[#0d06c8] to-[#1a0f8a] relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 left-10 w-32 h-32 transform rotate-12">
+            <i class="bi bi-diagram-3 text-white text-8xl"></i>
+        </div>
+        <div class="absolute top-1/3 right-20 w-24 h-24 transform -rotate-45">
+            <i class="bi bi-shield-lock text-[#9eff6b] text-6xl"></i>
+        </div>
+        <div class="absolute bottom-20 left-1/4 w-28 h-28 transform rotate-30">
+            <i class="bi bi-lightning text-white text-7xl"></i>
+        </div>
+        <div class="absolute bottom-1/3 right-1/3 w-20 h-20 transform -rotate-12">
+            <i class="bi bi-check-circle text-[#9eff6b] text-5xl"></i>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16 animate-on-scroll">
+            <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium mb-6">
+                <i class="bi bi-diagram-3 mr-2 text-[#9eff6b]"></i>
+                Blockchain Technology
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+                Built on <span class="text-[#9eff6b]">XRPL</span>
+            </h2>
+            <p class="text-lg text-white/90 max-w-3xl mx-auto mb-8">
+                Leveraging the power of XRP Ledger blockchain technology to create unbreakable trust, 
+                transparency, and efficiency in security deposit management
+            </p>
+
+            <!-- XRPL Logo -->
+            <div class="flex justify-center mb-12">
+                <div class="rounded-2xl p-4 border border-white/20">
+                    <img src="/Built-on-XRPL-Color-Horizontal-White.png" 
+                         alt="Built on XRPL" 
+                         class="h-16 md:h-20 mx-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Statement -->
+        <!-- <div class="text-center mt-16 animate-on-scroll">
+            <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 max-w-4xl mx-auto">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-12 h-12 bg-[#9eff6b]/20 rounded-full flex items-center justify-center mr-4">
+                        <i class="bi bi-patch-check text-[#9eff6b] text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Blockchain-Verified Trust</h3>
+                </div>
+                <p class="text-lg text-white/90 leading-relaxed">
+                    By building on XRPL, Est8Ledger eliminates the need for blind trust between landlords and tenants. 
+                    Every transaction, agreement, and profit distribution is cryptographically verified and publicly auditable, 
+                    creating unprecedented transparency in the rental deposit market.
+                </p>
+            </div>
+        </div> -->
+    </div>
+</div>
 
 <!-- Benefits Section - Modern Card Layout -->
 <div class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose Est8Ledger?</h2>
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose est8Ledger?</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">Designed specifically for modern rental relationships</p>
         </div>
 
@@ -744,9 +828,18 @@
         <div class="mt-12 text-center">
             <p class="text-sm text-gray-500 mb-4">Trusted by landlords and tenants nationwide</p>
             <div class="flex justify-center items-center space-x-8 opacity-60">
-                <div class="text-2xl font-bold text-gray-400">🏦 Blockchain Secured</div>
-                <div class="text-2xl font-bold text-gray-400">🔒 SSL Secured</div>
-                <div class="text-2xl font-bold text-gray-400">✅ Compliant</div>
+                <div class="flex items-center text-gray-400">
+                    <i class="bi bi-shield-check mr-2 text-accent-600"></i>
+                    <span class="font-semibold">Blockchain Secured</span>
+                </div>
+                <div class="flex items-center text-gray-400">
+                    <i class="bi bi-lock mr-2 text-blue-600"></i>
+                    <span class="font-semibold">SSL Secured</span>
+                </div>
+                <div class="flex items-center text-gray-400">
+                    <i class="bi bi-check-circle mr-2 text-green-600"></i>
+                    <span class="font-semibold">Compliant</span>
+                </div>
             </div>
         </div>
     </div>

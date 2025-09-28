@@ -38,6 +38,12 @@ class BlogController extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Blog post not found');
         }
 
+        // Increment view count
+        $this->incrementViewCount($blog['id']);
+        
+        // Get updated blog data with new view count
+        $blog = $this->getBlogBySlug($slug);
+
         // Format the blog content before passing to view
         $blog['formatted_content'] = $this->formatBlogContent($blog['content']);
 
