@@ -370,7 +370,7 @@
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="/" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Home</a>
                     <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">How it Works</a>
-                    <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Blog</a>
+                    <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Blogs</a>
                     <a href="#contact" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Contact</a>
                     <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg font-semibold text-white">
                         Request Demo
@@ -469,6 +469,114 @@
     <!-- Professional Footer -->
     <footer class="bg-secondary-900 text-white py-16 mt-16" id="contact">
         <div class="container mx-auto px-4">
+            <!-- Contact Form Section -->
+            <div class="mb-16">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h3 class="text-3xl font-bold text-white mb-4">Get in Touch</h3>
+                        <p class="text-secondary-300 text-lg">Ready to transform your rental deposit experience? Contact us today.</p>
+                    </div>
+
+                    <!-- Display Flash Messages -->
+                    <?php if (session()->getFlashdata('success')): ?>
+                        <div class="bg-[#9eff6b]/20 border border-[#9eff6b]/30 text-[#9eff6b] px-6 py-4 rounded-lg mb-8 flex items-center">
+                            <i class="bi bi-check-circle-fill mr-3 text-xl"></i>
+                            <span><?= session()->getFlashdata('success') ?></span>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if (session()->getFlashdata('error')): ?>
+                        <div class="bg-red-500/20 border border-red-500/30 text-red-300 px-6 py-4 rounded-lg mb-8 flex items-center">
+                            <i class="bi bi-exclamation-triangle-fill mr-3 text-xl"></i>
+                            <span><?= session()->getFlashdata('error') ?></span>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php if (session()->getFlashdata('errors')): ?>
+                        <div class="bg-red-500/20 border border-red-500/30 text-red-300 px-6 py-4 rounded-lg mb-8">
+                            <div class="flex items-center mb-2">
+                                <i class="bi bi-exclamation-triangle-fill mr-3 text-xl"></i>
+                                <span class="font-semibold">Please correct the following errors:</span>
+                            </div>
+                            <ul class="list-disc list-inside ml-6 space-y-1">
+                                <?php foreach (session()->getFlashdata('errors') as $error): ?>
+                                    <li><?= $error ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+
+                    <form action="/contact" method="POST" class="bg-secondary-800/50 backdrop-blur-sm border border-secondary-700 rounded-2xl p-8">
+                        <?= csrf_field() ?>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <!-- Name Field -->
+                            <div>
+                                <label for="contact_name" class="block text-sm font-semibold text-white mb-2">
+                                    Full Name *
+                                </label>
+                                <input type="text" 
+                                       id="contact_name" 
+                                       name="name" 
+                                       value="<?= old('name') ?>"
+                                       required
+                                       class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors"
+                                       placeholder="Enter your full name">
+                            </div>
+
+                            <!-- Email Field -->
+                            <div>
+                                <label for="contact_email" class="block text-sm font-semibold text-white mb-2">
+                                    Email Address *
+                                </label>
+                                <input type="email" 
+                                       id="contact_email" 
+                                       name="email" 
+                                       value="<?= old('email') ?>"
+                                       required
+                                       class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors"
+                                       placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <!-- Phone Field -->
+                        <div class="mb-6">
+                            <label for="contact_phone" class="block text-sm font-semibold text-white mb-2">
+                                Phone Number (Optional)
+                            </label>
+                            <input type="tel" 
+                                   id="contact_phone" 
+                                   name="phone" 
+                                   value="<?= old('phone') ?>"
+                                   class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors"
+                                   placeholder="+256 700 000 000">
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-8">
+                            <label for="contact_message" class="block text-sm font-semibold text-white mb-2">
+                                Message *
+                            </label>
+                            <textarea id="contact_message" 
+                                      name="message" 
+                                      rows="5" 
+                                      required
+                                      class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors resize-vertical"
+                                      placeholder="Tell us about your rental deposit needs, property management challenges, or any questions you have about est8Ledger..."><?= old('message') ?></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit" 
+                                    class="bg-[#9eff6b] hover:bg-[#8ee55a] text-secondary-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:ring-offset-2 focus:ring-offset-secondary-900 inline-flex items-center">
+                                <i class="bi bi-send mr-2"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <div class="col-span-2">
                     <h3 class="text-2xl font-bold text-white mb-4">est8Ledger</h3>

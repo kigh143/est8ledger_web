@@ -18,3 +18,6 @@ $routes->post('/request-demo', 'DemoController::submit');
 // Legal pages
 $routes->get('/privacy-policy', 'Home::privacyPolicy');
 $routes->get('/terms-of-use', 'Home::termsOfUse');
+
+// Contact form route
+$routes->post('/contact', 'ContactController::submit');
