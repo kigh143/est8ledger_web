@@ -10,7 +10,132 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-T4Z9HEBQ3Z');
+        gtag('config', 'G-T4Z9HEBQ3Z', {
+            // Enable debug mode for testing (remove in production)
+            debug_mode: <?= ENVIRONMENT === 'development' ? 'true' : 'false' ?>,
+            send_page_view: true
+        });
+    </script>
+
+    <!-- GA4 Event Tracking System -->
+    <script>
+        // Modular GA4 Event Tracking System
+        window.GA4Tracker = {
+            // Core tracking function
+            trackEvent: function(eventName, parameters = {}) {
+                if (typeof gtag === 'undefined') {
+                    console.warn('GA4: gtag not loaded');
+                    return;
+                }
+
+                // Ensure event name follows GA4 best practices
+                const cleanEventName = eventName.toLowerCase().replace(/[^a-z0-9_]/g, '_').substring(0, 40);
+                
+                // Add default parameters
+                const defaultParams = {
+                    page_title: document.title,
+                    page_location: window.location.href,
+                    timestamp: new Date().toISOString()
+                };
+
+                const eventParams = { ...defaultParams, ...parameters };
+
+                // Send event to GA4
+                gtag('event', cleanEventName, eventParams);
+
+                // Debug logging
+                if (<?= ENVIRONMENT === 'development' ? 'true' : 'false' ?>) {
+                    console.log('GA4 Event Tracked:', cleanEventName, eventParams);
+                }
+            },
+
+            // Form submission tracking
+            trackFormSubmission: function(formType, formId = null, additionalData = {}) {
+                this.trackEvent('form_submit', {
+                    form_type: formType,
+                    form_id: formId,
+                    ...additionalData
+                });
+            },
+
+            // CTA click tracking
+            trackCTAClick: function(ctaName, ctaLocation, ctaType = 'button') {
+                this.trackEvent('cta_click', {
+                    cta_name: ctaName,
+                    cta_location: ctaLocation,
+                    cta_type: ctaType
+                });
+            },
+
+            // Navigation tracking
+            trackNavigation: function(linkText, destination, navType = 'menu') {
+                this.trackEvent('navigation_click', {
+                    link_text: linkText,
+                    destination: destination,
+                    nav_type: navType
+                });
+            },
+
+            // Modal interactions
+            trackModalInteraction: function(modalName, action) {
+                this.trackEvent('modal_interaction', {
+                    modal_name: modalName,
+                    action: action
+                });
+            },
+
+            // Blog interactions
+            trackBlogInteraction: function(action, blogTitle = null, blogSlug = null) {
+                this.trackEvent('blog_interaction', {
+                    action: action,
+                    blog_title: blogTitle,
+                    blog_slug: blogSlug
+                });
+            },
+
+            // Survey interactions
+            trackSurveyInteraction: function(surveyId, action, questionId = null) {
+                this.trackEvent('survey_interaction', {
+                    survey_id: surveyId,
+                    action: action,
+                    question_id: questionId
+                });
+            },
+
+            // Scroll depth tracking
+            trackScrollDepth: function(percentage) {
+                this.trackEvent('scroll_depth', {
+                    scroll_percentage: percentage
+                });
+            },
+
+            // File download tracking
+            trackFileDownload: function(fileName, fileType) {
+                this.trackEvent('file_download', {
+                    file_name: fileName,
+                    file_type: fileType
+                });
+            },
+
+            // Error tracking
+            trackError: function(errorType, errorMessage, errorLocation = null) {
+                this.trackEvent('error_occurred', {
+                    error_type: errorType,
+                    error_message: errorMessage,
+                    error_location: errorLocation
+                });
+            }
+        };
+
+        // Auto-track page views with enhanced data
+        document.addEventListener('DOMContentLoaded', function() {
+            GA4Tracker.trackEvent('page_view_enhanced', {
+                page_type: document.body.dataset.pageType || 'unknown',
+                user_agent: navigator.userAgent,
+                screen_resolution: screen.width + 'x' + screen.height,
+                viewport_size: window.innerWidth + 'x' + window.innerHeight
+            });
+        });
     </script>
     
     <!-- SEO Meta Tags -->
@@ -634,47 +759,113 @@
         function openDemoModal() {
             document.getElementById('demoModal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
+            
+            // Track modal open
+            GA4Tracker.trackModalInteraction('waiting_list_modal', 'open');
         }
 
         function closeDemoModal() {
             document.getElementById('demoModal').classList.add('hidden');
             document.body.style.overflow = 'auto';
+            
+            // Track modal close
+            GA4Tracker.trackModalInteraction('waiting_list_modal', 'close');
         }
 
         // Close modal when clicking outside
         document.getElementById('demoModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeDemoModal();
+                GA4Tracker.trackModalInteraction('waiting_list_modal', 'close_outside_click');
             }
         });
 
-        // Mobile menu functionality
+        // Track form submission
+        document.getElementById('demoForm').addEventListener('submit', function(e) {
+            const formData = new FormData(this);
+            GA4Tracker.trackFormSubmission('waiting_list', 'demoForm', {
+                user_type: formData.get('user_type'),
+                has_phone: formData.get('phone') ? 'yes' : 'no',
+                has_message: formData.get('message') ? 'yes' : 'no'
+            });
+        });
+
+        // Mobile menu functionality with tracking
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
 
-            if (mobileMenuButton && mobileMenu && menuIcon) {
+            if (mobileMenuButton && mobileMenu) {
                 mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-
-                    // Toggle icon
-                    if (mobileMenu.classList.contains('hidden')) {
-                        menuIcon.className = 'bi bi-list text-2xl';
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        menuIcon.classList.remove('bi-list');
+                        menuIcon.classList.add('bi-x');
+                        GA4Tracker.trackNavigation('mobile_menu', 'open', 'mobile_menu');
                     } else {
-                        menuIcon.className = 'bi bi-x text-2xl';
+                        mobileMenu.classList.add('hidden');
+                        menuIcon.classList.remove('bi-x');
+                        menuIcon.classList.add('bi-list');
+                        GA4Tracker.trackNavigation('mobile_menu', 'close', 'mobile_menu');
                     }
                 });
+            }
 
-                // Close mobile menu when clicking on links
-                const mobileLinks = mobileMenu.querySelectorAll('a');
-                mobileLinks.forEach(link => {
-                    link.addEventListener('click', function() {
-                        mobileMenu.classList.add('hidden');
-                        menuIcon.className = 'bi bi-list text-2xl';
+            // Track all navigation clicks
+            document.querySelectorAll('nav a, .nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const linkText = this.textContent.trim();
+                    const destination = this.getAttribute('href');
+                    GA4Tracker.trackNavigation(linkText, destination, 'main_nav');
+                });
+            });
+
+            // Track CTA buttons
+            document.querySelectorAll('.btn-primary, .cta-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const buttonText = this.textContent.trim();
+                    const buttonLocation = this.closest('section')?.id || 'unknown';
+                    GA4Tracker.trackCTAClick(buttonText, buttonLocation);
+                });
+            });
+
+            // Track contact form submission
+            const contactForm = document.querySelector('form[action="/contact"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    const formData = new FormData(this);
+                    GA4Tracker.trackFormSubmission('contact', 'contact_form', {
+                        has_phone: formData.get('phone') ? 'yes' : 'no',
+                        message_length: formData.get('message')?.length || 0
                     });
                 });
             }
+        });
+
+        // Scroll depth tracking
+        let scrollDepthTracked = [];
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            
+            [25, 50, 75, 90].forEach(threshold => {
+                if (scrollPercent >= threshold && !scrollDepthTracked.includes(threshold)) {
+                    scrollDepthTracked.push(threshold);
+                    GA4Tracker.trackScrollDepth(threshold);
+                }
+            });
+        });
+
+        // Track JavaScript errors
+        window.addEventListener('error', function(e) {
+            GA4Tracker.trackError('javascript_error', e.message, e.filename + ':' + e.lineno);
+        });
+
+        // Track unhandled promise rejections
+        window.addEventListener('unhandledrejection', function(e) {
+            GA4Tracker.trackError('promise_rejection', e.reason?.message || 'Unknown promise rejection');
         });
     </script>
 

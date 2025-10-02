@@ -187,3 +187,38 @@
 </div>
 
 <?= $this->endSection() ?>
+
+<body data-page-type="survey">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const surveyId = '<?= esc($survey['id']) ?>';
+    
+    // Track survey start
+    GA4Tracker.trackSurveyInteraction(surveyId, 'survey_started');
+
+    // Track form submission
+    const surveyForm = document.querySelector('form[action*="survey"]');
+    if (surveyForm) {
+        surveyForm.addEventListener('submit', function(e) {
+            const formData = new FormData(this);
+            const answeredQuestions = Array.from(formData.keys()).length;
+            
+            GA4Tracker.trackSurveyInteraction(surveyId, 'survey_submitted', null);
+            GA4Tracker.trackFormSubmission('survey', surveyId, {
+                survey_title: '<?= esc($survey['title']) ?>',
+                questions_answered: answeredQuestions,
+                total_questions: <?= count($survey['questions']) ?>
+            });
+        });
+    }
+
+    // Track individual question interactions
+    document.querySelectorAll('input, select, textarea').forEach(input => {
+        input.addEventListener('change', function() {
+            const questionId = this.name;
+            GA4Tracker.trackSurveyInteraction(surveyId, 'question_answered', questionId);
+        });
+    });
+});
+</script>
