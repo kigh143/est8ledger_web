@@ -1,5 +1,10 @@
-./surveys/tenants-survey-answers.json
-./surveys/landlords-survey-answers.json
-./contacts
-./writable/session
-./blogs/*
+surveys/tenants-survey-answers.json
+surveys/landlords-survey-answers.json
+contacts/
+writable/session/
+blogs/
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.production

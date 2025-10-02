@@ -29,3 +29,13 @@ $routes->post('/contact', 'ContactController::submit');
 $routes->get('/surveys', 'SurveyController::index');
 $routes->get('/survey/(:segment)', 'SurveyController::show/$1');
 $routes->post('/survey/(:segment)', 'SurveyController::submit/$1');
+
+// Admin routes
+$routes->get('/admin', 'AdminController::index');
+$routes->get('/admin/login', 'AdminController::login');
+$routes->post('/admin/authenticate', 'AdminController::authenticate');
+$routes->get('/admin/logout', 'AdminController::logout');
+$routes->get('/admin/contacts', 'AdminController::contacts');
+$routes->get('/admin/surveys', 'AdminController::surveys');
+$routes->get('/admin/surveys/tenants', 'AdminController::tenantSurveys');
+$routes->get('/admin/surveys/landlords', 'AdminController::landlordSurveys');
