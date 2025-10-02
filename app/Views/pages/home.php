@@ -493,23 +493,23 @@
 
                         <h3 class="text-xl font-bold text-secondary-900 mb-4">Investment Management</h3>
                         <p class="text-secondary-600 leading-relaxed mb-6">
-                            With mutual agreement, security deposit funds are invested in treasury bills, bonds, stocks, and money markets.
-                            Investment profits can be withdrawn after the first year, with transparent profit sharing.
+                            With mutual agreement, security deposit funds are invested in money markets.
+                            Profits can be withdrawn after the first year, with transparent profit sharing.
                         </p>
 
                         <!-- Professional Features -->
                         <div class="space-y-2">
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                40% profits to tenant
+                                Profits to tenant
                             </div>
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                40% profits to landlord
+                                Profits to landlord
                             </div>
                             <div class="flex items-center text-sm text-secondary-600">
                                 <i class="bi bi-check-circle-fill text-green-600 mr-2"></i>
-                                20% management fees
+                                Management fees
                             </div>
                         </div>
                     </div>
