@@ -542,7 +542,7 @@
                         <i class="bi bi-envelope text-3xl text-primary-100 mb-3"></i>
                         <h3 class="font-semibold mb-2">Email</h3>
                         <a href="mailto:privacy@est8Ledger.com" class="text-primary-100 hover:text-white transition-colors">
-                            privacy@est8Ledger.com
+                            info@est8Ledger.com
                         </a>
                     </div>
                     <div class="bg-white/10 rounded-xl p-6">
@@ -556,8 +556,7 @@
                         <i class="bi bi-geo-alt text-3xl text-primary-100 mb-3"></i>
                         <h3 class="font-semibold mb-2">Address</h3>
                         <p class="text-primary-100">
-                            est8Ledger, Inc.<br>
-                            Privacy Department<br>
+                            est8Ledger<br>
                             Kisaasi, Bahai Road
                         </p>
                     </div>

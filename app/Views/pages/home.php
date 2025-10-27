@@ -29,8 +29,8 @@
 
         <!-- Main Heading -->
         <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-secondary-900 mb-6 leading-tight animate-on-scroll">
-            End Security Deposit Disputes
-            <span class="text-primary-700">Forever</span>
+            Ending Rental 
+            <span class="text-primary-700">Security Deposit Disputes</span>
         </h1>
 
         <!-- Subheading -->

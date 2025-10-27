@@ -55,4 +55,20 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = service('session');
     }
+    
+    protected function loadSeoData($page, $additionalData = [])
+    {
+        $seoData = SeoController::getPageSeoData($page, $additionalData);
+        
+        // Make SEO data available to all views
+        $this->data = array_merge($this->data ?? [], $seoData);
+        
+        return $seoData;
+    }
+    
+    protected function renderWithSeo($view, $page, $additionalData = [])
+    {
+        $seoData = $this->loadSeoData($page, $additionalData);
+        return view($view, array_merge($this->data ?? [], $seoData));
+    }
 }

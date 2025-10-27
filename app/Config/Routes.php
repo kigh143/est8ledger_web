@@ -39,3 +39,6 @@ $routes->get('/admin/contacts', 'AdminController::contacts');
 $routes->get('/admin/surveys', 'AdminController::surveys');
 $routes->get('/admin/surveys/tenants', 'AdminController::tenantSurveys');
 $routes->get('/admin/surveys/landlords', 'AdminController::landlordSurveys');
+
+// KYC verification callback route with rate limiting
+$routes->get('/didit', 'KycController::diditCallback', ['filter' => 'ratelimit']);

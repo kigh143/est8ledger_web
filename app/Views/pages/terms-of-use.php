@@ -632,14 +632,11 @@
                     <div class="bg-gray-50 p-6 rounded-lg mt-6">
                         <h3 class="text-xl font-semibold mb-4">est8Ledger Legal Team</h3>
                         <div class="space-y-2">
-                            <p><strong>Email:</strong> <a href="mailto:legal@est8Ledger.com" class="text-primary hover:underline">legal@est8Ledger.com</a></p>
-                            <p><strong>Phone:</strong> 1-800-EST-8LED</p>
+                            <p><strong>Email:</strong> <a href="mailto:legal@est8Ledger.com" class="text-primary hover:underline">info@est8Ledger.com</a></p>
+                            <p><strong>Phone:</strong> +447930068728</p>
                             <p><strong>Address:</strong><br>
-                            est8Ledger, Inc.<br>
-                            Legal Department<br>
-                            123 Blockchain Avenue<br>
-                            Tech City, TC 12345<br>
-                            United States</p>
+                            est8Ledger.<br>
+                            Kisaasi, Bahai Road</p>
                         </div>
                     </div>
 
