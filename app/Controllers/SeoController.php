@@ -8,53 +8,60 @@ class SeoController extends BaseController
     {
         $seoData = [
             'home' => [
-                'title' => 'est8Ledger | Revolutionary Security Deposit Management for Uganda & East Africa',
-                'description' => 'End rental disputes forever with blockchain-secured security deposit management. Transparent inspections, digital tenancy agreements, and profit-sharing deposits for Uganda landlords and tenants.',
-                'keywords' => 'security deposit management Uganda, rental escrow service East Africa, tenant landlord trust, digital tenancy agreements, blockchain rental platform, property deposit solution Uganda, rental transparency, move-in inspections, rental disputes solution',
+                'title' => 'Security Deposit Management Uganda | Blockchain Rental Escrow East Africa - est8Ledger',
+                'description' => 'Transform security deposit disputes with Uganda\'s first blockchain-secured rental escrow platform. 90% fewer disputes, 8-12% profit sharing, transparent digital inspections. Join 2,500+ users across East Africa.',
+                'keywords' => 'security deposit management Uganda, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, transparent property inspections, Uganda rental platform, Kenya Tanzania deposits',
                 'og_type' => 'website',
                 'canonical' => base_url('/')
             ],
             'blogs' => [
-                'title' => 'Rental Industry Blog | Security Deposit & Property Management Insights - est8Ledger',
-                'description' => 'Expert insights on security deposit management, tenant rights, landlord best practices, and rental industry trends in Uganda and East Africa. Stay informed with est8Ledger.',
-                'keywords' => 'rental industry blog Uganda, security deposit insights, tenant rights East Africa, landlord best practices, property management tips Uganda, rental market analysis',
+                'title' => 'East Africa Rental Industry Blog | Security Deposit & Property Management Insights - est8Ledger',
+                'description' => 'Expert insights on security deposit management, tenant rights, landlord best practices, and rental industry trends across Uganda, Kenya, and Tanzania. Stay informed with est8Ledger.',
+                'keywords' => 'rental industry blog East Africa, security deposit insights Uganda, tenant rights Kenya Tanzania, landlord best practices, property management tips Uganda, rental market analysis East Africa',
                 'og_type' => 'website',
                 'canonical' => base_url('/blogs')
             ],
             'contact' => [
-                'title' => 'Contact est8Ledger | Get Help with Security Deposit Management in Uganda',
-                'description' => 'Contact est8Ledger for support with security deposit management, rental escrow services, and digital tenancy agreements in Uganda and East Africa. We\'re here to help.',
-                'keywords' => 'contact est8Ledger, security deposit support Uganda, rental escrow help, customer service East Africa, property management assistance',
+                'title' => 'Contact est8Ledger | Security Deposit Management Support Uganda & East Africa',
+                'description' => 'Get support with blockchain-secured security deposit management, rental escrow services, and digital tenancy agreements across Uganda, Kenya, and Tanzania. WhatsApp and phone support available.',
+                'keywords' => 'contact est8Ledger Uganda, security deposit support East Africa, rental escrow help Kenya, customer service Tanzania, property management assistance, blockchain deposit support',
                 'og_type' => 'website',
                 'canonical' => base_url('/contact')
             ],
             'terms-of-use' => [
-                'title' => 'Terms of Use | est8Ledger Security Deposit Management Platform',
-                'description' => 'Read the terms of use for est8Ledger\'s security deposit management platform. Understand your rights and responsibilities when using our rental escrow services.',
-                'keywords' => 'est8Ledger terms of use, security deposit platform terms, rental escrow terms, digital tenancy agreement terms',
+                'title' => 'Terms of Use | est8Ledger Blockchain Security Deposit Management Platform',
+                'description' => 'Read the terms of use for est8Ledger\'s blockchain-secured security deposit management platform. Understand your rights and responsibilities when using our rental escrow services in East Africa.',
+                'keywords' => 'est8Ledger terms of use, security deposit platform terms East Africa, rental escrow terms Uganda, digital tenancy agreement terms, blockchain deposit terms',
                 'og_type' => 'article',
                 'canonical' => base_url('/terms-of-use')
             ],
             'privacy-policy' => [
-                'title' => 'Privacy Policy | How est8Ledger Protects Your Data',
-                'description' => 'Learn how est8Ledger protects your personal data and privacy when using our security deposit management platform. Transparent data handling practices.',
-                'keywords' => 'est8Ledger privacy policy, data protection Uganda, security deposit privacy, rental platform data security',
+                'title' => 'Privacy Policy | How est8Ledger Protects Your Data in East Africa',
+                'description' => 'Learn how est8Ledger protects your personal data and privacy when using our blockchain-secured security deposit management platform across Uganda, Kenya, and Tanzania.',
+                'keywords' => 'est8Ledger privacy policy, data protection East Africa, security deposit privacy Uganda, rental platform data security, blockchain privacy Kenya Tanzania',
                 'og_type' => 'article',
                 'canonical' => base_url('/privacy-policy')
             ],
             'survey-tenants' => [
-                'title' => 'Tenant Experience Survey | Share Your Rental Story - est8Ledger',
-                'description' => 'Help improve rental experiences in Uganda by sharing your tenant story. Anonymous survey about security deposits, landlord relationships, and rental challenges.',
-                'keywords' => 'tenant survey Uganda, rental experience survey, security deposit feedback, tenant rights survey East Africa',
+                'title' => 'Tenant Experience Survey Uganda | Share Your Rental Deposit Story - est8Ledger',
+                'description' => 'Help improve rental experiences across East Africa by sharing your tenant story. Anonymous survey about security deposits, landlord relationships, and rental challenges in Uganda, Kenya, Tanzania.',
+                'keywords' => 'tenant survey Uganda, rental experience survey East Africa, security deposit feedback Kenya, tenant rights survey Tanzania, rental challenges East Africa',
                 'og_type' => 'website',
                 'canonical' => base_url('/survey/tenants')
             ],
             'survey-landlords' => [
-                'title' => 'Landlord & Property Manager Survey | Rental Industry Insights - est8Ledger',
-                'description' => 'Share your experience as a landlord or property manager in Uganda. Help us understand rental industry challenges and improve security deposit management.',
-                'keywords' => 'landlord survey Uganda, property manager survey, rental industry feedback, security deposit management survey East Africa',
+                'title' => 'Landlord & Property Manager Survey East Africa | Rental Industry Insights - est8Ledger',
+                'description' => 'Share your experience as a landlord or property manager across Uganda, Kenya, and Tanzania. Help us understand rental industry challenges and improve security deposit management.',
+                'keywords' => 'landlord survey East Africa, property manager survey Uganda, rental industry feedback Kenya, security deposit management survey Tanzania, property management challenges',
                 'og_type' => 'website',
                 'canonical' => base_url('/survey/landlords')
+            ],
+            'how-it-works' => [
+                'title' => 'How It Works | 6-Step Blockchain Security Deposit Management Process - est8Ledger',
+                'description' => 'Learn how est8Ledger\'s 6-step process transforms security deposit management across East Africa. From digital agreements to profit distribution in under 30 minutes.',
+                'keywords' => 'how security deposit management works, blockchain rental escrow process, digital tenancy agreement steps, transparent property inspection process, profit sharing deposits East Africa',
+                'og_type' => 'website',
+                'canonical' => base_url('/how-it-works')
             ]
         ];
 

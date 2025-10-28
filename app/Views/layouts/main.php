@@ -139,9 +139,9 @@
     </script>
     
     <!-- SEO Meta Tags -->
-    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?></title>
-    <meta name="description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
-    <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'security deposit management, rental escrow service, tenant landlord trust, digital tenancy agreements, rental transparency, property deposit solution, move-in inspections, rental disputes solution' ?>">
+    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | End Security Deposit Disputes in Uganda & East Africa' ?></title>
+    <meta name="description" content="<?= isset($description) ? esc($description) : 'Uganda\'s first blockchain-secured deposit platform. Transparent inspections, profit-sharing deposits, and digital agreements for landlords and tenants. Join 1000+ users.' ?>">
+    <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'security deposit management Uganda, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, Uganda rental platform' ?>">
     <meta name="author" content="est8Ledger">
     <meta name="robots" content="index, follow">
 
