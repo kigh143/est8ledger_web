@@ -85,8 +85,8 @@
 <div class="relative py-16 bg-slate-50 overflow-hidden">
     <!-- Featured Image Background -->
     <div class="absolute inset-0">
-        <img src="<?= esc($blog['featured_image']) ?>" 
-             alt="<?= esc($blog['title']) ?>" 
+        <img src="<?= isset($blog['featured_image']) && !empty($blog['featured_image']) ? esc($blog['featured_image']) : 'https://placehold.co/1200x600?text=' . urlencode($blog['title'] ?? 'Blog Article') ?>"
+             alt="<?= esc($blog['title'] ?? 'Blog article') ?>"
              class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/40"></div>
     </div>
@@ -278,6 +278,39 @@
         </div>
     </div>
 </div>
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "<?= esc($blog['title'] ?? 'Blog Article') ?>",
+    "description": "<?= esc($blog['excerpt'] ?? substr($blog['content'] ?? '', 0, 160)) ?>",
+    "image": "<?= isset($blog['featured_image']) && !empty($blog['featured_image']) ? esc($blog['featured_image']) : 'https://placehold.co/1200x600' ?>",
+    "datePublished": "<?= esc($blog['published_date'] ?? date('Y-m-d')) ?>",
+    "dateModified": "<?= esc($blog['updated_date'] ?? $blog['published_date'] ?? date('Y-m-d')) ?>",
+    "author": {
+        "@type": "Organization",
+        "name": "est8Ledger",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://est8ledger.com/logo_blue.png"
+        }
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "est8Ledger",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://est8ledger.com/logo_blue.png"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "<?= current_url() ?>"
+    }
+}
+</script>
 
 <script>
     // Character counter for comment textarea

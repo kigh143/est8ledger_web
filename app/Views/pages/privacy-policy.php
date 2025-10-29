@@ -2,8 +2,14 @@
 
 <?= $this->section('content') ?>
 <!-- Enhanced Header with Navigation -->
-<div class="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-20">
-    <div class="container mx-auto px-4">
+<div class="bg-gradient-to-br from-primary-50 to-primary-100 py-16 lg:py-20 relative overflow-hidden">
+    <!-- Logo Background Pattern -->
+    <div class="absolute inset-0 opacity-[0.05]">
+        <img src="/logo_blue.png" alt="" class="absolute top-10 left-10 w-40 h-40 object-contain" aria-hidden="true">
+        <img src="/logo_blue.png" alt="" class="absolute bottom-10 right-10 w-48 h-48 object-contain" aria-hidden="true">
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
                 <div class="inline-flex items-center bg-primary-100 border border-primary-200 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">

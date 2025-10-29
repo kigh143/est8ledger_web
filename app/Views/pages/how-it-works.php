@@ -28,8 +28,14 @@
 <?= $this->section('content') ?>
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20 md:py-32" data-page-type="how-it-works">
-    <div class="container mx-auto px-4">
+<section class="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20 md:py-32 relative overflow-hidden" data-page-type="how-it-works">
+    <!-- Logo Background Pattern -->
+    <div class="absolute inset-0 opacity-[0.08]">
+        <img src="/logo_blue.png" alt="" class="absolute top-10 left-10 w-48 h-48 object-contain" aria-hidden="true">
+        <img src="/logo_blue.png" alt="" class="absolute bottom-10 right-10 w-56 h-56 object-contain" aria-hidden="true">
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">
                 How est8Ledger Transforms Security Deposits

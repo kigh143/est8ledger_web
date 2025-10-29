@@ -53,66 +53,118 @@
             <p class="text-gray-500">No <?= strtolower(esc($surveyType)) ?> survey responses have been submitted.</p>
         </div>
     <?php else: ?>
-        <!-- Survey Responses -->
-        <div class="bg-white shadow overflow-hidden sm:rounded-md">
-            <ul class="divide-y divide-gray-200">
-                <?php foreach ($surveyResponses as $response): ?>
-                    <li class="px-6 py-4">
-                        <div class="flex items-center justify-between">
+        <!-- Survey Responses with Accordion -->
+        <div class="space-y-3">
+            <?php foreach ($surveyResponses as $index => $response): ?>
+                <div class="bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <!-- Accordion Header -->
+                    <button type="button"
+                            class="accordion-trigger w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                            data-accordion-id="response-<?= $index ?>">
+                        <div class="flex items-center flex-1 text-left">
+                            <div class="flex-shrink-0 mr-4">
+                                <?php if ($surveyType === 'tenants'): ?>
+                                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <i class="bi bi-person text-blue-600 text-lg"></i>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                        <i class="bi bi-building text-green-600 text-lg"></i>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
                             <div class="flex-1">
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 mr-3">
-                                            <?php if ($surveyType === 'tenants'): ?>
-                                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                                                    <i class="bi bi-person text-blue-600"></i>
-                                                </div>
-                                            <?php else: ?>
-                                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                                                    <i class="bi bi-building text-green-600"></i>
-                                                </div>
-                                            <?php endif; ?>
-                                        </div>
-                                        <p class="text-sm font-medium text-indigo-600">
-                                            <?= esc($surveyTitle) ?>
+                                <p class="text-sm font-semibold text-gray-900">
+                                    <?= esc($surveyTitle) ?>
+                                </p>
+                                <p class="text-xs text-gray-500 mt-1">
+                                    Submitted: <?= date('M j, Y \a\t H:i', $response['timestamp']) ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                <?= count($response['responses']) ?> answers
+                            </span>
+                            <i class="bi bi-chevron-down text-gray-400 transition-transform duration-300 accordion-icon"></i>
+                        </div>
+                    </button>
+
+                    <!-- Accordion Content -->
+                    <div class="accordion-content hidden border-t border-gray-200" id="response-<?= $index ?>">
+                        <div class="px-6 py-4 space-y-4">
+                            <!-- Response Answers -->
+                            <div class="space-y-3">
+                                <?php foreach ($response['responses'] as $questionId => $answer): ?>
+                                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                                        <p class="text-sm font-semibold text-gray-900 mb-2">
+                                            <?= esc($answer['question']) ?>
                                         </p>
-                                    </div>
-                                    <div class="ml-2 flex-shrink-0 flex">
-                                        <p class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                                            <?= date('M j, Y H:i', $response['timestamp']) ?>
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div class="mt-4 space-y-3">
-                                    <?php foreach ($response['responses'] as $questionId => $answer): ?>
-                                        <div class="bg-gray-50 p-3 rounded">
-                                            <p class="text-sm font-medium text-gray-700 mb-1">
-                                                <?= esc($answer['question']) ?>
-                                            </p>
-                                            <p class="text-sm text-gray-900">
+                                        <div class="bg-white p-3 rounded border border-gray-200">
+                                            <p class="text-sm text-gray-700 leading-relaxed">
                                                 <?php if (is_array($answer['answer'])): ?>
-                                                    <?= implode(', ', array_map('esc', $answer['answer'])) ?>
+                                                    <ul class="list-disc list-inside space-y-1">
+                                                        <?php foreach ($answer['answer'] as $item): ?>
+                                                            <li><?= esc($item) ?></li>
+                                                        <?php endforeach; ?>
+                                                    </ul>
                                                 <?php else: ?>
                                                     <?= nl2br(esc($answer['answer'])) ?>
                                                 <?php endif; ?>
                                             </p>
-                                            <span class="text-xs text-gray-500 capitalize"><?= esc($answer['type']) ?> question</span>
                                         </div>
-                                    <?php endforeach; ?>
-                                </div>
-                                
-                                <div class="mt-3 text-xs text-gray-500">
-                                    Response ID: <?= esc($response['id']) ?> | 
-                                    IP: <?= esc($response['ip_address']) ?> |
-                                    Submitted: <?= esc($response['submitted_at']) ?>
-                                </div>
+                                        <p class="text-xs text-gray-500 mt-2 capitalize">
+                                            <i class="bi bi-tag mr-1"></i><?= esc($answer['type']) ?> question
+                                        </p>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+
+                            <!-- Response Metadata -->
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-4">
+                                <p class="text-xs text-gray-600 space-y-1">
+                                    <div class="flex items-center">
+                                        <span class="font-semibold text-gray-700 w-24">Response ID:</span>
+                                        <code class="text-blue-700 font-mono text-xs"><?= esc($response['id']) ?></code>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="font-semibold text-gray-700 w-24">IP Address:</span>
+                                        <span class="text-gray-600"><?= esc($response['ip_address']) ?></span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="font-semibold text-gray-700 w-24">Submitted:</span>
+                                        <span class="text-gray-600"><?= esc($response['submitted_at']) ?></span>
+                                    </div>
+                                </p>
                             </div>
                         </div>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
+
+        <!-- Accordion JavaScript -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const triggers = document.querySelectorAll('.accordion-trigger');
+
+                triggers.forEach(trigger => {
+                    trigger.addEventListener('click', function() {
+                        const accordionId = this.getAttribute('data-accordion-id');
+                        const content = document.getElementById(accordionId);
+                        const icon = this.querySelector('.accordion-icon');
+
+                        // Toggle content visibility
+                        content.classList.toggle('hidden');
+
+                        // Rotate icon
+                        icon.style.transform = content.classList.contains('hidden')
+                            ? 'rotate(0deg)'
+                            : 'rotate(180deg)';
+                    });
+                });
+            });
+        </script>
     <?php endif; ?>
 </div>
 <?= $this->endSection() ?>

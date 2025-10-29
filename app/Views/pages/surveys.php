@@ -45,33 +45,62 @@
 
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <?php foreach ($surveys as $survey): ?>
-                <div class="bg-white border border-secondary-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:border-[#9eff6b]/30">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-12 h-12 bg-[#9eff6b]/20 rounded-xl flex items-center justify-center">
+                <div class="bg-white border border-secondary-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-[#9eff6b]/30 flex flex-col">
+                    <!-- Survey Card Header with Image -->
+                    <div class="relative h-40 bg-gradient-to-br from-[#0d06c8] to-[#1a0f8a] overflow-hidden">
+                        <!-- Background Pattern -->
+                        <div class="absolute inset-0 opacity-10">
                             <?php if (strpos($survey['id'], 'tenant') !== false): ?>
-                                <i class="bi bi-person text-2xl text-[#0d06c8]"></i>
+                                <i class="bi bi-person text-9xl absolute top-2 right-4 text-white"></i>
                             <?php else: ?>
-                                <i class="bi bi-building text-2xl text-[#0d06c8]"></i>
+                                <i class="bi bi-building text-9xl absolute top-2 right-4 text-white"></i>
                             <?php endif; ?>
                         </div>
-                        <span class="bg-secondary-100 text-secondary-600 px-3 py-1 rounded-full text-sm font-medium">
-                            <?= esc($survey['estimated_time']) ?>
-                        </span>
+
+                        <!-- Icon Badge -->
+                        <div class="absolute top-4 left-4 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/30">
+                            <?php if (strpos($survey['id'], 'tenant') !== false): ?>
+                                <i class="bi bi-person text-3xl text-white"></i>
+                            <?php else: ?>
+                                <i class="bi bi-building text-3xl text-white"></i>
+                            <?php endif; ?>
+                        </div>
+
+                        <!-- Time Badge -->
+                        <div class="absolute bottom-4 right-4 bg-[#9eff6b] text-secondary-900 px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="bi bi-clock mr-1"></i><?= esc($survey['estimated_time']) ?>
+                        </div>
                     </div>
 
-                    <h3 class="text-xl font-bold text-secondary-900 mb-3">
-                        <?= esc($survey['title']) ?>
-                    </h3>
-                    
-                    <p class="text-secondary-600 mb-6 leading-relaxed">
-                        <?= esc($survey['description']) ?>
-                    </p>
+                    <!-- Survey Card Content -->
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-secondary-900 mb-3">
+                            <?= esc($survey['title']) ?>
+                        </h3>
 
-                    <a href="/survey/<?= esc($survey['id']) ?>" 
-                       class="inline-flex items-center bg-[#9eff6b] hover:bg-[#8ee55a] text-secondary-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
-                        Start Survey
-                        <i class="bi bi-arrow-right ml-2"></i>
-                    </a>
+                        <p class="text-secondary-600 mb-6 leading-relaxed flex-1">
+                            <?= esc($survey['description']) ?>
+                        </p>
+
+                        <!-- Survey Stats -->
+                        <div class="flex items-center space-x-4 mb-6 text-sm text-secondary-600 border-t border-secondary-100 pt-4">
+                            <div class="flex items-center">
+                                <i class="bi bi-list-ol text-[#9eff6b] mr-2"></i>
+                                <span>Multiple questions</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="bi bi-check-circle text-[#9eff6b] mr-2"></i>
+                                <span>Anonymous</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <a href="/survey/<?= esc($survey['id']) ?>"
+                           class="inline-flex items-center justify-center bg-[#9eff6b] hover:bg-[#8ee55a] text-secondary-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 w-full">
+                            Start Survey
+                            <i class="bi bi-arrow-right ml-2"></i>
+                        </a>
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>

@@ -18,13 +18,28 @@ class BlogController extends BaseController
 
     public function index()
     {
-        $blogs = $this->getAllBlogs();
-        
+        $allBlogs = $this->getAllBlogs();
+        $page = (int) $this->request->getGet('page') ?? 1;
+        $perPage = 6; // Number of blogs per page
+
+        // Calculate pagination
+        $totalBlogs = count($allBlogs);
+        $totalPages = ceil($totalBlogs / $perPage);
+        $page = max(1, min($page, $totalPages)); // Ensure page is within valid range
+
+        // Get blogs for current page
+        $offset = ($page - 1) * $perPage;
+        $blogs = array_slice($allBlogs, $offset, $perPage);
+
         $data = [
             'title' => 'Blog - Latest Insights on Security Deposits & Rental Management',
             'description' => 'Stay updated with the latest insights on security deposit management, rental technology, and property management best practices.',
             'keywords' => 'rental blog, security deposit tips, property management insights, blockchain rentals, tenant advice',
-            'blogs' => $blogs
+            'blogs' => $blogs,
+            'currentPage' => $page,
+            'totalPages' => $totalPages,
+            'totalBlogs' => $totalBlogs,
+            'perPage' => $perPage
         ];
 
         return view('pages/blogs', $data);

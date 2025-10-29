@@ -35,145 +35,177 @@
         <div class="grid lg:grid-cols-3 gap-12">
             <!-- Main Content -->
             <div class="lg:col-span-2">
-                <div class="space-y-12">
-                    <!-- Featured Article -->
-                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                        <div class="aspect-w-16 aspect-h-9">
-                            <img src="/assets/images/blog/security-deposit-disputes-uganda.jpg" 
-                                 alt="Security deposit disputes in Uganda rental market"
-                                 class="w-full h-64 object-cover">
+                <div class="space-y-8">
+                    <?php if (empty($blogs)): ?>
+                        <!-- Empty State -->
+                        <div class="bg-white rounded-lg shadow-lg p-12 text-center">
+                            <i class="bi bi-inbox text-6xl text-gray-300 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">No articles found</h3>
+                            <p class="text-gray-600">Check back soon for more insights on rental management and security deposits.</p>
                         </div>
-                        <div class="p-8">
-                            <div class="flex items-center mb-4">
-                                <span class="bg-red-100 text-red-800 text-xs font-medium px-3 py-1 rounded-full">
-                                    Market Analysis
-                                </span>
-                                <time datetime="2024-12-15" class="text-gray-500 text-sm ml-4">
-                                    December 15, 2024
-                                </time>
-                            </div>
-                            <h2 class="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600">
-                                <a href="/blogs/security-deposit-disputes-uganda">
-                                    The Hidden Cost of Security Deposit Disputes in Uganda's Rental Market
-                                </a>
-                            </h2>
-                            <p class="text-gray-600 leading-relaxed mb-6">
-                                An in-depth analysis of how security deposit disputes are costing Ugandan landlords 
-                                and tenants millions annually, and why traditional management methods are failing 
-                                in the modern rental market.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <a href="/blogs/security-deposit-disputes-uganda" 
-                                   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                                    Read Full Article
-                                    <i class="bi bi-arrow-right ml-2"></i>
-                                </a>
-                                <div class="text-sm text-gray-500">
-                                    8 min read
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Regular Articles -->
-                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                        <div class="md:flex">
-                            <div class="md:w-1/3">
-                                <img src="/assets/images/blog/blockchain-rental-agreements.jpg" 
-                                     alt="Blockchain technology in rental agreements"
-                                     class="w-full h-48 md:h-full object-cover">
-                            </div>
-                            <div class="p-6 md:w-2/3">
-                                <div class="flex items-center mb-3">
-                                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">
-                                        Technology
-                                    </span>
-                                    <time datetime="2024-12-10" class="text-gray-500 text-sm ml-4">
-                                        December 10, 2024
-                                    </time>
-                                </div>
-                                <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600">
-                                    <a href="/blogs/blockchain-rental-agreements">
-                                        How Blockchain Technology is Revolutionizing Rental Agreements in East Africa
-                                    </a>
-                                </h2>
-                                <p class="text-gray-600 leading-relaxed mb-4">
-                                    Discover how blockchain-secured digital tenancy agreements are creating 
-                                    unprecedented transparency and trust in East African rental markets.
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <a href="/blogs/blockchain-rental-agreements" 
-                                       class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                                        Read More
-                                        <i class="bi bi-arrow-right ml-2"></i>
-                                    </a>
-                                    <div class="text-sm text-gray-500">
-                                        6 min read
+                    <?php else: ?>
+                        <?php foreach ($blogs as $index => $blog): ?>
+                            <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                                <?php if ($index === 0 && $currentPage === 1): ?>
+                                    <!-- Featured Article (First item on first page) -->
+                                    <div class="aspect-w-16 aspect-h-9">
+                                        <img src="<?= isset($blog['featured_image']) && !empty($blog['featured_image']) ? esc($blog['featured_image']) : 'https://placehold.co/800x450?text=' . urlencode($blog['title'] ?? 'Blog Article') ?>"
+                                             alt="<?= esc($blog['title'] ?? 'Blog article') ?>"
+                                             class="w-full h-64 object-cover">
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                        <div class="md:flex">
-                            <div class="md:w-1/3">
-                                <img src="/assets/images/blog/tenant-rights-uganda-2024.jpg" 
-                                     alt="Tenant rights in Uganda 2024 guide"
-                                     class="w-full h-48 md:h-full object-cover">
-                            </div>
-                            <div class="p-6 md:w-2/3">
-                                <div class="flex items-center mb-3">
-                                    <span class="bg-green-100 text-green-800 text-xs font-medium px-3 py-1 rounded-full">
-                                        Legal Guide
-                                    </span>
-                                    <time datetime="2024-12-05" class="text-gray-500 text-sm ml-4">
-                                        December 5, 2024
-                                    </time>
-                                </div>
-                                <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600">
-                                    <a href="/blogs/tenant-rights-uganda-2024">
-                                        Complete Guide to Tenant Rights in Uganda: 2024 Legal Updates
-                                    </a>
-                                </h2>
-                                <p class="text-gray-600 leading-relaxed mb-4">
-                                    Everything tenants need to know about their rights under the Uganda Tenancy Act 2022, 
-                                    including security deposit protections and dispute resolution procedures.
-                                </p>
-                                <div class="flex items-center justify-between">
-                                    <a href="/blogs/tenant-rights-uganda-2024" 
-                                       class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                                        Read More
-                                        <i class="bi bi-arrow-right ml-2"></i>
-                                    </a>
-                                    <div class="text-sm text-gray-500">
-                                        12 min read
+                                    <div class="p-8">
+                                        <div class="flex items-center mb-4 flex-wrap gap-3">
+                                            <span class="bg-red-100 text-red-800 text-xs font-medium px-3 py-1 rounded-full">
+                                                <?= esc($blog['category'] ?? 'Article') ?>
+                                            </span>
+                                            <time datetime="<?= esc($blog['published_date'] ?? date('Y-m-d')) ?>" class="text-gray-500 text-sm">
+                                                <?= date('F j, Y', strtotime($blog['published_date'] ?? date('Y-m-d'))) ?>
+                                            </time>
+                                            <span class="text-gray-500 text-sm">
+                                                <i class="bi bi-eye mr-1"></i><?= esc($blog['views'] ?? 0) ?> views
+                                            </span>
+                                        </div>
+                                        <h2 class="text-2xl font-bold text-gray-900 mb-4 hover:text-blue-600 transition-colors">
+                                            <a href="/blog/<?= esc($blog['slug'] ?? '') ?>">
+                                                <?= esc($blog['title'] ?? 'Untitled') ?>
+                                            </a>
+                                        </h2>
+                                        <p class="text-gray-600 leading-relaxed mb-6">
+                                            <?= esc(substr($blog['excerpt'] ?? $blog['content'] ?? '', 0, 200)) ?>...
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <a href="/blog/<?= esc($blog['slug'] ?? '') ?>"
+                                               class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-colors">
+                                                Read Full Article
+                                                <i class="bi bi-arrow-right ml-2"></i>
+                                            </a>
+                                            <div class="text-sm text-gray-500">
+                                                <?= esc($blog['read_time'] ?? '5') ?> min read
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+                                <?php else: ?>
+                                    <!-- Regular Article -->
+                                    <div class="md:flex">
+                                        <div class="md:w-1/3">
+                                            <img src="<?= isset($blog['featured_image']) && !empty($blog['featured_image']) ? esc($blog['featured_image']) : 'https://placehold.co/400x300?text=' . urlencode($blog['title'] ?? 'Blog') ?>"
+                                                 alt="<?= esc($blog['title'] ?? 'Blog article') ?>"
+                                                 class="w-full h-48 md:h-full object-cover">
+                                        </div>
+                                        <div class="p-6 md:w-2/3 flex flex-col justify-between">
+                                            <div>
+                                                <div class="flex items-center mb-3 flex-wrap gap-2">
+                                                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full">
+                                                        <?= esc($blog['category'] ?? 'Article') ?>
+                                                    </span>
+                                                    <time datetime="<?= esc($blog['published_date'] ?? date('Y-m-d')) ?>" class="text-gray-500 text-sm">
+                                                        <?= date('F j, Y', strtotime($blog['published_date'] ?? date('Y-m-d'))) ?>
+                                                    </time>
+                                                    <span class="text-gray-500 text-sm">
+                                                        <i class="bi bi-eye mr-1"></i><?= esc($blog['views'] ?? 0) ?>
+                                                    </span>
+                                                </div>
+                                                <h2 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                                                    <a href="/blog/<?= esc($blog['slug'] ?? '') ?>">
+                                                        <?= esc($blog['title'] ?? 'Untitled') ?>
+                                                    </a>
+                                                </h2>
+                                                <p class="text-gray-600 leading-relaxed mb-4">
+                                                    <?= esc(substr($blog['excerpt'] ?? $blog['content'] ?? '', 0, 150)) ?>...
+                                                </p>
+                                            </div>
+                                            <div class="flex items-center justify-between">
+                                                <a href="/blog/<?= esc($blog['slug'] ?? '') ?>"
+                                                   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center transition-colors">
+                                                    Read More
+                                                    <i class="bi bi-arrow-right ml-2"></i>
+                                                </a>
+                                                <div class="text-sm text-gray-500">
+                                                    <?= esc($blog['read_time'] ?? '5') ?> min read
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            </article>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Pagination -->
-                <nav aria-label="Blog pagination" class="mt-12">
-                    <div class="flex justify-center">
-                        <div class="flex space-x-2">
-                            <button class="px-4 py-2 text-gray-500 bg-gray-100 rounded-lg cursor-not-allowed" disabled>
-                                Previous
-                            </button>
-                            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">
-                                1
-                            </button>
-                            <button class="px-4 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg">
-                                2
-                            </button>
-                            <button class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg">
-                                Next
-                            </button>
+                <?php if ($totalPages > 1): ?>
+                    <nav aria-label="Blog pagination" class="mt-12">
+                        <div class="flex justify-center items-center space-x-2">
+                            <!-- Previous Button -->
+                            <?php if ($currentPage > 1): ?>
+                                <a href="/blogs?page=<?= $currentPage - 1 ?>"
+                                   class="px-4 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors flex items-center">
+                                    <i class="bi bi-chevron-left mr-1"></i>
+                                    Previous
+                                </a>
+                            <?php else: ?>
+                                <button class="px-4 py-2 text-gray-500 bg-gray-100 rounded-lg cursor-not-allowed" disabled>
+                                    <i class="bi bi-chevron-left mr-1"></i>
+                                    Previous
+                                </button>
+                            <?php endif; ?>
+
+                            <!-- Page Numbers -->
+                            <div class="flex space-x-1">
+                                <?php
+                                    $startPage = max(1, $currentPage - 2);
+                                    $endPage = min($totalPages, $currentPage + 2);
+
+                                    if ($startPage > 1): ?>
+                                        <a href="/blogs?page=1" class="px-3 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">1</a>
+                                        <?php if ($startPage > 2): ?>
+                                            <span class="px-3 py-2 text-gray-500">...</span>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+
+                                    <?php for ($i = $startPage; $i <= $endPage; $i++): ?>
+                                        <?php if ($i === $currentPage): ?>
+                                            <button class="px-3 py-2 bg-blue-600 text-white rounded-lg font-semibold">
+                                                <?= $i ?>
+                                            </button>
+                                        <?php else: ?>
+                                            <a href="/blogs?page=<?= $i ?>" class="px-3 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors">
+                                                <?= $i ?>
+                                            </a>
+                                        <?php endif; ?>
+                                    <?php endfor; ?>
+
+                                    <?php if ($endPage < $totalPages): ?>
+                                        <?php if ($endPage < $totalPages - 1): ?>
+                                            <span class="px-3 py-2 text-gray-500">...</span>
+                                        <?php endif; ?>
+                                        <a href="/blogs?page=<?= $totalPages ?>" class="px-3 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"><?= $totalPages ?></a>
+                                    <?php endif; ?>
+                                ?>
+                            </div>
+
+                            <!-- Next Button -->
+                            <?php if ($currentPage < $totalPages): ?>
+                                <a href="/blogs?page=<?= $currentPage + 1 ?>"
+                                   class="px-4 py-2 text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors flex items-center">
+                                    Next
+                                    <i class="bi bi-chevron-right ml-1"></i>
+                                </a>
+                            <?php else: ?>
+                                <button class="px-4 py-2 text-gray-500 bg-gray-100 rounded-lg cursor-not-allowed" disabled>
+                                    Next
+                                    <i class="bi bi-chevron-right ml-1"></i>
+                                </button>
+                            <?php endif; ?>
                         </div>
-                    </div>
-                </nav>
+
+                        <!-- Page Info -->
+                        <div class="text-center mt-4 text-sm text-gray-600">
+                            Page <?= $currentPage ?> of <?= $totalPages ?>
+                            <span class="text-gray-500">(<?= $totalBlogs ?> total articles)</span>
+                        </div>
+                    </nav>
+                <?php endif; ?>
             </div>
 
             <!-- Sidebar -->

@@ -49,12 +49,23 @@
 <?php endif; ?>
 
 <!-- Survey Form -->
-<div class="py-16">
+<div class="py-16 bg-secondary-50">
     <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
-            <form action="/survey/<?= esc($survey['id']) ?>" method="POST" class="bg-white border border-secondary-200 rounded-2xl p-8">
+            <!-- Progress Bar -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-semibold text-secondary-700">Progress</span>
+                    <span class="text-sm text-secondary-600"><span id="progress-count">0</span>/<?= count($survey['questions']) ?> questions</span>
+                </div>
+                <div class="w-full bg-secondary-200 rounded-full h-2">
+                    <div id="progress-bar" class="bg-gradient-to-r from-[#9eff6b] to-[#0d06c8] h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <form action="/survey/<?= esc($survey['id']) ?>" method="POST" class="bg-white border border-secondary-200 rounded-2xl p-8 shadow-lg">
                 <?= csrf_field() ?>
-                
+
                 <?php foreach ($survey['questions'] as $index => $question): ?>
                     <div class="mb-8 <?= $index < count($survey['questions']) - 1 ? 'pb-8 border-b border-secondary-100' : '' ?>">
                         <!-- Question Header -->
@@ -193,9 +204,28 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const surveyId = '<?= esc($survey['id']) ?>';
-    
+    const totalQuestions = <?= count($survey['questions']) ?>;
+
     // Track survey start
     GA4Tracker.trackSurveyInteraction(surveyId, 'survey_started');
+
+    // Update progress bar
+    function updateProgress() {
+        const inputs = document.querySelectorAll('input, select, textarea');
+        let answeredCount = 0;
+
+        inputs.forEach(input => {
+            if (input.type === 'checkbox' || input.type === 'radio') {
+                if (input.checked) answeredCount++;
+            } else if (input.value.trim() !== '') {
+                answeredCount++;
+            }
+        });
+
+        const progressPercent = (answeredCount / totalQuestions) * 100;
+        document.getElementById('progress-bar').style.width = progressPercent + '%';
+        document.getElementById('progress-count').textContent = Math.ceil(answeredCount / 2); // Approximate count
+    }
 
     // Track form submission
     const surveyForm = document.querySelector('form[action*="survey"]');
@@ -203,12 +233,12 @@ document.addEventListener('DOMContentLoaded', function() {
         surveyForm.addEventListener('submit', function(e) {
             const formData = new FormData(this);
             const answeredQuestions = Array.from(formData.keys()).length;
-            
+
             GA4Tracker.trackSurveyInteraction(surveyId, 'survey_submitted', null);
             GA4Tracker.trackFormSubmission('survey', surveyId, {
                 survey_title: '<?= esc($survey['title']) ?>',
                 questions_answered: answeredQuestions,
-                total_questions: <?= count($survey['questions']) ?>
+                total_questions: totalQuestions
             });
         });
     }
@@ -218,7 +248,15 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('change', function() {
             const questionId = this.name;
             GA4Tracker.trackSurveyInteraction(surveyId, 'question_answered', questionId);
+            updateProgress();
+        });
+
+        input.addEventListener('input', function() {
+            updateProgress();
         });
     });
+
+    // Initial progress update
+    updateProgress();
 });
 </script>

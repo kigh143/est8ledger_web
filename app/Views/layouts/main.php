@@ -144,6 +144,9 @@
     <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'security deposit management Uganda, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, Uganda rental platform' ?>">
     <meta name="author" content="est8Ledger">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="<?= current_url() ?>">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?>">
@@ -151,15 +154,46 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= current_url() ?>">
     <meta property="og:site_name" content="est8Ledger">
+    <meta property="og:image" content="<?= isset($og_image) ? esc($og_image) : base_url('/logo_blue.png') ?>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?>">
     <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts and transparent inspections.' ?>">
+    <meta name="twitter:image" content="<?= isset($og_image) ? esc($og_image) : base_url('/logo_blue.png') ?>">
     
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
-    
+
+    <!-- Organization Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "est8Ledger",
+        "url": "https://est8ledger.com",
+        "logo": "https://est8ledger.com/logo_blue.png",
+        "description": "Uganda's first blockchain-secured security deposit management platform for landlords and tenants",
+        "sameAs": [
+            "https://www.facebook.com/est8ledger",
+            "https://www.twitter.com/est8ledger",
+            "https://www.linkedin.com/company/est8ledger"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "support@est8ledger.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "UG",
+            "addressRegion": "Uganda"
+        }
+    }
+    </script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -495,8 +529,10 @@
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="/" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Home</a>
                     <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">How it Works</a>
+                    <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">About Us</a>
+                    <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">FAQs</a>
                     <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Blogs</a>
-                    <a href="#contact" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Contact</a>
+                    <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Contact</a>
                     <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold text-white">
                         Join Waiting List
                     </button>
@@ -511,8 +547,10 @@
                 <div class="flex flex-col space-y-4 pt-4">
                     <a href="/" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Home</a>
                     <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">How it Works</a>
+                    <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">About Us</a>
+                    <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">FAQs</a>
                     <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Blog</a>
-                    <a href="#contact" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Contact</a>
+                    <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Contact</a>
                     <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg font-semibold text-white w-full">
                         Join Waiting List
                     </button>
@@ -592,128 +630,23 @@
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-secondary-900 text-white py-16 mt-16" id="contact">
+    <footer class="bg-secondary-900 text-white py-16 mt-16">
         <div class="container mx-auto px-4">
-            <!-- Contact Form Section -->
-            <div class="mb-16">
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h3 class="text-3xl font-bold text-white mb-4">Get in Touch</h3>
-                        <p class="text-secondary-300 text-lg">Ready to transform your rental deposit experience? Contact us today.</p>
-                    </div>
-
-                    <!-- Display Flash Messages -->
-                    <?php if (session()->getFlashdata('success')): ?>
-                        <div class="bg-[#9eff6b]/20 border border-[#9eff6b]/30 text-[#9eff6b] px-6 py-4 rounded-lg mb-8 flex items-center">
-                            <i class="bi bi-check-circle-fill mr-3 text-xl"></i>
-                            <span><?= session()->getFlashdata('success') ?></span>
-                        </div>
-                    <?php endif; ?>
-
-                    <?php if (session()->getFlashdata('error')): ?>
-                        <div class="bg-red-500/20 border border-red-500/30 text-red-300 px-6 py-4 rounded-lg mb-8 flex items-center">
-                            <i class="bi bi-exclamation-triangle-fill mr-3 text-xl"></i>
-                            <span><?= session()->getFlashdata('error') ?></span>
-                        </div>
-                    <?php endif; ?>
-
-                    <?php if (session()->getFlashdata('errors')): ?>
-                        <div class="bg-red-500/20 border border-red-500/30 text-red-300 px-6 py-4 rounded-lg mb-8">
-                            <div class="flex items-center mb-2">
-                                <i class="bi bi-exclamation-triangle-fill mr-3 text-xl"></i>
-                                <span class="font-semibold">Please correct the following errors:</span>
-                            </div>
-                            <ul class="list-disc list-inside ml-6 space-y-1">
-                                <?php foreach (session()->getFlashdata('errors') as $error): ?>
-                                    <li><?= $error ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                    <?php endif; ?>
-
-                    <form action="/contact" method="POST" class="bg-secondary-800/50 backdrop-blur-sm border border-secondary-700 rounded-2xl p-8">
-                        <?= csrf_field() ?>
-                        
-                        <div class="grid md:grid-cols-2 gap-6 mb-6">
-                            <!-- Name Field -->
-                            <div>
-                                <label for="contact_name" class="block text-sm font-semibold text-white mb-2">
-                                    Full Name *
-                                </label>
-                                <input type="text" 
-                                       id="contact_name" 
-                                       name="name" 
-                                       value="<?= old('name') ?>"
-                                       required
-                                       class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors"
-                                       placeholder="Enter your full name">
-                            </div>
-
-                            <!-- Email Field -->
-                            <div>
-                                <label for="contact_email" class="block text-sm font-semibold text-white mb-2">
-                                    Email Address *
-                                </label>
-                                <input type="email" 
-                                       id="contact_email" 
-                                       name="email" 
-                                       value="<?= old('email') ?>"
-                                       required
-                                       class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors"
-                                       placeholder="your.email@example.com">
-                            </div>
-                        </div>
-
-                        <!-- Phone Field -->
-                        <div class="mb-6">
-                            <label for="contact_phone" class="block text-sm font-semibold text-white mb-2">
-                                Phone Number (Optional)
-                            </label>
-                            <input type="tel" 
-                                   id="contact_phone" 
-                                   name="phone" 
-                                   value="<?= old('phone') ?>"
-                                   class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors"
-                                   placeholder="+256 700 000 000">
-                        </div>
-
-                        <!-- Message Field -->
-                        <div class="mb-8">
-                            <label for="contact_message" class="block text-sm font-semibold text-white mb-2">
-                                Message *
-                            </label>
-                            <textarea id="contact_message" 
-                                      name="message" 
-                                      rows="5" 
-                                      required
-                                      class="w-full px-4 py-3 bg-secondary-800 border border-secondary-600 rounded-lg text-white placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:border-[#9eff6b] transition-colors resize-vertical"
-                                      placeholder="Tell us about your rental deposit needs, property management challenges, or any questions you have about est8Ledger..."><?= old('message') ?></textarea>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <div class="text-center">
-                            <button type="submit" 
-                                    class="bg-[#9eff6b] hover:bg-[#8ee55a] text-secondary-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#9eff6b] focus:ring-offset-2 focus:ring-offset-secondary-900 inline-flex items-center">
-                                <i class="bi bi-send mr-2"></i>
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-8 mb-12 pt-12 mt-12 border-t border-secondary-700">
+            <div class="grid md:grid-cols-4 gap-8 mb-12 pb-12 border-b border-secondary-700">
                 <div class="col-span-2">
-                         <img src="/long_logo.png" alt="est8Ledger" class="h-14">
-                    <p class="text-secondary-300 mb-6 leading-relaxed">Professional security deposit management for property owners, managers, and tenants. Building trust through transparency and regulatory compliance.</p>
+                    <img src="/long_logo.png" alt="est8Ledger" class="h-14 mb-4">
+                    <p class="text-secondary-300 mb-6 leading-relaxed">est8Ledger is Uganda's leading blockchain-secured security deposit management platform. We help landlords, property managers, and tenants eliminate rental disputes through transparent property inspections, secure escrow accounts, and investment opportunities. Trusted for secure deposits, fair rent collections, and professional property management solutions.</p>
                     <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/company/est8ledger/" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">
+                        <a href="https://www.linkedin.com/company/est8ledger/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Visit est8Ledger on LinkedIn">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">
+                        <a href="https://www.crunchbase.com/organization/est8ledger" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="View est8Ledger on Crunchbase">
+                            <i class="bi bi-graph-up"></i>
+                        </a>
+                        <a href="mailto:info@est8ledger.com" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Email est8Ledger">
                             <i class="bi bi-envelope"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors">
+                        <a href="tel:+447930068728" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Call est8Ledger">
                             <i class="bi bi-telephone"></i>
                         </a>
                     </div>
@@ -723,17 +656,18 @@
                     <ul class="space-y-3">
                         <li><a href="/" class="text-secondary-300 hover:text-white transition-colors">Home</a></li>
                         <li><a href="#how-it-works" class="text-secondary-300 hover:text-white transition-colors">How it Works</a></li>
+                        <li><a href="/about-us" class="text-secondary-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="/faqs" class="text-secondary-300 hover:text-white transition-colors">FAQs</a></li>
                         <li><a href="/blogs" class="text-secondary-300 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-secondary-300 hover:text-white transition-colors">Security</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Legal & Compliance</h4>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Support & Contact</h4>
                     <ul class="space-y-3">
+                        <li><a href="/contact-us" class="text-secondary-300 hover:text-white transition-colors">Contact Us</a></li>
                         <li><a href="/privacy-policy" class="text-secondary-300 hover:text-white transition-colors">Privacy Policy</a></li>
                         <li><a href="/terms-of-use" class="text-secondary-300 hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="text-secondary-300 hover:text-white transition-colors">Regulatory Compliance</a></li>
-                        <li><a href="#contact" class="text-secondary-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="mailto:info@est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Email Support</a></li>
                     </ul>
                 </div>
             </div>

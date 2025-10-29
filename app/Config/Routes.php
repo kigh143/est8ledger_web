@@ -22,6 +22,11 @@ $routes->post('/request-demo', 'DemoController::submit');
 $routes->get('/privacy-policy', 'Home::privacyPolicy');
 $routes->get('/terms-of-use', 'Home::termsOfUse');
 
+// New pages
+$routes->get('/about-us', 'Home::aboutUs');
+$routes->get('/faqs', 'Home::faqs');
+$routes->get('/contact-us', 'Home::contactUs');
+
 // Contact form route
 $routes->post('/contact', 'ContactController::submit');
 
