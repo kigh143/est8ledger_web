@@ -29,9 +29,9 @@
                                         </p>
                                         <p class="text-sm text-gray-900">
                                             <?php if (is_array($answer['answer'])): ?>
-                                                <?= implode(', ', array_map('esc', $answer['answer'])) ?>
+                                                <?= implode(', ', array_map(function($item) { return esc(str_replace('_', ' ', ucwords($item, '_'))); }, $answer['answer'])) ?>
                                             <?php else: ?>
-                                                <?= esc($answer['answer']) ?>
+                                                <?= esc(str_replace('_', ' ', ucwords($answer['answer'], '_'))) ?>
                                             <?php endif; ?>
                                         </p>
                                         <span class="text-xs text-gray-500 capitalize"><?= esc($answer['type']) ?> question</span>

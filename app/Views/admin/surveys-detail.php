@@ -105,11 +105,11 @@
                                                 <?php if (is_array($answer['answer'])): ?>
                                                     <ul class="list-disc list-inside space-y-1">
                                                         <?php foreach ($answer['answer'] as $item): ?>
-                                                            <li><?= esc($item) ?></li>
+                                                            <li><?= esc(str_replace('_', ' ', ucwords($item, '_'))) ?></li>
                                                         <?php endforeach; ?>
                                                     </ul>
                                                 <?php else: ?>
-                                                    <?= nl2br(esc($answer['answer'])) ?>
+                                                    <?= nl2br(esc(str_replace('_', ' ', ucwords($answer['answer'], '_')))) ?>
                                                 <?php endif; ?>
                                             </p>
                                         </div>
