@@ -24,7 +24,7 @@
         </h1>
 
         <p class="text-lg lg:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed animate-on-scroll">
-            Rentalynk is on a mission to revolutionize the rental industry by solving one of its biggest problems: security deposit disputes.
+            From a simple question about lost deposits, we built a platform to restore trust in rental relationships.
         </p>
     </div>
 </div>
@@ -34,15 +34,38 @@
     <div class="container mx-auto px-4">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
-                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    At Rentalynk, we believe that rental relationships should be built on trust, transparency, and fairness. We created est8Ledger to eliminate the friction and disputes that plague the rental industry.
+                    It all started with Rentalynk, a property finder app we built to make house hunting simple and stress-free. Our goal was to help people find homes faster and connect seamlessly with property owners.
                 </p>
+
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    Security deposits are one of the most contentious issues between landlords and tenants. Disputes over deductions, lost deposits, and unclear terms cost both parties time, money, and peace of mind.
+                    But as we interacted with users, a pattern began to emerge. Many tenants were not just looking for homes—they were looking for fairness. One question kept coming up: <span class="italic font-semibold text-primary">"Can you help me recover my security deposit?"</span>
                 </p>
+
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    That question changed everything.
+                </p>
+
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    We realized that while the rental listing market was crowded, trust between tenants and landlords was still broken. Security deposit disputes, unclear deductions, and lost payments were a common frustration.
+                </p>
+
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    So, we decided to take a new path.
+                </p>
+
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    From that insight, we created est8Ledger, a platform built to restore trust in the rental ecosystem. Using blockchain technology, est8Ledger provides a transparent and tamper-proof way to manage security deposits, ensuring that both landlords and tenants have a fair and accountable experience.
+                </p>
+
+                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                    While Rentalynk has evolved into a software company serving real estate professionals, est8Ledger stands independently, dedicated to making rental relationships more transparent, secure, and built on mutual trust.
+                </p>
+
                 <p class="text-lg text-gray-600 leading-relaxed">
-                    We're using blockchain technology and transparent processes to create a single source of truth for security deposits, making the rental experience better for everyone.
+                    At our core, we believe the future of renting is not just about finding homes—it is about creating trustworthy experiences for everyone involved.
                 </p>
             </div>
 
