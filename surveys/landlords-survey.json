@@ -1,9 +1,9 @@
 {
   "id": "landlords-survey",
   "title": "Landlord & Property Manager Survey",
-  "description": "Help us understand your experience managing security deposits and tenant relationships.",
-  "estimated_time": "6-8 minutes",
-  "version": "1.1",
+  "description": "Help us understand your experience managing security deposits and tenant relationships. Your insights help us build better solutions for property management.",
+  "estimated_time": "8-10 minutes",
+  "version": "2.0",
   "created_at": "2025-10-02",
   "questions": [
     {
@@ -23,7 +23,7 @@
     {
       "id": "property_type",
       "type": "radio",
-      "question": "Which best describes you?",
+      "question": "Which best describes your role?",
       "required": true,
       "options": [
         {
@@ -41,129 +41,399 @@
     {
       "id": "property_count",
       "type": "select",
-      "question": "How many rental units/properties do you currently manage?",
+      "question": "How many rental units or properties do you currently manage?",
       "required": true,
       "options": [
-        { "value": "1_2", "label": "1-2" },
-        { "value": "3_5", "label": "3-5" },
-        { "value": "6_10", "label": "6-10" },
-        { "value": "11_25", "label": "11-25" },
-        { "value": "over_25", "label": "More than 25" }
+        { "value": "1_2", "label": "1-2 properties" },
+        { "value": "3_5", "label": "3-5 properties" },
+        { "value": "6_10", "label": "6-10 properties" },
+        { "value": "11_25", "label": "11-25 properties" },
+        { "value": "over_25", "label": "More than 25 properties" }
+      ]
+    },
+    {
+      "id": "current_deposit_storage",
+      "type": "radio",
+      "question": "How do you currently store and manage tenant security deposits?",
+      "required": true,
+      "options": [
+        { "value": "personal_account", "label": "Personal bank account" },
+        { "value": "business_account", "label": "Separate business account" },
+        {
+          "value": "manual_records",
+          "label": "Manual records (cash, books, or spreadsheets)"
+        },
+        {
+          "value": "property_software",
+          "label": "Property management software"
+        },
+        { "value": "other", "label": "Other method" }
+      ]
+    },
+    {
+      "id": "deposit_tracking_method",
+      "type": "radio",
+      "question": "How do you track individual tenant deposits and deductions?",
+      "required": true,
+      "options": [
+        {
+          "value": "spreadsheet",
+          "label": "Spreadsheet (Excel, Google Sheets)"
+        },
+        { "value": "paper_records", "label": "Paper records or notebooks" },
+        {
+          "value": "accounting_software",
+          "label": "Accounting or bookkeeping software"
+        },
+        {
+          "value": "property_management_system",
+          "label": "Property management system"
+        },
+        { "value": "informal", "label": "Informal tracking or memory" },
+        { "value": "other", "label": "Other method" }
+      ]
+    },
+    {
+      "id": "property_documentation",
+      "type": "checkbox",
+      "question": "What documentation do you typically collect at move-in and move-out? (Select all that apply)",
+      "required": true,
+      "options": [
+        {
+          "value": "photos",
+          "label": "Photos or videos of property condition"
+        },
+        { "value": "written_inspection", "label": "Written inspection report" },
+        {
+          "value": "tenant_signature",
+          "label": "Tenant signature on condition report"
+        },
+        {
+          "value": "inventory_list",
+          "label": "Detailed inventory of fixtures and items"
+        },
+        {
+          "value": "damage_assessment",
+          "label": "Damage assessment or repair estimates"
+        },
+        { "value": "minimal_docs", "label": "Minimal documentation" },
+        { "value": "none", "label": "No formal documentation" }
       ]
     },
     {
       "id": "deposit_challenges",
       "type": "checkbox",
-      "question": "What challenges do you face when handling tenant security deposits? (Select all that apply)",
+      "question": "What specific challenges do you face when managing security deposits? (Select all that apply)",
       "required": true,
       "options": [
         {
-          "value": "tenant_resistance",
-          "label": "Tenants resist or delay paying deposits"
+          "value": "tenant_disputes",
+          "label": "Disputes with tenants over deduction amounts"
         },
         {
-          "value": "deposit_disputes",
-          "label": "Disputes over deductions at move-out"
+          "value": "documentation_issues",
+          "label": "Lack of clear documentation or evidence for deductions"
         },
         {
           "value": "refund_delays",
-          "label": "Difficulty refunding deposits on time"
+          "label": "Difficulty returning deposits within required timeframes"
         },
         {
           "value": "record_keeping",
-          "label": "Difficulty tracking deposits and deductions"
+          "label": "Difficulty organizing and tracking deposit records"
+        },
+        {
+          "value": "wear_vs_damage",
+          "label": "Determining fair wear and tear vs. tenant damage"
         },
         {
           "value": "cash_flow",
-          "label": "Deposits tie up funds or create cash flow issues"
+          "label": "Deposits tie up working capital or create cash flow issues"
         },
         {
-          "value": "trust_issues",
-          "label": "Maintaining tenant trust around deposit handling"
+          "value": "legal_compliance",
+          "label": "Staying compliant with local deposit regulations"
+        },
+        {
+          "value": "tenant_trust",
+          "label": "Maintaining tenant trust and transparency"
         }
       ]
+    },
+    {
+      "id": "refund_timeline",
+      "type": "radio",
+      "question": "On average, how long does it take you to return security deposits to tenants after move-out?",
+      "required": true,
+      "options": [
+        { "value": "within_7_days", "label": "Within 7 days" },
+        { "value": "within_14_days", "label": "Within 14 days" },
+        { "value": "within_30_days", "label": "Within 30 days" },
+        { "value": "within_60_days", "label": "Within 60 days" },
+        { "value": "over_60_days", "label": "More than 60 days" },
+        { "value": "varies", "label": "Varies significantly" }
+      ]
+    },
+    {
+      "id": "refund_delays_reasons",
+      "type": "checkbox",
+      "question": "What typically causes delays in returning deposits? (Select all that apply)",
+      "required": false,
+      "options": [
+        {
+          "value": "damage_assessment",
+          "label": "Time needed to assess damage and get repair quotes"
+        },
+        {
+          "value": "repair_completion",
+          "label": "Waiting for repairs to be completed"
+        },
+        {
+          "value": "deduction_calculation",
+          "label": "Time to calculate fair deductions"
+        },
+        {
+          "value": "documentation_gathering",
+          "label": "Gathering documentation and evidence"
+        },
+        {
+          "value": "tenant_disputes",
+          "label": "Resolving disputes with tenants"
+        },
+        {
+          "value": "administrative",
+          "label": "Administrative or processing delays"
+        },
+        {
+          "value": "cash_availability",
+          "label": "Availability of funds to refund"
+        },
+        {
+          "value": "no_delays",
+          "label": "We don't typically experience delays"
+        }
+      ]
+    },
+    {
+      "id": "wear_tear_challenges",
+      "type": "rating",
+      "question": "How challenging is it to determine fair wear and tear versus tenant-caused damage?",
+      "required": true,
+      "scale": 5,
+      "labels": {
+        "1": "Not challenging",
+        "2": "Slightly challenging",
+        "3": "Moderately challenging",
+        "4": "Very challenging",
+        "5": "Extremely challenging"
+      }
     },
     {
       "id": "vacancy_impact",
       "type": "rating",
       "question": "How much do deposit-related issues affect your ability to keep units occupied?",
       "required": true,
-      "scale": 3,
+      "scale": 5,
       "labels": {
         "1": "No impact",
-        "2": "Some impact",
-        "3": "Major impact"
+        "2": "Minimal impact",
+        "3": "Moderate impact",
+        "4": "Significant impact",
+        "5": "Major impact"
       }
-    },
-    {
-      "id": "current_deposit_management",
-      "type": "radio",
-      "question": "How do you currently manage tenant security deposits?",
-      "required": true,
-      "options": [
-        { "value": "personal_account", "label": "Personal bank account" },
-        { "value": "business_account", "label": "Separate business account" },
-        {
-          "value": "manual_tracking",
-          "label": "Manual records (cash/books/excel)"
-        },
-        { "value": "software", "label": "Property management software" },
-        { "value": "other", "label": "Other" }
-      ]
     },
     {
       "id": "transparency_importance",
       "type": "rating",
       "question": "How important is transparency in deposit handling for maintaining good tenant relationships?",
       "required": true,
-      "scale": 3,
+      "scale": 5,
       "labels": {
         "1": "Not important",
-        "2": "Somewhat important",
-        "3": "Very important"
+        "2": "Slightly important",
+        "3": "Moderately important",
+        "4": "Very important",
+        "5": "Extremely important"
       }
     },
     {
-      "id": "improvement_methods",
+      "id": "third_party_interest",
+      "type": "radio",
+      "question": "Would you consider using a third-party  service to manage security deposits?",
+      "required": true,
+      "options": [
+        { "value": "definitely_yes", "label": "Definitely yes" },
+        { "value": "probably_yes", "label": "Probably yes" },
+        { "value": "unsure", "label": "Unsure" },
+        { "value": "probably_no", "label": "Probably no" },
+        { "value": "definitely_no", "label": "Definitely no" }
+      ]
+    },
+    {
+      "id": "third_party_benefits",
       "type": "checkbox",
-      "question": "If you could improve how you handle deposits, what would you prefer? (Select all that apply)",
+      "question": "What benefits would a third-party service provide? (Select all that apply)",
       "required": false,
       "options": [
-        { "value": "clear_rules", "label": "Clearer rules for tenants" },
-        {
-          "value": "better_tracking",
-          "label": "Easier tracking of deposits and deductions"
-        },
-        { "value": "faster_refunds", "label": "Faster refund process" },
-        {
-          "value": "third_party_help",
-          "label": "Independent third-party handling"
-        },
         {
           "value": "reduced_disputes",
+          "label": "Reduced disputes with tenants"
+        },
+        {
+          "value": "legal_protection",
+          "label": "Legal protection and compliance"
+        },
+        { "value": "time_savings", "label": "Time savings on administration" },
+        {
+          "value": "professional_handling",
+          "label": "Professional, neutral handling"
+        },
+        {
+          "value": "better_documentation",
+          "label": "Better documentation and records"
+        },
+        { "value": "faster_refunds", "label": "Faster deposit refunds" },
+        { "value": "tenant_trust", "label": "Increased tenant trust" },
+        { "value": "cash_flow", "label": "Improved cash flow management" }
+      ]
+    },
+    {
+      "id": "third_party_concerns",
+      "type": "checkbox",
+      "question": "What concerns do you have about using a third-party service? (Select all that apply)",
+      "required": false,
+      "options": [
+        { "value": "cost", "label": "Cost or fees" },
+        {
+          "value": "loss_of_control",
+          "label": "Loss of control over deposits"
+        },
+        {
+          "value": "reliability",
+          "label": "Reliability and trustworthiness of the service"
+        },
+        { "value": "complexity", "label": "Complexity or difficulty to use" },
+        {
+          "value": "integration",
+          "label": "Integration with existing systems"
+        },
+        { "value": "data_security", "label": "Data security and privacy" },
+        { "value": "dispute_resolution", "label": "How disputes are resolved" },
+        { "value": "no_concerns", "label": "No significant concerns" }
+      ]
+    },
+    {
+      "id": "trust_factors",
+      "type": "checkbox",
+      "question": "What factors would make you trust a third-party deposit management platform? (Select all that apply)",
+      "required": false,
+      "options": [
+        {
+          "value": "regulatory_compliance",
+          "label": "Clear regulatory compliance and licensing"
+        },
+        {
+          "value": "transparent_fees",
+          "label": "Transparent, competitive pricing"
+        },
+        {
+          "value": "security_features",
+          "label": "Strong security and data protection"
+        },
+        {
+          "value": "user_reviews",
+          "label": "Positive reviews from other landlords"
+        },
+        { "value": "easy_to_use", "label": "Easy-to-use interface" },
+        { "value": "customer_support", "label": "Responsive customer support" },
+        {
+          "value": "dispute_resolution",
+          "label": "Fair dispute resolution process"
+        },
+        {
+          "value": "blockchain",
+          "label": "Blockchain or immutable record-keeping"
+        },
+        { "value": "insurance", "label": "Insurance or guarantee on deposits" }
+      ]
+    },
+    {
+      "id": "price_sensitivity",
+      "type": "radio",
+      "question": "What would be an acceptable fee for a professional deposit management service?",
+      "required": false,
+      "options": [
+        { "value": "free", "label": "Should be free" },
+        {
+          "value": "under_1_percent",
+          "label": "Less than 1% of deposit amount"
+        },
+        { "value": "1_2_percent", "label": "1-2% of deposit amount" },
+        { "value": "2_3_percent", "label": "2-3% of deposit amount" },
+        {
+          "value": "over_3_percent",
+          "label": "More than 3% of deposit amount"
+        },
+        { "value": "flat_fee", "label": "Flat monthly or annual fee" },
+        { "value": "unsure", "label": "Unsure" }
+      ]
+    },
+    {
+      "id": "improvement_priorities",
+      "type": "checkbox",
+      "question": "If you could improve how you handle deposits, what would be your top priorities? (Select all that apply)",
+      "required": false,
+      "options": [
+        { "value": "faster_refunds", "label": "Faster deposit refund process" },
+        {
+          "value": "better_documentation",
+          "label": "Better documentation and evidence collection"
+        },
+        {
+          "value": "dispute_reduction",
           "label": "Ways to reduce disputes with tenants"
+        },
+        {
+          "value": "easier_tracking",
+          "label": "Easier tracking and organization of records"
+        },
+        {
+          "value": "compliance_help",
+          "label": "Help with legal compliance and regulations"
+        },
+        {
+          "value": "tenant_transparency",
+          "label": "Better transparency for tenants"
+        },
+        {
+          "value": "time_savings",
+          "label": "Time savings on administrative tasks"
+        },
+        {
+          "value": "professional_handling",
+          "label": "Professional third-party handling"
         }
       ]
     },
     {
       "id": "implementation_timeline",
       "type": "radio",
-      "question": "If a better deposit management solution was available, when would you consider trying it?",
+      "question": "If a better deposit management solution was available, when would you consider adopting it?",
       "required": true,
       "options": [
         { "value": "immediately", "label": "Immediately" },
         { "value": "within_3_months", "label": "Within 3 months" },
         { "value": "within_6_months", "label": "Within 6 months" },
         { "value": "within_year", "label": "Within a year" },
-        { "value": "not_sure", "label": "Not sure yet" }
+        { "value": "not_interested", "label": "Not interested" }
       ]
     },
     {
       "id": "additional_comments",
       "type": "textarea",
-      "question": "Any additional thoughts or experiences about managing security deposits?",
+      "question": "Please share any additional thoughts, experiences, or suggestions about managing security deposits.",
       "required": false,
-      "placeholder": "Share your comments here..."
+      "placeholder": "Your feedback helps us build better solutions for property managers and landlords..."
     }
   ]
 }
