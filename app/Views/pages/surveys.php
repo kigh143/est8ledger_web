@@ -9,7 +9,7 @@
             Help Shape the Future of <span class="text-[#9eff6b]">Rental Deposits</span>
         </h1>
         <p class="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            Your experience matters. Share your insights about security deposits and help us build better solutions for landlords and tenants across Uganda.
+            Your experience matters. Share your insights about Rental Security Deposits and help us build better solutions for landlords and tenants across Uganda.
         </p>
         <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium">
             <i class="bi bi-clock mr-2 text-[#9eff6b]"></i>

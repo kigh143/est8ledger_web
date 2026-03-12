@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found - est8Ledger</title>
-    <meta name="description" content="The page you're looking for doesn't exist. Return to est8Ledger's security deposit management platform.">
+    <meta name="description" content="The page you're looking for doesn't exist. Return to est8Ledger's Rental Security Deposit management platform.">
     <meta name="robots" content="noindex, nofollow">
     
     <!-- Favicon -->
@@ -157,7 +157,7 @@
                 </h1>
                 <p class="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto leading-relaxed">
                     The page you're looking for seems to have moved, been deleted, or doesn't exist. 
-                    Don't worry – let's get you back on track with est8Ledger's security deposit management platform.
+                    Don't worry – let's get you back on track with est8Ledger's Rental Security Deposit management platform.
                 </p>
                 
                 <?php if (ENVIRONMENT !== 'production' && isset($message)) : ?>
@@ -218,7 +218,7 @@
                             <i class="bi bi-house text-primary-600 text-xl"></i>
                         </div>
                         <h3 class="font-semibold text-secondary-900 mb-2">Homepage</h3>
-                        <p class="text-sm text-secondary-600">Learn about our security deposit management platform</p>
+                        <p class="text-sm text-secondary-600">Learn about our Rental Security Deposit management platform</p>
                     </a>
 
                     <!-- Blog -->
@@ -273,7 +273,7 @@
                 <img src="/long_logo.png" alt="est8Ledger" class="h-8 brightness-0 invert">
             </div>
             <p class="text-secondary-400 text-sm mb-4">
-                Revolutionary security deposit management for Uganda & East Africa
+                Revolutionary Rental Security Deposit management for Uganda & East Africa
             </p>
             <div class="flex justify-center space-x-6 text-sm">
                 <a href="/" class="text-secondary-400 hover:text-white transition-colors">Home</a>

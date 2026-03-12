@@ -82,7 +82,7 @@
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-600">
                     <p class="mb-4">
-                        These Terms of Use ("Terms") constitute a legally binding agreement between you and est8Ledger, Inc. ("est8Ledger," "we," "us," or "our") regarding your use of our security deposit management platform and related services (the "Services").
+                        These Terms of Use ("Terms") constitute a legally binding agreement between you and est8Ledger, Inc. ("est8Ledger," "we," "us," or "our") regarding your use of our Rental Security Deposit management platform and related services (the "Services").
                     </p>
                     <div class="bg-blue-50 rounded-xl p-6">
                         <div class="flex items-start">
@@ -104,7 +104,7 @@
                     <h2 class="text-2xl font-bold text-gray-800">2. Description of Services</h2>
                 </div>
 
-                <p class="text-gray-600 mb-6">est8Ledger provides a comprehensive security deposit management platform that includes:</p>
+                <p class="text-gray-600 mb-6">est8Ledger provides a comprehensive Rental Security Deposit management platform that includes:</p>
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="space-y-4">
@@ -126,7 +126,7 @@
                             <i class="bi bi-shield-check text-green-600 text-xl mr-3 mt-1"></i>
                             <div>
                                 <h4 class="font-semibold text-green-800">Secure Escrow</h4>
-                                <p class="text-green-700 text-sm">Account management for security deposits</p>
+                                <p class="text-green-700 text-sm">Account management for Rental Security Deposits</p>
                             </div>
                         </div>
                     </div>

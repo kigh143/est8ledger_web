@@ -1,7 +1,7 @@
 {
   "id": "tenants-survey",
-  "title": "Renter & Tenant Security Deposit Survey",
-  "description": "Help us understand your experience with security deposits and what matters most to you as a renter. Your feedback helps us build fairer, more transparent solutions. Complete this survey with your contact info to enter our prize draw and get early access to est8Ledger!",
+  "title": "Renter & Tenant Rental Security Deposit Survey",
+  "description": "Help us understand your experience with Rental Security Deposits and what matters most to you as a renter. Your feedback helps us build fairer, more transparent solutions. Complete this survey with your contact info to enter our prize draw and get early access to est8Ledger!",
   "estimated_time": "10-12 minutes",
   "version": "2.0",
   "created_at": "2025-10-02",
@@ -27,8 +27,14 @@
       "required": true,
       "options": [
         { "value": "currently_renting", "label": "I currently rent my home" },
-        { "value": "recently_moved", "label": "I recently moved out (within last 12 months)" },
-        { "value": "former_renter", "label": "I used to rent, but not anymore" },
+        {
+          "value": "recently_moved",
+          "label": "I recently moved out (within last 12 months)"
+        },
+        {
+          "value": "former_renter",
+          "label": "I used to rent, but not anymore"
+        },
         { "value": "never_rented", "label": "I have never rented" }
       ]
     },
@@ -48,7 +54,7 @@
     {
       "id": "deposit_understanding",
       "type": "radio",
-      "question": "Do you understand what a security deposit is and why landlords require it?",
+      "question": "Do you understand what a Rental Security Deposit is and why landlords require it?",
       "required": true,
       "options": [
         { "value": "fully_understand", "label": "Yes, I fully understand" },
@@ -60,7 +66,7 @@
     {
       "id": "paid_deposit",
       "type": "radio",
-      "question": "Have you ever paid a security deposit when moving into a rental?",
+      "question": "Have you ever paid a Rental Security Deposit when moving into a rental?",
       "required": true,
       "options": [
         { "value": "yes", "label": "Yes" },
@@ -71,7 +77,7 @@
     {
       "id": "deposit_amount",
       "type": "select",
-      "question": "How much was the security deposit? (UGX)",
+      "question": "How much was the Rental Security Deposit? (UGX)",
       "required": false,
       "options": [
         { "value": "under_500k", "label": "Less than 500k" },
@@ -100,7 +106,7 @@
     {
       "id": "financial_burden",
       "type": "rating",
-      "question": "How much of a financial burden was paying the security deposit upfront?",
+      "question": "How much of a financial burden was paying the Rental Security Deposit upfront?",
       "required": true,
       "scale": 5,
       "labels": {
@@ -114,11 +120,14 @@
     {
       "id": "deposit_payment_difficulty",
       "type": "radio",
-      "question": "Did you have difficulty paying the security deposit upfront?",
+      "question": "Did you have difficulty paying the Rental Security Deposit upfront?",
       "required": false,
       "options": [
         { "value": "yes_very_difficult", "label": "Yes, very difficult" },
-        { "value": "yes_somewhat_difficult", "label": "Yes, somewhat difficult" },
+        {
+          "value": "yes_somewhat_difficult",
+          "label": "Yes, somewhat difficult"
+        },
         { "value": "no_manageable", "label": "No, it was manageable" },
         { "value": "no_easy", "label": "No, it was easy" }
       ]
@@ -126,23 +135,44 @@
     {
       "id": "deposit_concerns",
       "type": "checkbox",
-      "question": "What are your biggest concerns when paying a security deposit to a landlord? (Select all that apply)",
+      "question": "What are your biggest concerns when paying a Rental Security Deposit to a landlord? (Select all that apply)",
       "required": false,
       "options": [
-        { "value": "trust_landlord", "label": "Whether the landlord will keep my money" },
-        { "value": "where_stored", "label": "Not knowing where my deposit is stored" },
-        { "value": "unfair_deductions", "label": "Unfair deductions for normal wear and tear" },
-        { "value": "no_documentation", "label": "Lack of documentation about property condition" },
-        { "value": "slow_refund", "label": "Delays in getting my deposit back" },
-        { "value": "no_transparency", "label": "No transparency about how deductions are calculated" },
-        { "value": "dispute_difficulty", "label": "Difficulty disputing unfair deductions" },
+        {
+          "value": "trust_landlord",
+          "label": "Whether the landlord will keep my money"
+        },
+        {
+          "value": "where_stored",
+          "label": "Not knowing where my deposit is stored"
+        },
+        {
+          "value": "unfair_deductions",
+          "label": "Unfair deductions for normal wear and tear"
+        },
+        {
+          "value": "no_documentation",
+          "label": "Lack of documentation about property condition"
+        },
+        {
+          "value": "slow_refund",
+          "label": "Delays in getting my deposit back"
+        },
+        {
+          "value": "no_transparency",
+          "label": "No transparency about how deductions are calculated"
+        },
+        {
+          "value": "dispute_difficulty",
+          "label": "Difficulty disputing unfair deductions"
+        },
         { "value": "no_concerns", "label": "I do not have major concerns" }
       ]
     },
     {
       "id": "deposit_storage_knowledge",
       "type": "radio",
-      "question": "Do you know where your security deposit is currently stored or being held?",
+      "question": "Do you know where your Rental Security Deposit is currently stored or being held?",
       "required": false,
       "options": [
         { "value": "yes_know", "label": "Yes, I know exactly where it is" },
@@ -177,7 +207,7 @@
         "5": "Extremely confident"
       }
     },
- 
+
     {
       "id": "reasons_explained",
       "type": "radio",
@@ -210,7 +240,10 @@
       "options": [
         { "value": "yes", "label": "Yes" },
         { "value": "no", "label": "No" },
-        { "value": "wanted_but_not", "label": "I wanted to but did not know how" }
+        {
+          "value": "wanted_but_not",
+          "label": "I wanted to but did not know how"
+        }
       ]
     },
 
@@ -242,7 +275,7 @@
     {
       "id": "third_party_preference",
       "type": "radio",
-      "question": "Would you prefer your security deposit to be held by a neutral third party instead of the landlord?",
+      "question": "Would you prefer your Rental Security Deposit to be held by a neutral third party instead of the landlord?",
       "required": true,
       "options": [
         { "value": "definitely_yes", "label": "Definitely yes" },
@@ -259,16 +292,22 @@
       "required": false,
       "options": [
         { "value": "protection", "label": "Protection of my money" },
-        { "value": "transparency", "label": "Transparency and clear documentation" },
+        {
+          "value": "transparency",
+          "label": "Transparency and clear documentation"
+        },
         { "value": "fair_disputes", "label": "Fair resolution of disputes" },
         { "value": "faster_refunds", "label": "Faster refund of deposits" },
-        { "value": "reduced_disputes", "label": "Reduced conflicts with landlords" },
+        {
+          "value": "reduced_disputes",
+          "label": "Reduced conflicts with landlords"
+        },
         { "value": "peace_of_mind", "label": "Peace of mind" },
         { "value": "legal_protection", "label": "Legal protection" },
         { "value": "no_benefits", "label": "I do not see major benefits" }
       ]
     },
-   
+
     {
       "id": "fee_willingness",
       "type": "radio",
@@ -289,10 +328,16 @@
       "required": false,
       "options": [
         { "value": "free", "label": "Should be free" },
-        { "value": "under_1_percent", "label": "Less than 1% of deposit amount" },
+        {
+          "value": "under_1_percent",
+          "label": "Less than 1% of deposit amount"
+        },
         { "value": "1_2_percent", "label": "1-2% of deposit amount" },
         { "value": "2_3_percent", "label": "2-3% of deposit amount" },
-        { "value": "over_3_percent", "label": "More than 3% of deposit amount" },
+        {
+          "value": "over_3_percent",
+          "label": "More than 3% of deposit amount"
+        },
         { "value": "flat_fee", "label": "Flat fee (e.g., 50k-100k UGX)" },
         { "value": "unsure", "label": "Unsure" }
       ]
@@ -300,7 +345,7 @@
     {
       "id": "fairness_perception",
       "type": "radio",
-      "question": "Do you believe current security deposit practices are fair to renters?",
+      "question": "Do you believe current Rental Security Deposit practices are fair to renters?",
       "required": true,
       "options": [
         { "value": "yes", "label": "Yes, they are fair" },
@@ -312,7 +357,7 @@
     {
       "id": "open_feedback",
       "type": "textarea",
-      "question": "Please share any additional thoughts or experiences about security deposits and what would make you feel more secure as a renter.",
+      "question": "Please share any additional thoughts or experiences about Rental Security Deposits and what would make you feel more secure as a renter.",
       "required": false,
       "placeholder": "Your feedback helps us build fairer solutions for renters..."
     }

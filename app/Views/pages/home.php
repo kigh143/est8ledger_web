@@ -42,13 +42,13 @@
 
         <!-- Main Heading -->
         <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight animate-on-scroll">
-            Ending Rental
-            <span class="text-accent-400">Security Deposit Disputes</span>
+            Rental
+            <span class="text-accent-400">Security Deposit compliance tool</span>
         </h1>
 
         <!-- Subheading -->
         <p class="text-lg lg:text-xl text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed animate-on-scroll">
-            Manage security deposits with complete transparency. Get instant property inspections,
+            We help manage Rental Security Deposits with complete transparency. Get instant property inspections,
             <span class="font-semibold text-accent-300">earn returns on deposits</span>,
             and eliminate rental disputes—all from your phone.
         </p>
@@ -107,13 +107,13 @@
         <div class="text-center mb-16 animate-on-scroll">
             <div class="inline-flex items-center bg-red-50 text-red-700 px-4 py-2 rounded-lg text-sm font-medium mb-6">
                 <i class="bi bi-exclamation-triangle mr-2"></i>
-                The Security Deposit Crisis
+                The Rental Security Deposit Crisis
             </div>
             <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
-                Security Deposit Disputes Are Destroying Rental Relationships
+                Rental Security Deposit Disputes Are Destroying Rental Relationships
             </h2>
             <p class="text-lg text-secondary-600 max-w-3xl mx-auto">
-                Across Uganda and East Africa, security deposit disputes are costing landlords and tenants millions in lost money, legal fees, and damaged relationships. The problem is simple: there's no transparency, no documentation, and no trust.
+                Across Uganda and East Africa, Rental Security Deposit disputes are costing landlords and tenants millions in lost money, legal fees, and damaged relationships. The problem is simple: there's no transparency, no documentation, and no trust.
             </p>
         </div>
 
@@ -127,7 +127,7 @@
 
                     <h3 class="text-xl font-bold text-secondary-900 mb-4">Tenants Lose Money</h3>
                     <p class="text-secondary-600 leading-relaxed mb-6">
-                        Tenants face unfair security deposit deductions with no transparency. Landlords claim damage without proof, and tenants have no way to dispute unclear charges. Deposits disappear into legal battles.
+                        Tenants face unfair Rental Security Deposit deductions with no transparency. Landlords claim damage without proof, and tenants have no way to dispute unclear charges. Deposits disappear into legal battles.
                     </p>
 
                     <div class="space-y-3">
@@ -205,6 +205,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- Real-World Proof Section -->
+        <div class="mt-16 pt-16 border-t border-gray-200 animate-on-scroll">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl font-bold text-secondary-900 mb-4">Real Stories from Our Community</h3>
+                <p class="text-lg text-secondary-600">Hear directly from people experiencing these challenges</p>
+            </div>
+
+            <!-- Twitter Embed -->
+            <div class="flex justify-center">
+                <div class="w-full max-w-md">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ugandan landlords with broad day thuggery.<br>Why don't you guys want to refund the Rental Security Deposit when a tenant is vacating your property?</p>&mdash; Mclynn Kemigisha the_KYAKWERA🖤 (@kemigishaMackl4) <a href="https://twitter.com/kemigishaMackl4/status/1975224306117624109?ref_src=twsrc%5Etfw">October 6, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -230,7 +245,7 @@
                         Our Complete Solution
                     </div>
                     <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                        Security Deposits
+                        Rental Security Deposits
                         <span class="text-primary">Done Right</span>
                     </h2>
                     <p class="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -257,7 +272,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-gray-800 mb-2">Professional Property Inspections</h3>
-                            <p class="text-gray-600">Timestamped, geo-tagged inspections with photo evidence eliminate security deposit disputes. Compare move-in and move-out conditions with irrefutable documentation.</p>
+                            <p class="text-gray-600">Timestamped, geo-tagged inspections with photo evidence eliminate Rental Security Deposit disputes. Compare move-in and move-out conditions with irrefutable documentation.</p>
                         </div>
                     </div>
 
@@ -304,7 +319,7 @@
                 Your Deposit's Complete Journey
             </h2>
             <p class="text-lg text-secondary-600 max-w-3xl mx-auto mb-8">
-                Every security deposit follows this exact 6-step process for maximum transparency and protection
+                Every Rental Security Deposit follows this exact 6-step process for maximum transparency and protection
             </p>
             
             <!-- Process Flow Indicator -->
@@ -469,7 +484,7 @@
 
                         <h3 class="text-xl font-bold text-secondary-900 mb-4">Investment Management</h3>
                         <p class="text-secondary-600 leading-relaxed mb-6">
-                            With mutual agreement, security deposit funds are invested in money markets.
+                            With mutual agreement, Rental Security Deposit funds are invested in money markets.
                             Profits can be withdrawn after the first year, with transparent profit sharing.
                         </p>
 
@@ -606,7 +621,7 @@
             </h2>
             <p class="text-lg text-white/90 max-w-3xl mx-auto mb-8">
                 Leveraging the power of XRP Ledger blockchain technology to create unbreakable trust, 
-                transparency, and efficiency in security deposit management
+                transparency, and efficiency in Rental Security Deposit management
             </p>
 
             <!-- XRPL Logo -->
@@ -644,10 +659,10 @@
         <div class="text-center mb-16 animate-on-scroll">
             <div class="inline-flex items-center bg-primary-50 border border-primary-200 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <i class="bi bi-star-fill mr-2"></i>
-                Security Deposit Solution
+                Rental Security Deposit Solution
             </div>
             <h2 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Why Choose est8Ledger?</h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">The platform that eliminates security deposit disputes through transparency, documentation, and blockchain-backed security</p>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">The platform that eliminates Rental Security Deposit disputes through transparency, documentation, and blockchain-backed security</p>
         </div>
 
         <!-- Hero Cards Layout -->
@@ -684,7 +699,7 @@
                                 <i class="bi bi-check-circle text-blue-600 text-sm"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-gray-800">Eliminate Security Deposit Disputes</h4>
+                                <h4 class="font-semibold text-gray-800">Eliminate Rental Security Deposit Disputes</h4>
                                 <p class="text-gray-600 text-sm">Photo-backed inspections and transparent calculations end tenant conflicts</p>
                             </div>
                         </div>

@@ -14,7 +14,7 @@ class Home extends BaseController
         $data = [
             'title' => 'Privacy Policy - How We Protect Your Data',
             'description' => 'Learn how est8Ledger collects, uses, and protects your personal information in our comprehensive privacy policy.',
-            'keywords' => 'privacy policy, data protection, personal information, security deposits, GDPR compliance'
+            'keywords' => 'privacy policy, data protection, personal information, Rental Security Deposits, GDPR compliance'
         ];
 
         return view('pages/privacy-policy', $data);
@@ -24,8 +24,8 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Terms of Use - Service Agreement',
-            'description' => 'Read our terms of use to understand your rights and responsibilities when using est8Ledger\'s security deposit management platform.',
-            'keywords' => 'terms of use, service agreement, user agreement, security deposit terms, rental platform'
+            'description' => 'Read our terms of use to understand your rights and responsibilities when using est8Ledger\'s Rental Security Deposit management platform.',
+            'keywords' => 'terms of use, service agreement, user agreement, Rental Security Deposit terms, rental platform'
         ];
 
         return view('pages/terms-of-use', $data);
@@ -35,8 +35,8 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'About Us - Rentalynk\'s Mission for Fair Rental Deposits',
-            'description' => 'Learn about Rentalynk and est8Ledger\'s journey to revolutionize security deposit management through blockchain technology and transparent solutions.',
-            'keywords' => 'about est8Ledger, Rentalynk company, security deposit solutions, property management innovation, rental technology'
+            'description' => 'Learn about Rentalynk and est8Ledger\'s journey to revolutionize Rental Security Deposit management through blockchain technology and transparent solutions.',
+            'keywords' => 'about est8Ledger, Rentalynk company, Rental Security Deposit solutions, property management innovation, rental technology'
         ];
 
         return view('pages/about-us', $data);
@@ -46,24 +46,24 @@ class Home extends BaseController
     {
         $faqs = [
             [
-                'question' => 'How does est8Ledger protect my security deposit?',
-                'answer' => 'est8Ledger uses blockchain technology and regulated escrow accounts to protect your security deposit. All deposits are held in fully compliant escrow accounts with banking-level security. Every transaction is recorded on the blockchain, creating an immutable record that cannot be altered or disputed.'
+                'question' => 'How does est8Ledger protect my Rental Security Deposit?',
+                'answer' => 'est8Ledger uses blockchain technology and regulated escrow accounts to protect your Rental Security Deposit. All deposits are held in fully compliant escrow accounts with banking-level security. Every transaction is recorded on the blockchain, creating an immutable record that cannot be altered or disputed.'
             ],
             [
                 'question' => 'What data does est8Ledger collect and how is it protected?',
-                'answer' => 'We collect only essential information needed to manage your security deposit: property details, tenant/landlord information, and inspection records. All data is encrypted end-to-end using industry-standard encryption protocols. We comply with GDPR and other data protection regulations. Your personal information is never shared with third parties without your consent.'
+                'answer' => 'We collect only essential information needed to manage your Rental Security Deposit: property details, tenant/landlord information, and inspection records. All data is encrypted end-to-end using industry-standard encryption protocols. We comply with GDPR and other data protection regulations. Your personal information is never shared with third parties without your consent.'
             ],
             [
                 'question' => 'How does the property inspection process work?',
                 'answer' => 'Property inspections are conducted using our mobile app with geo-tagged photos and timestamps. This creates verified evidence of the property condition at move-in and move-out. Both landlords and tenants can view the inspection records, ensuring complete transparency and preventing disputes over property damage.'
             ],
             [
-                'question' => 'How long does it take to resolve a security deposit dispute?',
+                'question' => 'How long does it take to resolve a Rental Security Deposit dispute?',
                 'answer' => 'With est8Ledger, most disputes are resolved within days instead of months. Because all evidence is documented and verified on the blockchain, there\'s a clear record of what happened. This eliminates the need for lengthy legal proceedings and allows for quick resolution.'
             ],
             [
-                'question' => 'Can I earn returns on my security deposit?',
-                'answer' => 'Yes! est8Ledger allows landlords to invest security deposits in low-risk, high-yield opportunities. Tenants can benefit from a portion of these returns, creating a win-win situation. Your deposit works for you while remaining fully protected and accessible when needed.'
+                'question' => 'Can I earn returns on my Rental Security Deposit?',
+                'answer' => 'Yes! est8Ledger allows landlords to invest Rental Security Deposits in low-risk, high-yield opportunities. Tenants can benefit from a portion of these returns, creating a win-win situation. Your deposit works for you while remaining fully protected and accessible when needed.'
             ],
             [
                 'question' => 'Is est8Ledger available in my country?',
@@ -88,9 +88,9 @@ class Home extends BaseController
         ];
 
         $data = [
-            'title' => 'FAQs - Security Deposits & Data Protection Questions',
-            'description' => 'Find answers to frequently asked questions about est8Ledger\'s security deposit management, data protection, and how our platform works.',
-            'keywords' => 'FAQ, security deposit questions, data protection, platform features, how it works, security',
+            'title' => 'FAQs - Rental Security Deposits & Data Protection Questions',
+            'description' => 'Find answers to frequently asked questions about est8Ledger\'s Rental Security Deposit management, data protection, and how our platform works.',
+            'keywords' => 'FAQ, Rental Security Deposit questions, data protection, platform features, how it works, security',
             'faqs' => $faqs
         ];
 
@@ -101,7 +101,7 @@ class Home extends BaseController
     {
         $data = [
             'title' => 'Contact Us - Get in Touch with est8Ledger',
-            'description' => 'Contact est8Ledger for support, inquiries, or to learn more about our security deposit management platform. Email, phone, and location details available.',
+            'description' => 'Contact est8Ledger for support, inquiries, or to learn more about our Rental Security Deposit management platform. Email, phone, and location details available.',
             'keywords' => 'contact est8Ledger, customer support, inquiries, contact form, Kampala Uganda'
         ];
 

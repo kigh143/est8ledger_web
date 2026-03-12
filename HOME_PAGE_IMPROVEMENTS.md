@@ -8,34 +8,34 @@ The home page has been significantly enhanced with improved copy, better value p
 ## 1. Hero Section Subtitle Enhancement ✅
 
 ### Previous Subtitle:
-"The definitive platform for secure tenancy agreements, transparent inspections, and profit-sharing security deposits across Uganda and East Africa. Turn idle deposits into shared wealth."
+"The definitive platform for secure tenancy agreements, transparent inspections, and profit-sharing Rental Security Deposits across Uganda and East Africa. Turn idle deposits into shared wealth."
 
 ### New Subtitle:
-"Manage security deposits with complete transparency. Get instant property inspections, earn returns on deposits, and eliminate rental disputes—all from your phone."
+"Manage Rental Security Deposits with complete transparency. Get instant property inspections, earn returns on deposits, and eliminate rental disputes—all from your phone."
 
 ### Improvements:
 - **More Concise**: Reduced from 2 sentences to 1 clear statement
 - **Easier to Understand**: Uses simpler, more direct language
 - **Clear Value Proposition**: Highlights 3 key benefits (transparency, inspections, returns)
 - **Mobile-First**: Emphasizes "from your phone" for modern users
-- **SEO Keywords**: Naturally incorporates "security deposits," "property inspections," "disputes"
+- **SEO Keywords**: Naturally incorporates "Rental Security Deposits," "property inspections," "disputes"
 
 ---
 
 ## 2. Problem Statement Section Enhanced ✅
 
 ### Changes Made:
-- Updated heading from "Security Deposits Are Broken" to "Traditional Property Management is Broken"
+- Updated heading from "Rental Security Deposits Are Broken" to "Traditional Property Management is Broken"
 - Expanded problem description to include all property management challenges
 - Rewrote all three problem cards with better copy:
 
 #### Tenant Concerns Card:
 - Highlights: unfair deductions, lack of transparency, idle deposits
-- Incorporates keywords: "security deposit deductions," "property inspection transparency"
+- Incorporates keywords: "Rental Security Deposit deductions," "property inspection transparency"
 
 #### Property Owner Challenges Card:
 - Highlights: deposit disputes, rent collection, tenant acquisition, maintenance
-- Incorporates keywords: "security deposit disputes," "rent collection," "tenant acquisition," "maintenance management"
+- Incorporates keywords: "Rental Security Deposit disputes," "rent collection," "tenant acquisition," "maintenance management"
 
 #### Property Manager Overwhelm Card:
 - Highlights: multiplied disputes, tenant screening, scattered systems
@@ -72,7 +72,7 @@ The home page has been significantly enhanced with improved copy, better value p
 
 ### For Property Owners Card - New Benefits:
 1. **Investment Opportunities** - Earn returns on idle deposits
-2. **Eliminate Security Deposit Disputes** - Photo-backed inspections
+2. **Eliminate Rental Security Deposit Disputes** - Photo-backed inspections
 3. **Streamlined Property Management** - Rent collection, tenant screening, maintenance
 4. **Detailed Reporting & Analytics** - Track performance metrics
 
@@ -115,7 +115,7 @@ The home page has been significantly enhanced with improved copy, better value p
 - ✅ Property management
 - ✅ Rent collections & payment reminders
 - ✅ Property advertising (implied in tenant acquisition)
-- ✅ Security deposit disputes
+- ✅ Rental Security Deposit disputes
 - ✅ Maintenance management
 - ✅ Tenant acquisition & screening
 - ✅ Reporting and analytics

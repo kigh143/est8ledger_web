@@ -100,7 +100,7 @@
                             <ul class="text-sm text-green-700 space-y-2">
                                 <li class="flex items-start">
                                     <i class="bi bi-arrow-right text-green-600 mr-2 mt-0.5"></i>
-                                    Access your secure dashboard to manage security deposits
+                                    Access your secure dashboard to manage Rental Security Deposits
                                 </li>
                                 <li class="flex items-start">
                                     <i class="bi bi-arrow-right text-green-600 mr-2 mt-0.5"></i>

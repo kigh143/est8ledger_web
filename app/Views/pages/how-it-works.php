@@ -38,7 +38,7 @@
     <div class="container mx-auto px-4 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">
-                How est8Ledger Transforms Security Deposits
+                How est8Ledger Transforms Rental Security Deposits
             </h1>
             <p class="text-xl md:text-2xl mb-8 text-primary-100 animate-on-scroll">
                 Six simple steps to transparent, profitable deposit management
@@ -151,7 +151,7 @@
                     </h2>
                     
                     <p class="text-lg text-secondary-600 mb-8 leading-relaxed">
-                        Your security deposit is held in a licensed escrow account, not with the landlord. It's regulated by financial institutions, blockchain-recorded, and neither party can access without agreement. Fully insured and protected.
+                        Your Rental Security Deposit is held in a licensed escrow account, not with the landlord. It's regulated by financial institutions, blockchain-recorded, and neither party can access without agreement. Fully insured and protected.
                     </p>
                     
                     <ul class="space-y-3 mb-8">

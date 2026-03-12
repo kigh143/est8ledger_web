@@ -32,9 +32,9 @@ class BlogController extends BaseController
         $blogs = array_slice($allBlogs, $offset, $perPage);
 
         $data = [
-            'title' => 'Blog - Latest Insights on Security Deposits & Rental Management',
-            'description' => 'Stay updated with the latest insights on security deposit management, rental technology, and property management best practices.',
-            'keywords' => 'rental blog, security deposit tips, property management insights, blockchain rentals, tenant advice',
+            'title' => 'Blog - Latest Insights on Rental Security Deposits & Rental Management',
+            'description' => 'Stay updated with the latest insights on Rental Security Deposit management, rental technology, and property management best practices.',
+            'keywords' => 'rental blog, Rental Security Deposit tips, property management insights, blockchain rentals, tenant advice',
             'blogs' => $blogs,
             'currentPage' => $page,
             'totalPages' => $totalPages,

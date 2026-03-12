@@ -66,7 +66,7 @@
                     <div>
                         <h3 class="text-lg font-semibold text-blue-800 mb-2">Your Privacy Matters</h3>
                         <p class="text-blue-700 leading-relaxed">
-                            Your privacy is important to us. This policy outlines how est8Ledger collects, uses, and protects your information when you use our security deposit management platform.
+                            Your privacy is important to us. This policy outlines how est8Ledger collects, uses, and protects your information when you use our Rental Security Deposit management platform.
                         </p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     <h2 class="text-2xl font-bold text-gray-800">1. Introduction</h2>
                 </div>
                 <p class="text-gray-600 leading-relaxed">
-                    est8Ledger ("we," "our," or "us") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our security deposit management platform and related services.
+                    est8Ledger ("we," "our," or "us") is committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Rental Security Deposit management platform and related services.
                 </p>
             </div>
 
@@ -109,7 +109,7 @@
                             </div>
                             <div class="flex items-center text-primary-700">
                                 <i class="bi bi-check-circle-fill mr-2 text-primary-600"></i>
-                                Use our security deposit management services
+                                Use our Rental Security Deposit management services
                             </div>
                             <div class="flex items-center text-primary-700">
                                 <i class="bi bi-check-circle-fill mr-2 text-primary-600"></i>
@@ -144,7 +144,7 @@
                             </div>
                             <div class="flex items-start">
                                 <i class="bi bi-credit-card mr-3 text-accent-600 mt-1"></i>
-                                <span class="text-gray-700">Financial information related to security deposits</span>
+                                <span class="text-gray-700">Financial information related to Rental Security Deposits</span>
                             </div>
                         </div>
                         <div class="space-y-3">
@@ -215,7 +215,7 @@
                         <ul class="space-y-2 text-primary-700">
                             <li class="flex items-start">
                                 <i class="bi bi-check mr-2 text-primary-600 mt-1 flex-shrink-0"></i>
-                                Processing and managing security deposits
+                                Processing and managing Rental Security Deposits
                             </li>
                             <li class="flex items-start">
                                 <i class="bi bi-check mr-2 text-primary-600 mt-1 flex-shrink-0"></i>

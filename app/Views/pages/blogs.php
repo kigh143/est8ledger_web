@@ -22,7 +22,7 @@
                 Rental Industry Insights & News
             </h1>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Expert insights on security deposit management, tenant rights, landlord best practices, 
+                Expert insights on Rental Security Deposit management, tenant rights, landlord best practices, 
                 and the future of rental relationships in Uganda and East Africa.
             </p>
         </header>
@@ -41,7 +41,7 @@
                         <div class="bg-white rounded-lg shadow-lg p-12 text-center">
                             <i class="bi bi-inbox text-6xl text-gray-300 mb-4"></i>
                             <h3 class="text-xl font-semibold text-gray-900 mb-2">No articles found</h3>
-                            <p class="text-gray-600">Check back soon for more insights on rental management and security deposits.</p>
+                            <p class="text-gray-600">Check back soon for more insights on rental management and Rental Security Deposits.</p>
                         </div>
                     <?php else: ?>
                         <?php foreach ($blogs as $index => $blog): ?>
@@ -252,7 +252,7 @@
                     <div class="bg-blue-50 rounded-lg p-6">
                         <h3 class="text-lg font-bold text-gray-900 mb-4">Stay Updated</h3>
                         <p class="text-gray-600 mb-4">
-                            Get the latest insights on rental market trends and security deposit management.
+                            Get the latest insights on rental market trends and Rental Security Deposit management.
                         </p>
                         <form class="space-y-3">
                             <input type="email" 
@@ -299,7 +299,7 @@
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "est8Ledger Blog",
-    "description": "Expert insights on security deposit management, tenant rights, and rental industry trends in Uganda and East Africa",
+    "description": "Expert insights on Rental Security Deposit management, tenant rights, and rental industry trends in Uganda and East Africa",
     "url": "https://est8ledger.com/blogs",
     "publisher": {
         "@type": "Organization",
@@ -312,7 +312,7 @@
     "blogPost": [
         {
             "@type": "BlogPosting",
-            "headline": "The Hidden Cost of Security Deposit Disputes in Uganda's Rental Market",
+            "headline": "The Hidden Cost of Rental Security Deposit Disputes in Uganda's Rental Market",
             "url": "https://est8ledger.com/blogs/security-deposit-disputes-uganda",
             "datePublished": "2024-12-15",
             "author": {

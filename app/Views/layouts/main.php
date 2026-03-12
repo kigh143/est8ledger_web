@@ -139,9 +139,9 @@
     </script>
     
     <!-- SEO Meta Tags -->
-    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | End Security Deposit Disputes in Uganda & East Africa' ?></title>
+    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | End Rental Security Deposit Disputes in Uganda & East Africa' ?></title>
     <meta name="description" content="<?= isset($description) ? esc($description) : 'Uganda\'s first blockchain-secured deposit platform. Transparent inspections, profit-sharing deposits, and digital agreements for landlords and tenants. Join 1000+ users.' ?>">
-    <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'security deposit management Uganda, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, Uganda rental platform' ?>">
+    <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'Rental Security Deposit management Uganda, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, Uganda rental platform' ?>">
     <meta name="author" content="est8Ledger">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -149,8 +149,8 @@
     <link rel="canonical" href="<?= current_url() ?>">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?>">
-    <meta property="og:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
+    <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Rental Security Deposit Management' ?>">
+    <meta property="og:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle Rental Security Deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= current_url() ?>">
     <meta property="og:site_name" content="est8Ledger">
@@ -160,8 +160,8 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Security Deposit Management' ?>">
-    <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle security deposits with trust. Secure escrow accounts and transparent inspections.' ?>">
+    <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Rental Security Deposit Management' ?>">
+    <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle Rental Security Deposits with trust. Secure escrow accounts and transparent inspections.' ?>">
     <meta name="twitter:image" content="<?= isset($og_image) ? esc($og_image) : base_url('/logo_blue.png') ?>">
     
     <!-- Favicon -->
@@ -175,7 +175,7 @@
         "name": "est8Ledger",
         "url": "https://est8ledger.com",
         "logo": "https://est8ledger.com/logo_blue.png",
-        "description": "Uganda's first blockchain-secured security deposit management platform for landlords and tenants",
+        "description": "Uganda's first blockchain-secured Rental Security Deposit management platform for landlords and tenants",
         "sameAs": [
             "https://www.facebook.com/est8ledger",
             "https://www.twitter.com/est8ledger",
@@ -527,12 +527,14 @@
                     <img src="/long_logo.png" alt="est8Ledger" class="h-8">
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Home</a>
                     <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">How it Works</a>
                     <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">About Us</a>
                     <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">FAQs</a>
                     <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Blogs</a>
                     <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Contact</a>
+                    <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold text-white">
+                        Join Waiting List
+                    </button>
                     <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold text-white">
                         Join Waiting List
                     </button>
@@ -570,7 +572,7 @@
                     </button>
                 </div>
 
-                <p class="text-secondary-600 mb-6">Be among the first to experience secure, transparent security deposit management when we launch.</p>
+                <p class="text-secondary-600 mb-6">Be among the first to experience secure, transparent Rental Security Deposit management when we launch.</p>
 
                 <form id="demoForm" action="/join-waitinglist" method="POST">
                     <?= csrf_field() ?>
@@ -607,7 +609,7 @@
 
                     <div class="mb-6">
                         <label for="message" class="block text-sm font-semibold text-secondary-700 mb-2">What else do we need to address? (Optional)</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Tell us about your specific needs, challenges, or questions about security deposit management..."
+                        <textarea id="message" name="message" rows="3" placeholder="Tell us about your specific needs, challenges, or questions about Rental Security Deposit management..."
                                   class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"></textarea>
                     </div>
 
@@ -635,7 +637,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-12 pb-12 border-b border-secondary-700">
                 <div class="col-span-2">
                     <img src="/long_logo.png" alt="est8Ledger" class="h-14 mb-4">
-                    <p class="text-secondary-300 mb-6 leading-relaxed">est8Ledger is Uganda's leading blockchain-secured security deposit management platform. We help landlords, property managers, and tenants eliminate rental disputes through transparent property inspections, secure escrow accounts, and investment opportunities. Trusted for secure deposits, fair rent collections, and professional property management solutions.</p>
+                    <p class="text-secondary-300 mb-6 leading-relaxed">est8Ledger is Uganda's leading blockchain-secured Rental Security Deposit management platform. We help landlords, property managers, and tenants eliminate rental disputes through transparent property inspections, secure escrow accounts, and investment opportunities. Trusted for secure deposits, fair rent collections, and professional property management solutions.</p>
                     <div class="flex space-x-4">
                         <a href="https://www.linkedin.com/company/est8ledger/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Visit est8Ledger on LinkedIn">
                             <i class="bi bi-linkedin"></i>

@@ -63,8 +63,8 @@
             
             <!-- SEO-Optimized Headlines -->
             <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">
-                <span class="block md:hidden">Uganda Security Deposit Management Platform</span>
-                <span class="hidden md:block">End Security Deposit Disputes in Uganda & East Africa Forever</span>
+                <span class="block md:hidden">Uganda Rental Security Deposit Management Platform</span>
+                <span class="hidden md:block">End Rental Security Deposit Disputes in Uganda & East Africa Forever</span>
             </h1>
             
             <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed animate-on-scroll">
@@ -109,10 +109,10 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-6">
-                    Why 60% of Uganda Tenants Lose Security Deposits Unfairly
+                    Why 60% of Uganda Tenants Lose Rental Security Deposits Unfairly
                 </h2>
                 <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
-                    Across Uganda, Kenya, and Tanzania, <strong>$1.5 billion in security deposits</strong> are trapped in disputes, unfair deductions, and broken rental relationships every year
+                    Across Uganda, Kenya, and Tanzania, <strong>$1.5 billion in Rental Security Deposits</strong> are trapped in disputes, unfair deductions, and broken rental relationships every year
                 </p>
             </div>
             
@@ -139,7 +139,7 @@
                         <div class="flex items-start">
                             <div class="problem-stat w-12 h-12 rounded-xl flex items-center justify-center mr-4 text-white font-bold">$0</div>
                             <div>
-                                <h3 class="font-semibold text-secondary-900 mb-1">Zero Returns on Idle Security Deposit Money</h3>
+                                <h3 class="font-semibold text-secondary-900 mb-1">Zero Returns on Idle Rental Security Deposit Money</h3>
                                 <p class="text-secondary-600 text-sm">Billions in deposits earn nothing while inflation reduces purchasing power</p>
                             </div>
                         </div>
@@ -198,7 +198,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-6">
-                    How est8Ledger Solves Uganda's Security Deposit Crisis
+                    How est8Ledger Solves Uganda's Rental Security Deposit Crisis
                 </h2>
                 <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
                     The complete blockchain-secured solution: <strong>eliminate disputes</strong>, <strong>guarantee deposit recovery</strong>, and <strong>earn 8-12% annual profits</strong> on idle deposit money
@@ -422,7 +422,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-6">
-                    6 Simple Steps to Profitable Security Deposit Management
+                    6 Simple Steps to Profitable Rental Security Deposit Management
                 </h2>
                 <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
                     From digital agreements to profit distribution - the complete process takes less than 30 minutes
@@ -722,7 +722,7 @@
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16 animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-6">
-                    Uganda Security Deposit Management: Frequently Asked Questions
+                    Uganda Rental Security Deposit Management: Frequently Asked Questions
                 </h2>
                 <p class="text-xl text-secondary-600">
                     Everything landlords and tenants need to know about blockchain-secured rental escrow in East Africa
@@ -732,7 +732,7 @@
             <div class="space-y-6 animate-stagger">
                 <div class="bg-white rounded-xl p-6 shadow-sm stagger-item">
                     <h3 class="font-semibold text-secondary-900 mb-3">Is est8Ledger legal under Uganda's Landlord and Tenant Act 2022?</h3>
-                    <p class="text-secondary-600">Yes, est8Ledger fully complies with Uganda's rental laws and works exclusively with licensed financial institutions. Our escrow accounts meet all regulatory requirements for security deposit protection across Uganda, Kenya, and Tanzania.</p>
+                    <p class="text-secondary-600">Yes, est8Ledger fully complies with Uganda's rental laws and works exclusively with licensed financial institutions. Our escrow accounts meet all regulatory requirements for Rental Security Deposit protection across Uganda, Kenya, and Tanzania.</p>
                 </div>
                 
                 <div class="bg-white rounded-xl p-6 shadow-sm stagger-item">
@@ -757,7 +757,7 @@
                 
                 <div class="bg-white rounded-xl p-6 shadow-sm stagger-item">
                     <h3 class="font-semibold text-secondary-900 mb-3">What's the minimum deposit amount to earn 8-12% profit sharing?</h3>
-                    <p class="text-secondary-600">Any security deposit amount qualifies for profit sharing. Whether it's UGX 500,000 or UGX 2,000,000, your deposit earns returns through our regulated investment partnerships while remaining fully protected.</p>
+                    <p class="text-secondary-600">Any Rental Security Deposit amount qualifies for profit sharing. Whether it's UGX 500,000 or UGX 2,000,000, your deposit earns returns through our regulated investment partnerships while remaining fully protected.</p>
                 </div>
             </div>
         </div>
@@ -770,7 +770,7 @@
         <div class="max-w-4xl mx-auto text-center">
             <div class="animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    Join Uganda's Security Deposit Revolution
+                    Join Uganda's Rental Security Deposit Revolution
                 </h2>
                 <p class="text-xl mb-8 text-primary-100">
                     Be among the first 3,000 landlords and tenants to eliminate deposit disputes and earn 8-12% annual profits across East Africa
@@ -938,7 +938,7 @@
                     Simple. Secure. Profitable.
                 </h2>
                 <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
-                    Six steps to transform your security deposit experience
+                    Six steps to transform your Rental Security Deposit experience
                 </p>
             </div>
             
@@ -1402,7 +1402,7 @@
         <div class="max-w-4xl mx-auto text-center">
             <div class="animate-on-scroll">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    Ready to Transform Your Security Deposit Experience?
+                    Ready to Transform Your Rental Security Deposit Experience?
                 </h2>
                 <p class="text-xl mb-8 text-primary-100">
                     Join 2,500+ landlords and tenants already earning profits and

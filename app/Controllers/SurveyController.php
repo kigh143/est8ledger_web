@@ -24,8 +24,8 @@ class SurveyController extends Controller
         
         $data = [
             'title' => 'Surveys - Help Shape the Future of Rental Deposits',
-            'description' => 'Share your experience with security deposits and help us build better solutions for landlords and tenants.',
-            'keywords' => 'rental survey, security deposit feedback, tenant experience, landlord survey',
+            'description' => 'Share your experience with Rental Security Deposits and help us build better solutions for landlords and tenants.',
+            'keywords' => 'rental survey, Rental Security Deposit feedback, tenant experience, landlord survey',
             'surveys' => $surveys
         ];
 
@@ -47,7 +47,7 @@ class SurveyController extends Controller
         $data = [
             'title' => $survey['title'] . ' - est8Ledger Survey',
             'description' => $survey['description'],
-            'keywords' => 'survey, feedback, rental experience, security deposits',
+            'keywords' => 'survey, feedback, rental experience, Rental Security Deposits',
             'survey' => $survey
         ];
 

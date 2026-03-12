@@ -1,7 +1,7 @@
 {
   "id": "landlords-survey",
   "title": "Landlord & Property Manager Survey",
-  "description": "Help us understand your experience managing security deposits and tenant relationships. Your insights help us build better solutions for property management.",
+  "description": "Help us understand your experience managing Rental Security Deposits and tenant relationships. Your insights help us build better solutions for property management.",
   "estimated_time": "8-10 minutes",
   "version": "2.0",
   "created_at": "2025-10-02",
@@ -54,7 +54,7 @@
     {
       "id": "current_deposit_storage",
       "type": "radio",
-      "question": "How do you currently store and manage tenant security deposits?",
+      "question": "How do you currently store and manage tenant Rental Security Deposits?",
       "required": true,
       "options": [
         { "value": "personal_account", "label": "Personal bank account" },
@@ -123,7 +123,7 @@
     {
       "id": "deposit_challenges",
       "type": "checkbox",
-      "question": "What specific challenges do you face when managing security deposits? (Select all that apply)",
+      "question": "What specific challenges do you face when managing Rental Security Deposits? (Select all that apply)",
       "required": true,
       "options": [
         {
@@ -163,7 +163,7 @@
     {
       "id": "refund_timeline",
       "type": "radio",
-      "question": "On average, how long does it take you to return security deposits to tenants after move-out?",
+      "question": "On average, how long does it take you to return Rental Security Deposits to tenants after move-out?",
       "required": true,
       "options": [
         { "value": "within_7_days", "label": "Within 7 days" },
@@ -259,7 +259,7 @@
     {
       "id": "third_party_interest",
       "type": "radio",
-      "question": "Would you consider using a third-party  service to manage security deposits?",
+      "question": "Would you consider using a third-party  service to manage Rental Security Deposits?",
       "required": true,
       "options": [
         { "value": "definitely_yes", "label": "Definitely yes" },
@@ -431,7 +431,7 @@
     {
       "id": "additional_comments",
       "type": "textarea",
-      "question": "Please share any additional thoughts, experiences, or suggestions about managing security deposits.",
+      "question": "Please share any additional thoughts, experiences, or suggestions about managing Rental Security Deposits.",
       "required": false,
       "placeholder": "Your feedback helps us build better solutions for property managers and landlords..."
     }

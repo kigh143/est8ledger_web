@@ -5,12 +5,12 @@
 ### BEFORE:
 ```
 The definitive platform for secure tenancy agreements, transparent inspections, and 
-profit-sharing security deposits across Uganda and East Africa. Turn idle deposits into shared wealth.
+profit-sharing Rental Security Deposits across Uganda and East Africa. Turn idle deposits into shared wealth.
 ```
 
 ### AFTER:
 ```
-Manage security deposits with complete transparency. Get instant property inspections, 
+Manage Rental Security Deposits with complete transparency. Get instant property inspections, 
 earn returns on deposits, and eliminate rental disputes—all from your phone.
 ```
 
@@ -27,7 +27,7 @@ earn returns on deposits, and eliminate rental disputes—all from your phone.
 
 ### BEFORE:
 ```
-Security Deposits Are Broken
+Rental Security Deposits Are Broken
 ```
 
 ### AFTER:
@@ -116,7 +116,7 @@ an unalterable record of property condition
 ### AFTER - Feature 3:
 ```
 Professional Property Inspections
-Timestamped, geo-tagged inspections with photo evidence eliminate security deposit 
+Timestamped, geo-tagged inspections with photo evidence eliminate Rental Security Deposit 
 disputes. Compare move-in and move-out conditions with irrefutable documentation.
 ```
 
@@ -124,7 +124,7 @@ disputes. Compare move-in and move-out conditions with irrefutable documentation
 - "Professional" adds credibility
 - Emphasizes dispute elimination (key benefit)
 - More specific about comparison process
-- Better keywords: "property inspections," "security deposit disputes"
+- Better keywords: "property inspections," "Rental Security Deposit disputes"
 
 ---
 
@@ -137,7 +137,7 @@ disputes. Compare move-in and move-out conditions with irrefutable documentation
 
 ### AFTER Benefits:
 1. Investment Opportunities - Earn returns on idle deposits
-2. Eliminate Security Deposit Disputes - Photo-backed inspections
+2. Eliminate Rental Security Deposit Disputes - Photo-backed inspections
 3. Streamlined Property Management - Rent collection, tenant screening, maintenance
 4. Detailed Reporting & Analytics - Track performance metrics
 
@@ -214,7 +214,7 @@ All 8 priority keywords naturally incorporated:
 ✅ Property management - Hero, Problem, Solution, Why Choose sections
 ✅ Rent collections & payment reminders - Why Choose section, Feature grid
 ✅ Property advertising - Tenant acquisition (implied)
-✅ Security deposit disputes - Problem section, Solution section, Why Choose section
+✅ Rental Security Deposit disputes - Problem section, Solution section, Why Choose section
 ✅ Maintenance management - Solution section, Why Choose section
 ✅ Tenant acquisition & screening - Why Choose section, Feature grid
 ✅ Reporting and analytics - Why Choose section, Feature grid

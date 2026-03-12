@@ -47,7 +47,7 @@
 2. ✅ Property management
 3. ✅ Rent collections & payment reminders
 4. ✅ Property advertising (tenant acquisition)
-5. ✅ Security deposit disputes
+5. ✅ Rental Security Deposit disputes
 6. ✅ Maintenance management
 7. ✅ Tenant acquisition & screening
 8. ✅ Reporting and analytics
@@ -60,7 +60,7 @@
 - Long-tail keywords included
 
 ### Meta Tags:
-- Page title: "Blog - Latest Insights on Security Deposits & Rental Management"
+- Page title: "Blog - Latest Insights on Rental Security Deposits & Rental Management"
 - Meta description: Already optimized in main layout
 - Keywords: Already optimized in main layout
 

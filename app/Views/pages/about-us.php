@@ -41,7 +41,7 @@
                 </p>
 
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    But as we interacted with users, a pattern began to emerge. Many tenants were not just looking for homes—they were looking for fairness. One question kept coming up: <span class="italic font-semibold text-primary">"Can you help me recover my security deposit?"</span>
+                    But as we interacted with users, a pattern began to emerge. Many tenants were not just looking for homes—they were looking for fairness. One question kept coming up: <span class="italic font-semibold text-primary">"Can you help me recover my Rental Security Deposit?"</span>
                 </p>
 
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
@@ -49,7 +49,7 @@
                 </p>
 
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    We realized that while the rental listing market was crowded, trust between tenants and landlords was still broken. Security deposit disputes, unclear deductions, and lost payments were a common frustration.
+                    We realized that while the rental listing market was crowded, trust between tenants and landlords was still broken. Rental Security Deposit disputes, unclear deductions, and lost payments were a common frustration.
                 </p>
 
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
@@ -57,7 +57,7 @@
                 </p>
 
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    From that insight, we created est8Ledger, a platform built to restore trust in the rental ecosystem. Using blockchain technology, est8Ledger provides a transparent and tamper-proof way to manage security deposits, ensuring that both landlords and tenants have a fair and accountable experience.
+                    From that insight, we created est8Ledger, a platform built to restore trust in the rental ecosystem. Using blockchain technology, est8Ledger provides a transparent and tamper-proof way to manage Rental Security Deposits, ensuring that both landlords and tenants have a fair and accountable experience.
                 </p>
 
                 <p class="text-lg text-gray-600 mb-4 leading-relaxed">
@@ -119,7 +119,7 @@
     <div class="container mx-auto px-4">
         <div class="text-center mb-12 animate-on-scroll">
             <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">The Problem We Solve</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Security deposit disputes are costing the rental industry millions and damaging relationships</p>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Rental Security Deposit disputes are costing the rental industry millions and damaging relationships</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 animate-stagger">
