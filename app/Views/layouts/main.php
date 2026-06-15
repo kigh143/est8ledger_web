@@ -202,43 +202,44 @@
                 extend: {
                     colors: {
                         'primary': {
-                            DEFAULT: '#0d06c8', // Deep blue primary
-                            '50': '#f0f0ff',
-                            '100': '#e5e3ff',
-                            '200': '#ccc9ff',
-                            '300': '#a8a1ff',
-                            '400': '#7c6fff',
-                            '500': '#5940ff',
-                            '600': '#4c1df7',
+                            DEFAULT: '#3f0ee3', // Brand violet primary
+                            '50': '#f1edfe',
+                            '100': '#e4dcfd',
+                            '200': '#c9b9fb',
+                            '300': '#a98ff8',
+                            '400': '#845bf2',
+                            '500': '#6633ec',
+                            '600': '#5018e8',
                             '700': '#3f0ee3',
-                            '800': '#350bbf',
-                            '900': '#0d06c8'
+                            '800': '#340bb8',
+                            '900': '#2b0c92',
+                            '950': '#1a0654'
                         },
                         'secondary': {
-                            DEFAULT: '#374151', // Professional gray
-                            '50': '#f9fafb',
-                            '100': '#f3f4f6',
-                            '200': '#e5e7eb',
-                            '300': '#d1d5db',
-                            '400': '#9ca3af',
-                            '500': '#6b7280',
-                            '600': '#4b5563',
-                            '700': '#374151',
-                            '800': '#1f2937',
-                            '900': '#111827'
+                            DEFAULT: '#475569', // Professional slate
+                            '50': '#f8fafc',
+                            '100': '#f1f5f9',
+                            '200': '#e2e8f0',
+                            '300': '#cbd5e1',
+                            '400': '#94a3b8',
+                            '500': '#64748b',
+                            '600': '#475569',
+                            '700': '#334155',
+                            '800': '#1e293b',
+                            '900': '#0f172a'
                         },
                         'accent': {
-                            DEFAULT: '#9eff6b', // Bright green accent
-                            '50': '#f7ffe6',
-                            '100': '#efffcc',
-                            '200': '#deff99',
-                            '300': '#c8ff66',
-                            '400': '#b3ff33',
-                            '500': '#9eff6b',
-                            '600': '#7ee600',
-                            '700': '#6bcc00',
-                            '800': '#58b300',
-                            '900': '#459900'
+                            DEFAULT: '#7fe502', // Brand lime accent
+                            '50': '#f3ffe0',
+                            '100': '#e3ffba',
+                            '200': '#c8ff7d',
+                            '300': '#aef83f',
+                            '400': '#95ec12',
+                            '500': '#7fe502',
+                            '600': '#61b800',
+                            '700': '#498c03',
+                            '800': '#3b6e08',
+                            '900': '#335d0c'
                         },
                         'neutral': {
                             DEFAULT: '#f8fafc', // Clean background
@@ -310,41 +311,59 @@
         }
 
         /* Professional focus states */
-        button:focus, input:focus, textarea:focus, select:focus {
-            outline: 2px solid #0d06c8;
+        button:focus, input:focus, textarea:focus, select:focus, a:focus-visible {
+            outline: 2px solid #3f0ee3;
             outline-offset: 2px;
-            box-shadow: 0 0 0 4px rgba(13, 6, 200, 0.1);
+            box-shadow: 0 0 0 4px rgba(63, 14, 227, 0.12);
         }
 
         /* Professional button styles */
         .btn-primary {
-            background: linear-gradient(135deg, #0d06c8 0%, #350bbf 100%);
+            background: linear-gradient(135deg, #3f0ee3 0%, #5018e8 100%);
             border: none;
             transition: all 0.2s ease-in-out;
             font-weight: 600;
-            letter-spacing: 0.025em;
+            letter-spacing: 0.01em;
+            box-shadow: 0 8px 20px -8px rgba(63, 14, 227, 0.55);
         }
 
         .btn-primary:hover {
-            background: linear-gradient(135deg, #350bbf 0%, #4c1df7 100%);
+            background: linear-gradient(135deg, #340bb8 0%, #3f0ee3 100%);
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(13, 6, 200, 0.25);
+            box-shadow: 0 12px 26px -8px rgba(63, 14, 227, 0.6);
+        }
+
+        /* Accent CTA — use dark text for contrast on lime */
+        .btn-accent {
+            background: #7fe502;
+            color: #14210a;
+            border: none;
+            transition: all 0.2s ease-in-out;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            box-shadow: 0 8px 20px -8px rgba(127, 229, 2, 0.6);
+        }
+
+        .btn-accent:hover {
+            background: #95ec12;
+            transform: translateY(-1px);
+            box-shadow: 0 12px 26px -8px rgba(127, 229, 2, 0.7);
         }
 
         .btn-secondary {
             background: #ffffff;
-            border: 2px solid #e5e7eb;
-            color: #374151;
+            border: 2px solid #e2e8f0;
+            color: #334155;
             transition: all 0.2s ease-in-out;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .btn-secondary:hover {
-            border-color: #0d06c8;
-            color: #0d06c8;
-            background: #f0f0ff;
+            border-color: #3f0ee3;
+            color: #3f0ee3;
+            background: #f1edfe;
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(13, 6, 200, 0.1);
+            box-shadow: 0 4px 12px rgba(63, 14, 227, 0.1);
         }
 
         /* Professional card styles */
@@ -513,49 +532,100 @@
 
         .btn-primary:hover {
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(13, 6, 200, 0.3);
+            box-shadow: 0 12px 26px -8px rgba(63, 14, 227, 0.6);
         }
+
+        /* Utility helpers for the SaaS refresh */
+        .text-balance { text-wrap: balance; }
+
+        /* Offset anchored sections so the sticky header doesn't cover headings */
+        section[id], div[id="how-it-works"] { scroll-margin-top: 84px; }
+
+        .gradient-hero {
+            background:
+                radial-gradient(1200px 600px at 80% -10%, rgba(127, 229, 2, 0.10), transparent 60%),
+                radial-gradient(900px 500px at 0% 0%, rgba(63, 14, 227, 0.12), transparent 55%),
+                linear-gradient(180deg, #ffffff 0%, #f6f4ff 100%);
+        }
+
+        .gradient-cta {
+            background:
+                radial-gradient(900px 500px at 90% 10%, rgba(127, 229, 2, 0.18), transparent 55%),
+                linear-gradient(135deg, #3f0ee3 0%, #2b0c92 100%);
+        }
+
+        .card-lift {
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .card-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -16px rgba(15, 23, 42, 0.18);
+        }
+
+        /* Pricing-style ring for highlighted cards */
+        .ring-brand { box-shadow: 0 0 0 2px #3f0ee3, 0 24px 48px -20px rgba(63, 14, 227, 0.45); }
+
+        /* Marquee for trust logos */
+        @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        .animate-marquee { animation: marquee 28s linear infinite; }
+        @media (prefers-reduced-motion: reduce) {
+            .animate-marquee { animation: none; }
+        }
+
+        /* FAQ accordion */
+        details.faq > summary { list-style: none; cursor: pointer; }
+        details.faq > summary::-webkit-details-marker { display: none; }
+        details.faq[open] .faq-icon { transform: rotate(180deg); }
+        .faq-icon { transition: transform 0.2s ease; }
     </style>
     <?= $this->renderSection('css') ?>
 </head>
 <body class="bg-neutral-50">
     <!-- Professional Header -->
-    <header class="bg-white border-b border-secondary-200 sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <a href="/" class="flex items-center">
-                    <img src="/long_logo.png" alt="est8Ledger" class="h-8">
+    <header class="bg-white/90 backdrop-blur-md border-b border-secondary-200/70 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-3" aria-label="Primary">
+            <div class="flex justify-between items-center gap-4">
+                <a href="/" class="flex items-center shrink-0" aria-label="est8Ledger home">
+                    <img src="/long_logo.png" alt="est8Ledger" class="h-8 w-auto" width="109" height="32">
                 </a>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">How it Works</a>
-                    <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">About Us</a>
-                    <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">FAQs</a>
-                    <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Blogs</a>
-                    <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium">Contact</a>
-                    <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold text-white">
-                        Join Waiting List
-                    </button>
-                    <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg text-sm font-semibold text-white">
-                        Join Waiting List
-                    </button>
+                <div class="hidden lg:flex space-x-7 items-center">
+                    <a href="/#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">How it Works</a>
+                    <a href="/#solution" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Solution</a>
+                    <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">About</a>
+                    <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">FAQs</a>
+                    <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Blog</a>
+                    <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Contact</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden p-2 text-secondary-600">
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://app.est8ledger.com" class="text-secondary-700 hover:text-primary-700 transition-colors font-medium text-sm px-3 py-2">
+                        Sign In
+                    </a>
+                    <a href="https://app.est8ledger.com" class="btn-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold inline-flex items-center">
+                        Launch App
+                        <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+                <button id="mobile-menu-button" class="lg:hidden p-2 text-secondary-700" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
                     <i class="bi bi-list text-2xl" id="menu-icon"></i>
                 </button>
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-secondary-200">
-                <div class="flex flex-col space-y-4 pt-4">
-                    <a href="/" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Home</a>
-                    <a href="#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">How it Works</a>
-                    <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">About Us</a>
-                    <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">FAQs</a>
-                    <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Blog</a>
-                    <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium py-2">Contact</a>
-                    <button onclick="openDemoModal()" class="btn-primary px-6 py-2 rounded-lg font-semibold text-white w-full">
-                        Join Waiting List
-                    </button>
+            <div id="mobile-menu" class="hidden lg:hidden mt-3 pb-4 border-t border-secondary-200">
+                <div class="flex flex-col space-y-1 pt-3">
+                    <a href="/" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Home</a>
+                    <a href="/#how-it-works" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">How it Works</a>
+                    <a href="/#solution" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Solution</a>
+                    <a href="/about-us" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">About</a>
+                    <a href="/faqs" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">FAQs</a>
+                    <a href="/blogs" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Blog</a>
+                    <a href="/contact-us" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Contact</a>
+                    <a href="https://app.est8ledger.com" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Sign In</a>
+                    <a href="https://app.est8ledger.com" class="btn-primary text-white px-4 py-3 rounded-lg font-semibold mt-2 mx-1 text-center inline-flex items-center justify-center">
+                        Launch App
+                        <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -632,60 +702,112 @@
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-secondary-900 text-white py-16 mt-16">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-12 pb-12 border-b border-secondary-700">
-                <div class="col-span-2">
-                    <img src="/long_logo.png" alt="est8Ledger" class="h-14 mb-4">
-                    <p class="text-secondary-300 mb-6 leading-relaxed">est8Ledger is Uganda's leading blockchain-secured Rental Security Deposit management platform. We help landlords, property managers, and tenants eliminate rental disputes through transparent property inspections, secure escrow accounts, and investment opportunities. Trusted for secure deposits, fair rent collections, and professional property management solutions.</p>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/company/est8ledger/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Visit est8Ledger on LinkedIn">
+    <footer class="bg-secondary-900 text-white mt-20">
+        <!-- CTA strip -->
+        <div class="border-b border-white/10">
+            <div class="container mx-auto px-4 py-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-2xl font-extrabold text-white">Ready to make deposits dispute-proof?</h3>
+                        <p class="text-secondary-300 mt-1">Launch the est8Ledger app and manage rental deposits with full transparency.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+                        <a href="https://app.est8ledger.com" class="btn-accent px-6 py-3 rounded-xl inline-flex items-center justify-center">
+                            Launch App
+                            <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="/contact-us" class="px-6 py-3 rounded-xl font-semibold text-white border border-white/25 hover:bg-white/10 transition inline-flex items-center justify-center">
+                            Talk to Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link columns -->
+        <div class="container mx-auto px-4 py-14">
+            <div class="grid grid-cols-2 md:grid-cols-12 gap-10">
+                <!-- Brand -->
+                <div class="col-span-2 md:col-span-4">
+                    <img src="/long_logo.png" alt="est8Ledger" class="h-10 w-auto mb-5" width="136" height="40">
+                    <p class="text-secondary-400 leading-relaxed text-sm mb-6 max-w-xs">
+                        Blockchain-secured rental security deposit management. Escrow, digital tenancy agreements,
+                        and tamper-proof inspections that build trust between landlords and tenants across East Africa.
+                    </p>
+                    <div class="flex gap-2.5">
+                        <a href="https://www.linkedin.com/company/est8ledger/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 hover:border-primary-700 transition-colors" aria-label="est8Ledger on LinkedIn">
                             <i class="bi bi-linkedin"></i>
                         </a>
-                        <a href="https://www.crunchbase.com/organization/est8ledger" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="View est8Ledger on Crunchbase">
+                        <a href="https://www.crunchbase.com/organization/est8ledger" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 hover:border-primary-700 transition-colors" aria-label="est8Ledger on Crunchbase">
                             <i class="bi bi-graph-up"></i>
                         </a>
-                        <a href="mailto:info@est8ledger.com" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Email est8Ledger">
+                        <a href="mailto:info@est8ledger.com" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 hover:border-primary-700 transition-colors" aria-label="Email est8Ledger">
                             <i class="bi bi-envelope"></i>
                         </a>
-                        <a href="tel:+447930068728" class="w-10 h-10 bg-secondary-800 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 transition-colors" title="Call est8Ledger">
+                        <a href="tel:+447930068728" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 hover:border-primary-700 transition-colors" aria-label="Call est8Ledger">
                             <i class="bi bi-telephone"></i>
                         </a>
                     </div>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Platform</h4>
-                    <ul class="space-y-3">
-                        <li><a href="/" class="text-secondary-300 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#how-it-works" class="text-secondary-300 hover:text-white transition-colors">How it Works</a></li>
-                        <li><a href="/about-us" class="text-secondary-300 hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="/faqs" class="text-secondary-300 hover:text-white transition-colors">FAQs</a></li>
-                        <li><a href="/blogs" class="text-secondary-300 hover:text-white transition-colors">Blog</a></li>
+
+                <!-- Product -->
+                <div class="md:col-span-2">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-secondary-500 mb-4">Product</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/#solution" class="text-secondary-300 hover:text-white transition-colors">Solution</a></li>
+                        <li><a href="/#how-it-works" class="text-secondary-300 hover:text-white transition-colors">How it Works</a></li>
+                        <li><a href="https://app.est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Launch App</a></li>
+                        <li><a href="https://app.est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Sign In</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Support & Contact</h4>
-                    <ul class="space-y-3">
-                        <li><a href="/contact-us" class="text-secondary-300 hover:text-white transition-colors">Contact Us</a></li>
+
+                <!-- Company -->
+                <div class="md:col-span-2">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-secondary-500 mb-4">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/about-us" class="text-secondary-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="/blogs" class="text-secondary-300 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="/faqs" class="text-secondary-300 hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/contact-us" class="text-secondary-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="md:col-span-2">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-secondary-500 mb-4">Resources</h4>
+                    <ul class="space-y-3 text-sm">
                         <li><a href="/privacy-policy" class="text-secondary-300 hover:text-white transition-colors">Privacy Policy</a></li>
                         <li><a href="/terms-of-use" class="text-secondary-300 hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="mailto:info@est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Email Support</a></li>
+                        <li><a href="/landlord-and-tenant-act-2022.pdf" class="text-secondary-300 hover:text-white transition-colors">Tenancy Act 2022</a></li>
+                        <li><a href="mailto:info@est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Support</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="border-t border-secondary-700 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-secondary-400 text-sm">&copy; <?= date('Y') ?> est8Ledger. All rights reserved.</p>
-                    <div class="flex items-center mt-4 md:mt-0 space-x-6">
-                        <div class="flex items-center text-secondary-400 text-sm">
-                            <i class="bi bi-shield-check mr-2 text-accent-600"></i>
-                            Blockchain Secured
-                        </div>
-                        <div class="flex items-center text-secondary-400 text-sm">
-                            <i class="bi bi-lock mr-2 text-accent-600"></i>
-                            Bank-Grade Security
-                        </div>
+
+                <!-- Get the app -->
+                <div class="col-span-2 md:col-span-2">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-secondary-500 mb-4">Get the app</h4>
+                    <div class="flex flex-col gap-3">
+                        <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 hover:bg-white/10 transition-colors">
+                            <i class="bi bi-apple text-2xl text-white"></i>
+                            <span class="leading-tight"><span class="block text-[10px] text-secondary-400">Download on the</span><span class="block text-sm font-semibold text-white">App Store</span></span>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.rentalynk.est8ledger&hl=en" target="_blank" rel="noopener" class="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 hover:bg-white/10 transition-colors">
+                            <i class="bi bi-google-play text-xl text-white"></i>
+                            <span class="leading-tight"><span class="block text-[10px] text-secondary-400">Get it on</span><span class="block text-sm font-semibold text-white">Google Play</span></span>
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="border-t border-white/10">
+            <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-secondary-500 text-sm order-2 md:order-1">&copy; <?= date('Y') ?> est8Ledger. All rights reserved.</p>
+                <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 order-1 md:order-2">
+                    <span class="flex items-center text-secondary-400 text-xs font-medium"><i class="bi bi-shield-check mr-1.5 text-accent-500"></i>Blockchain Secured</span>
+                    <span class="flex items-center text-secondary-400 text-xs font-medium"><i class="bi bi-lock mr-1.5 text-accent-500"></i>Bank-Grade Security</span>
+                    <img src="/Built-on-XRPL-Color-Horizontal-White.png" alt="Built on the XRP Ledger" class="h-5 opacity-80" loading="lazy">
                 </div>
             </div>
         </div>
@@ -703,9 +825,18 @@
         function closeDemoModal() {
             document.getElementById('demoModal').classList.add('hidden');
             document.body.style.overflow = 'auto';
-            
+
             // Track modal close
             GA4Tracker.trackModalInteraction('waiting_list_modal', 'close');
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const btn = document.getElementById('mobile-menu-button');
+            if (mobileMenu) mobileMenu.classList.add('hidden');
+            if (menuIcon) { menuIcon.classList.remove('bi-x'); menuIcon.classList.add('bi-list'); }
+            if (btn) btn.setAttribute('aria-expanded', 'false');
         }
 
         // Close modal when clicking outside
@@ -735,18 +866,25 @@
             if (mobileMenuButton && mobileMenu) {
                 mobileMenuButton.addEventListener('click', function() {
                     const isHidden = mobileMenu.classList.contains('hidden');
-                    
+
                     if (isHidden) {
                         mobileMenu.classList.remove('hidden');
                         menuIcon.classList.remove('bi-list');
                         menuIcon.classList.add('bi-x');
+                        mobileMenuButton.setAttribute('aria-expanded', 'true');
                         GA4Tracker.trackNavigation('mobile_menu', 'open', 'mobile_menu');
                     } else {
                         mobileMenu.classList.add('hidden');
                         menuIcon.classList.remove('bi-x');
                         menuIcon.classList.add('bi-list');
+                        mobileMenuButton.setAttribute('aria-expanded', 'false');
                         GA4Tracker.trackNavigation('mobile_menu', 'close', 'mobile_menu');
                     }
+                });
+
+                // Close mobile menu when a link is tapped
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', closeMobileMenu);
                 });
             }
 

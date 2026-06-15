@@ -6,7 +6,45 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('pages/home');
+        $faqs = [
+            [
+                'question' => 'What is a rental security deposit and why do disputes happen?',
+                'answer' => 'A rental security deposit is money a tenant pays upfront to cover potential property damage, unpaid rent, or cleaning costs. Disputes happen at the end of a tenancy because there is usually no shared, tamper-proof evidence of the property condition at move-in versus move-out, so landlords and tenants disagree on what deductions are fair.'
+            ],
+            [
+                'question' => 'How does est8Ledger stop security deposit disputes?',
+                'answer' => 'est8Ledger holds the deposit in secure escrow, records a digital tenancy agreement, and captures timestamped, geo-tagged move-in and move-out inspections. Because every record is stored on a tamper-proof blockchain ledger, both parties see the same evidence — so deductions are based on facts, not arguments.'
+            ],
+            [
+                'question' => 'Who controls the deposit money — the landlord or est8Ledger?',
+                'answer' => 'Neither party can unilaterally take the money. Deposits are held in regulated escrow and released according to the signed agreement and the documented inspection results. This protects tenants from unfair withholding and protects landlords from tenants refusing legitimate deductions.'
+            ],
+            [
+                'question' => 'How does blockchain make deposit records trustworthy?',
+                'answer' => 'Every agreement, inspection, and transaction is written to a tamper-proof ledger built on the XRP Ledger (XRPL). Once recorded, the evidence cannot be secretly altered or deleted, creating a single source of truth that is cryptographically verifiable by tenants, landlords, and property managers.'
+            ],
+            [
+                'question' => 'Can my deposit earn returns while it is held?',
+                'answer' => 'Yes. With mutual agreement, deposits can be placed in low-risk money-market investments. Profits are shared transparently, so idle deposit money can work for both the tenant and the landlord instead of sitting untouched.'
+            ],
+            [
+                'question' => 'How fast are refunds processed at the end of a tenancy?',
+                'answer' => 'Because the move-out inspection is compared directly against the documented move-in baseline, refund calculations are clear and fast — typically days instead of the months a contested dispute can take.'
+            ],
+            [
+                'question' => 'Is est8Ledger available in Uganda and East Africa?',
+                'answer' => 'Yes. est8Ledger is built mobile-first for East Africa, with an initial focus on Uganda, Kenya, and Tanzania, and is expanding to more regions.'
+            ],
+        ];
+
+        $data = [
+            'title'       => 'Rental Security Deposit Escrow & Dispute Protection',
+            'description' => 'End rental security deposit disputes. est8Ledger uses blockchain escrow, digital tenancy agreements, and tamper-proof move-in/move-out inspections to protect landlords and tenants in Uganda & East Africa.',
+            'keywords'    => 'rental security deposit, security deposit disputes, deposit escrow, rental deposit protection, blockchain escrow Uganda, digital tenancy agreement, property inspection app, landlord tenant deposit, deposit refund, East Africa rental platform',
+            'faqs'        => $faqs,
+        ];
+
+        return view('pages/home', $data);
     }
 
     public function privacyPolicy(): string

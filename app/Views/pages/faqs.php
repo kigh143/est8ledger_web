@@ -1,102 +1,89 @@
 <?= $this->extend('layouts/main') ?>
 
+<?= $this->section('css') ?>
+<?php if (!empty($faqs)): ?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    <?php foreach ($faqs as $i => $faq): ?>
+    {
+      "@type": "Question",
+      "name": <?= json_encode($faq['question']) ?>,
+      "acceptedAnswer": { "@type": "Answer", "text": <?= json_encode($faq['answer']) ?> }
+    }<?= $i < count($faqs) - 1 ? ',' : '' ?>
+    <?php endforeach; ?>
+  ]
+}
+</script>
+<?php endif; ?>
+<?= $this->endSection() ?>
+
 <?= $this->section('content') ?>
 
-<!-- Hero Section -->
-<div class="relative bg-white py-20 lg:py-28 overflow-hidden">
-    <!-- Building Background Image -->
-    <div class="absolute inset-0">
-        <img src="/website_images/building.png" alt="" class="w-full h-full object-cover" aria-hidden="true">
-        <!-- Dark overlay for text readability -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60"></div>
-    </div>
-
-    <!-- Logo Background Pattern -->
-    <div class="absolute inset-0 opacity-[0.08]">
-        <img src="/logo_white.png" alt="" class="absolute top-10 left-10 w-48 h-48 object-contain" aria-hidden="true">
-        <img src="/logo_white.png" alt="" class="absolute bottom-20 right-10 w-64 h-64 object-contain" aria-hidden="true">
-    </div>
-
-    <div class="container mx-auto px-4 text-center relative z-10">
-        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight animate-on-scroll">
-            Frequently Asked
-            <span class="text-accent-400">Questions</span>
+<!-- ============================ HERO ============================ -->
+<section class="relative gradient-hero overflow-hidden">
+    <div class="container mx-auto px-4 pt-16 pb-20 lg:pt-24 lg:pb-24 text-center">
+        <div class="inline-flex items-center bg-primary-50 border border-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-accent-500 mr-2"></span>
+            Frequently asked
+        </div>
+        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-secondary-900 leading-[1.08] mb-6 text-balance max-w-4xl mx-auto">
+            Your
+            <span class="relative whitespace-nowrap">
+                <span class="relative z-10">questions</span>
+                <span class="absolute left-0 bottom-1 h-3 w-full bg-accent-300/70 rounded -z-0" aria-hidden="true"></span>
+            </span>
+            answered
         </h1>
-
-        <p class="text-lg lg:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed animate-on-scroll">
-            Find answers to common questions about est8Ledger's security, data protection, and how our platform works.
+        <p class="text-lg text-secondary-600 max-w-2xl mx-auto leading-relaxed">
+            Everything about rental security deposits, escrow, data protection, and how the est8Ledger platform works.
         </p>
     </div>
-</div>
+</section>
 
-<!-- FAQs Section -->
-<div class="section-padding bg-white">
+<!-- ============================ FAQ LIST ============================ -->
+<section class="section-padding bg-white">
     <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
-            <!-- FAQ Accordion -->
-            <div class="space-y-4 animate-stagger">
-                <?php foreach ($faqs as $index => $faq): ?>
-                    <div class="stagger-item border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-                        <button 
-                            class="faq-toggle w-full px-6 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 transition-colors flex items-center justify-between"
-                            onclick="toggleFAQ(this)"
-                            aria-expanded="false"
-                            aria-controls="faq-answer-<?= $index ?>">
-                            <span><?= htmlspecialchars($faq['question']) ?></span>
-                            <i class="bi bi-chevron-down text-primary transition-transform"></i>
-                        </button>
-                        <div 
-                            id="faq-answer-<?= $index ?>" 
-                            class="faq-answer hidden px-6 py-4 bg-gray-50 border-t border-gray-200">
-                            <p class="text-gray-600 leading-relaxed"><?= htmlspecialchars($faq['answer']) ?></p>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <?php foreach ($faqs as $faq): ?>
+            <details class="faq group bg-neutral-50 border border-secondary-200 rounded-xl px-6 py-5 hover:border-primary-200 transition-colors">
+                <summary class="flex items-center justify-between gap-4">
+                    <h2 class="text-base font-semibold text-secondary-900"><?= esc($faq['question']) ?></h2>
+                    <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-white border border-secondary-200 flex items-center justify-center">
+                        <i class="bi bi-chevron-down faq-icon text-primary-600"></i>
+                    </span>
+                </summary>
+                <p class="text-secondary-600 leading-relaxed mt-4"><?= esc($faq['answer']) ?></p>
+            </details>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ STILL HAVE QUESTIONS ============================ -->
+<section class="py-16 lg:py-20 bg-neutral-50">
+    <div class="container mx-auto px-4">
+        <div class="gradient-cta rounded-3xl px-8 py-14 lg:px-16 text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10" aria-hidden="true">
+                <i class="bi bi-patch-question text-white text-[10rem] absolute -bottom-6 -right-2"></i>
+            </div>
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 text-balance">Still have questions?</h2>
+                <p class="text-lg text-white/85 mb-8">Can't find what you're looking for? Our support team is happy to help.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact-us" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
+                        <i class="bi bi-chat-dots mr-2"></i>
+                        Contact Us
+                    </a>
+                    <button onclick="openDemoModal()" class="px-8 py-3.5 rounded-xl text-base font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition inline-flex items-center justify-center">
+                        Join the Waitlist
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Still Have Questions Section -->
-<div class="section-padding bg-gradient-to-r from-primary-50 to-accent-50">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Still Have Questions?</h2>
-        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Can't find the answer you're looking for? Our support team is here to help.</p>
-        <a href="/contact-us" class="bg-primary-700 hover:bg-primary-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center">
-            <i class="bi bi-chat-dots mr-2"></i>
-            Contact Us
-        </a>
-    </div>
-</div>
-
-<script>
-function toggleFAQ(button) {
-    const answerId = button.getAttribute('aria-controls');
-    const answer = document.getElementById(answerId);
-    const isExpanded = button.getAttribute('aria-expanded') === 'true';
-    
-    // Close all other FAQs
-    document.querySelectorAll('.faq-toggle').forEach(btn => {
-        if (btn !== button) {
-            btn.setAttribute('aria-expanded', 'false');
-            const id = btn.getAttribute('aria-controls');
-            document.getElementById(id).classList.add('hidden');
-            btn.querySelector('i').style.transform = 'rotate(0deg)';
-        }
-    });
-    
-    // Toggle current FAQ
-    if (isExpanded) {
-        answer.classList.add('hidden');
-        button.setAttribute('aria-expanded', 'false');
-        button.querySelector('i').style.transform = 'rotate(0deg)';
-    } else {
-        answer.classList.remove('hidden');
-        button.setAttribute('aria-expanded', 'true');
-        button.querySelector('i').style.transform = 'rotate(180deg)';
-    }
-}
-</script>
+</section>
 
 <?= $this->endSection() ?>
-

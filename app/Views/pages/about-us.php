@@ -2,227 +2,219 @@
 
 <?= $this->section('content') ?>
 
-<!-- Hero Section -->
-<div class="relative bg-white py-20 lg:py-28 overflow-hidden">
-    <!-- Building Background Image -->
-    <div class="absolute inset-0">
-        <img src="/website_images/building.png" alt="" class="w-full h-full object-cover" aria-hidden="true">
-        <!-- Dark overlay for text readability -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/60"></div>
-    </div>
-
-    <!-- Logo Background Pattern -->
-    <div class="absolute inset-0 opacity-[0.08]">
-        <img src="/logo_white.png" alt="" class="absolute top-10 left-10 w-48 h-48 object-contain" aria-hidden="true">
-        <img src="/logo_white.png" alt="" class="absolute bottom-20 right-10 w-64 h-64 object-contain" aria-hidden="true">
-    </div>
-
-    <div class="container mx-auto px-4 text-center relative z-10">
-        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight animate-on-scroll">
-            Our Story: Building
-            <span class="text-accent-400">Trust in Rentals</span>
+<!-- ============================ HERO ============================ -->
+<section class="relative gradient-hero overflow-hidden">
+    <div class="container mx-auto px-4 pt-16 pb-20 lg:pt-24 lg:pb-24 text-center">
+        <div class="inline-flex items-center bg-primary-50 border border-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-accent-500 mr-2"></span>
+            Our story
+        </div>
+        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-secondary-900 leading-[1.08] mb-6 text-balance max-w-4xl mx-auto">
+            Rebuilding
+            <span class="relative whitespace-nowrap">
+                <span class="relative z-10">trust</span>
+                <span class="absolute left-0 bottom-1 h-3 w-full bg-accent-300/70 rounded -z-0" aria-hidden="true"></span>
+            </span>
+            in rentals
         </h1>
-
-        <p class="text-lg lg:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed animate-on-scroll">
-            From a simple question about lost deposits, we built a platform to restore trust in rental relationships.
+        <p class="text-lg text-secondary-600 max-w-2xl mx-auto leading-relaxed">
+            From a simple question about lost deposits, we built a platform to make rental security deposits
+            transparent, secure, and fair for everyone.
         </p>
     </div>
-</div>
+</section>
 
-<!-- Mission Section -->
-<div class="section-padding bg-white">
+<!-- ============================ STORY ============================ -->
+<section class="section-padding bg-white">
     <div class="container mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
             <div class="animate-on-scroll">
-                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    It all started with Rentalynk, a property finder app we built to make house hunting simple and stress-free. Our goal was to help people find homes faster and connect seamlessly with property owners.
-                </p>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    But as we interacted with users, a pattern began to emerge. Many tenants were not just looking for homes—they were looking for fairness. One question kept coming up: <span class="italic font-semibold text-primary">"Can you help me recover my Rental Security Deposit?"</span>
-                </p>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    That question changed everything.
-                </p>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    We realized that while the rental listing market was crowded, trust between tenants and landlords was still broken. Rental Security Deposit disputes, unclear deductions, and lost payments were a common frustration.
-                </p>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    So, we decided to take a new path.
-                </p>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    From that insight, we created est8Ledger, a platform built to restore trust in the rental ecosystem. Using blockchain technology, est8Ledger provides a transparent and tamper-proof way to manage Rental Security Deposits, ensuring that both landlords and tenants have a fair and accountable experience.
-                </p>
-
-                <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                    While Rentalynk has evolved into a software company serving real estate professionals, est8Ledger stands independently, dedicated to making rental relationships more transparent, secure, and built on mutual trust.
-                </p>
-
-                <p class="text-lg text-gray-600 leading-relaxed">
-                    At our core, we believe the future of renting is not just about finding homes—it is about creating trustworthy experiences for everyone involved.
-                </p>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-6 text-balance">It started with one question</h2>
+                <div class="space-y-4 text-secondary-600 text-lg leading-relaxed">
+                    <p>
+                        It began with Rentalynk, a property-finder app we built to make house hunting simple. But as we
+                        talked to users, a pattern emerged — tenants weren't just looking for homes, they were looking
+                        for fairness. One question kept coming up:
+                    </p>
+                    <blockquote class="border-l-4 border-accent-500 bg-neutral-50 rounded-r-xl px-5 py-4 text-secondary-900 font-semibold italic">
+                        "Can you help me recover my rental security deposit?"
+                    </blockquote>
+                    <p>That question changed everything.</p>
+                    <p>
+                        The rental listing market was crowded, but trust between tenants and landlords was still broken.
+                        Disputes, unclear deductions, and lost payments were everywhere. So we took a new path and built
+                        <span class="font-semibold text-secondary-900">est8Ledger</span> — using blockchain to give both
+                        sides a transparent, tamper-proof way to manage deposits.
+                    </p>
+                    <p>
+                        Rentalynk has grown into a software company for real estate professionals, while est8Ledger stands
+                        on its own — dedicated to rental relationships built on accountability and mutual trust.
+                    </p>
+                </div>
             </div>
 
             <div class="relative animate-on-scroll">
-                <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-200">
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
-                                    <i class="bi bi-shield-check text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-gray-800">Transparency</h3>
-                                <p class="text-gray-600 mt-1">Every transaction and inspection is recorded and verifiable</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent text-gray-800">
-                                    <i class="bi bi-lock text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-gray-800">Security</h3>
-                                <p class="text-gray-600 mt-1">Blockchain-backed security with banking-level protection</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white">
-                                    <i class="bi bi-balance-scale text-xl"></i>
-                                </div>
-                            </div>
-                            <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-gray-800">Fairness</h3>
-                                <p class="text-gray-600 mt-1">Balanced solutions that protect both landlords and tenants</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="absolute -inset-6 bg-gradient-to-tr from-primary-200/40 to-accent-200/40 blur-3xl rounded-full -z-10" aria-hidden="true"></div>
+                <div class="rounded-2xl border border-secondary-200 bg-white shadow-2xl p-2">
+                    <img src="/app_mock_ups/tenancy_details.png" alt="est8Ledger platform interface showing tenancy and deposit details" class="w-full rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- The Problem Section -->
-<div class="section-padding bg-gray-50">
+<!-- ============================ VALUES ============================ -->
+<section class="section-padding bg-neutral-50">
     <div class="container mx-auto px-4">
-        <div class="text-center mb-12 animate-on-scroll">
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">The Problem We Solve</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Rental Security Deposit disputes are costing the rental industry millions and damaging relationships</p>
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <div class="inline-flex items-center bg-primary-50 border border-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+                <i class="bi bi-compass-fill mr-2"></i>
+                What we stand for
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-4 text-balance">The principles behind every feature</h2>
+            <p class="text-secondary-600">Three commitments guide how we design est8Ledger.</p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8 animate-stagger">
-            <div class="stagger-item bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <i class="bi bi-exclamation-triangle text-red-600 text-xl"></i>
+        <div class="grid md:grid-cols-3 gap-6 animate-stagger">
+            <?php
+            $values = [
+                ['bi-eye-fill', 'Transparency', 'Every transaction and inspection is recorded and independently verifiable by both parties.'],
+                ['bi-shield-lock-fill', 'Security', 'Blockchain-backed records and regulated escrow give your money bank-grade protection.'],
+                ['bi-balance-scale', 'Fairness', 'Balanced outcomes that protect landlords and tenants equally — no winners or losers.'],
+            ];
+            foreach ($values as $v): ?>
+            <div class="stagger-item card-lift bg-white rounded-2xl border border-secondary-200 p-8">
+                <div class="w-14 h-14 rounded-xl bg-primary-50 text-primary-700 flex items-center justify-center mb-5">
+                    <i class="bi <?= $v[0] ?> text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Lost Deposits</h3>
-                <p class="text-gray-600">Tenants lose thousands in deposits due to unclear deductions and lost documentation</p>
+                <h3 class="text-lg font-bold text-secondary-900 mb-2"><?= $v[1] ?></h3>
+                <p class="text-secondary-600 text-sm leading-relaxed"><?= $v[2] ?></p>
             </div>
-
-            <div class="stagger-item bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <i class="bi bi-clock-history text-orange-600 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Time-Consuming Disputes</h3>
-                <p class="text-gray-600">Resolving deposit disputes takes months and requires legal intervention</p>
-            </div>
-
-            <div class="stagger-item bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                    <i class="bi bi-graph-down text-purple-600 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Broken Trust</h3>
-                <p class="text-gray-600">Disputes damage relationships and create negative experiences for both parties</p>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
-</div>
+</section>
 
-<!-- Our Solution Section -->
-<div class="section-padding bg-white">
+<!-- ============================ TEAM ============================ -->
+<section class="section-padding bg-white">
     <div class="container mx-auto px-4">
-        <div class="text-center mb-12 animate-on-scroll">
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">Our Solution: est8Ledger</h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">A blockchain-powered platform that creates transparency and trust</p>
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <div class="inline-flex items-center bg-accent-100 text-accent-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+                <i class="bi bi-people-fill mr-2"></i>
+                Meet the team
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-4 text-balance">The people building est8Ledger</h2>
+            <p class="text-secondary-600">A team obsessed with making rental deposits fair across East Africa.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-12 items-center animate-stagger">
-            <div class="stagger-item">
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold">1</div>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Instant Documentation</h3>
-                            <p class="text-gray-600 mt-1">Geo-tagged property inspections create immutable records</p>
-                        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-stagger">
+            <?php
+            // Members render in leadership order. 'accent' flags the founder card highlight.
+            $team = [
+                ['Katende Hakim G', 'Founder &amp; CEO', 'KH', 'bi-rocket-takeoff-fill', true],
+                ['AbuBaker Ssemugoma', 'Chief Technology Officer', 'AS', 'bi-cpu-fill', false],
+                ['Eduku Patrick', 'Chief Financial Officer', 'EP', 'bi-graph-up-arrow', false],
+                ['Kisaakye Allan K', 'Chief Marketing Officer', 'KA', 'bi-megaphone-fill', false],
+            ];
+            foreach ($team as $m):
+                $highlight = $m[4];
+            ?>
+            <div class="stagger-item card-lift bg-white rounded-2xl border <?= $highlight ? 'border-primary-200 ring-1 ring-primary-100' : 'border-secondary-200' ?> p-7 text-center">
+                <div class="relative mx-auto w-24 h-24 mb-5">
+                    <div class="w-24 h-24 rounded-2xl <?= $highlight ? 'bg-gradient-to-br from-primary-600 to-primary-800' : 'bg-gradient-to-br from-secondary-700 to-secondary-900' ?> text-white flex items-center justify-center text-2xl font-extrabold tracking-wide">
+                        <?= $m[2] ?>
                     </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold">2</div>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Transparent Deductions</h3>
-                            <p class="text-gray-600 mt-1">All deductions are documented and visible to both parties</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold">3</div>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Secure Escrow</h3>
-                            <p class="text-gray-600 mt-1">Deposits held in regulated escrow with blockchain verification</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold">4</div>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-semibold text-gray-800">Instant Resolution</h3>
-                            <p class="text-gray-600 mt-1">Disputes resolved in days, not months</p>
-                        </div>
-                    </div>
+                    <span class="absolute -bottom-2 -right-2 w-9 h-9 rounded-xl bg-accent-500 text-accent-900 flex items-center justify-center shadow-md">
+                        <i class="bi <?= $m[3] ?> text-sm"></i>
+                    </span>
                 </div>
+                <h3 class="text-lg font-bold text-secondary-900"><?= $m[0] ?></h3>
+                <p class="text-sm font-semibold <?= $highlight ? 'text-primary-700' : 'text-secondary-500' ?> mt-1"><?= $m[1] ?></p>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ PROBLEM → SOLUTION ============================ -->
+<section class="section-padding bg-neutral-50">
+    <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center bg-red-50 text-red-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+                    <i class="bi bi-exclamation-triangle-fill mr-2"></i>
+                    The problem we solve
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-6 text-balance">Deposit disputes cost everyone</h2>
+                <ul class="space-y-4">
+                    <?php
+                    $problems = [
+                        ['bi-cash-stack', 'Lost deposits', 'Tenants lose money to unclear deductions and missing documentation.'],
+                        ['bi-clock-history', 'Drawn-out disputes', 'Resolving a contested deposit can take months and legal fees.'],
+                        ['bi-emoji-frown', 'Broken trust', 'Disputes sour relationships and damage reputations on both sides.'],
+                    ];
+                    foreach ($problems as $p): ?>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center"><i class="bi <?= $p[0] ?>"></i></span>
+                        <div>
+                            <p class="font-semibold text-secondary-900"><?= $p[1] ?></p>
+                            <p class="text-sm text-secondary-600"><?= $p[2] ?></p>
+                        </div>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
 
-            <div class="stagger-item">
-                <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-200">
-                    <img src="/app_mock_ups/tenancy_details.png" alt="est8Ledger platform interface" class="w-full rounded-lg shadow-lg">
+            <div>
+                <div class="inline-flex items-center bg-accent-100 text-accent-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+                    <i class="bi bi-check2-circle mr-2"></i>
+                    How est8Ledger fixes it
+                </div>
+                <div class="space-y-4">
+                    <?php
+                    $solutions = [
+                        ['1', 'Instant documentation', 'Geo-tagged, timestamped inspections create immutable move-in/move-out records.'],
+                        ['2', 'Transparent deductions', 'Every charge is documented and visible to both parties.'],
+                        ['3', 'Secure escrow', 'Deposits are held in regulated escrow with blockchain verification.'],
+                        ['4', 'Fast resolution', 'Clear evidence means refunds in days, not months.'],
+                    ];
+                    foreach ($solutions as $s): ?>
+                    <div class="flex items-start gap-4 bg-white rounded-xl border border-secondary-200 p-4 card-lift">
+                        <span class="flex-shrink-0 w-9 h-9 rounded-lg bg-primary-700 text-white flex items-center justify-center font-bold"><?= $s[0] ?></span>
+                        <div>
+                            <p class="font-semibold text-secondary-900"><?= $s[1] ?></p>
+                            <p class="text-sm text-secondary-600"><?= $s[2] ?></p>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<!-- CTA Section -->
-<div class="section-padding bg-gradient-to-r from-primary-700 to-primary-900">
-    <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready to Transform Your Rental Experience?</h2>
-        <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">Join landlords and tenants across East Africa who are already using est8Ledger to eliminate deposit disputes.</p>
-        <button onclick="openDemoModal()" class="bg-accent hover:bg-accent/90 text-gray-800 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center">
-            <i class="bi bi-chat-dots mr-2"></i>
-            Start Your Free Demo
-        </button>
+<!-- ============================ CTA ============================ -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="gradient-cta rounded-3xl px-8 py-14 lg:px-16 text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10" aria-hidden="true">
+                <i class="bi bi-buildings text-white text-[10rem] absolute -bottom-6 -right-2"></i>
+            </div>
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 text-balance">Ready to transform your rental experience?</h2>
+                <p class="text-lg text-white/85 mb-8">Join landlords and tenants across East Africa eliminating deposit disputes with est8Ledger.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="openDemoModal()" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
+                        Join the Waitlist
+                        <i class="bi bi-arrow-right ml-2"></i>
+                    </button>
+                    <a href="/contact-us" class="px-8 py-3.5 rounded-xl text-base font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition inline-flex items-center justify-center">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
 <?= $this->endSection() ?>
-
