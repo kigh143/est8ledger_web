@@ -19,8 +19,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Rental Security Deposit Escrow & Management",
-  "name": "est8Ledger Rental Security Deposit Protection",
+  "serviceType": "Ending Rental Security Deposit Disputes for good in Uganda & East Africa ",
+  "name": "est8Ledger | Rental Security Deposit Protection",
   "description": "Est8Ledger is the trust infrastructure for rental security deposits protecting tenant funds, giving landlords confidence, and making deposit returns faster, fairer, and transparent.",
   "provider": {
     "@type": "Organization",
@@ -35,7 +35,7 @@
   ],
   "audience": {
     "@type": "Audience",
-    "audienceType": "Landlords, Tenants, and Property Managers"
+    "audienceType": "Landlords, Tenants, Renters, and Property Managers"
   }
 }
 </script>

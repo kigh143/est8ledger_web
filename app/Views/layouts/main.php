@@ -139,9 +139,9 @@
     </script>
     
     <!-- SEO Meta Tags -->
-    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | End Rental Security Deposit Disputes in Uganda & East Africa' ?></title>
-    <meta name="description" content="<?= isset($description) ? esc($description) : 'Uganda\'s first blockchain-secured deposit platform. Transparent inspections, profit-sharing deposits, and digital agreements for landlords and tenants. Join 1000+ users.' ?>">
-    <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'Rental Security Deposit management Uganda, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, Uganda rental platform' ?>">
+    <title><?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Ending Rental Security Deposit Disputes for good in Uganda & East Africa' ?></title>
+    <meta name="description" content="<?= isset($description) ? esc($description) : 'Est8Ledger is the trust infrastructure for rental security deposits making deposit returns faster, fairer, and transparent.' ?>">
+    <meta name="keywords" content="<?= isset($keywords) ? esc($keywords) : 'Rental Security Deposit, prop-tech, fintech, rental escrow East Africa, blockchain deposits, landlord tenant disputes, profit sharing deposits, digital tenancy agreements, Uganda rental platform' ?>">
     <meta name="author" content="est8Ledger">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -149,8 +149,8 @@
     <link rel="canonical" href="<?= current_url() ?>">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Rental Security Deposit Management' ?>">
-    <meta property="og:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle Rental Security Deposits with trust. Secure escrow accounts, digital agreements, and transparent inspections for stress-free rentals.' ?>">
+    <meta property="og:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger |  Ending Rental Security Deposit Disputes for good in Uganda & East Africa' ?>">
+    <meta property="og:description" content="<?= isset($description) ? esc($description) : 'est8Ledger is the trust infrastructure for rental security deposits making deposit returns faster, fairer, and transparent.' ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?= current_url() ?>">
     <meta property="og:site_name" content="est8Ledger">
@@ -160,8 +160,8 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Secure & Transparent Rental Security Deposit Management' ?>">
-    <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'est8Ledger helps landlords and tenants handle Rental Security Deposits with trust. Secure escrow accounts and transparent inspections.' ?>">
+    <meta name="twitter:title" content="<?= isset($title) ? esc($title) . ' - est8Ledger' : 'est8Ledger | Ending Rental Security Deposit Disputes for good in Uganda & East Africa' ?>">
+    <meta name="twitter:description" content="<?= isset($description) ? esc($description) : 'est8Ledger is the trust infrastructure for rental security deposits making deposit returns faster, fairer, and transparent.' ?>">
     <meta name="twitter:image" content="<?= isset($og_image) ? esc($og_image) : base_url('/logo_blue.png') ?>">
     
     <!-- Favicon -->
@@ -676,8 +676,7 @@
                 <div class="col-span-2 md:col-span-4">
                     <img src="/long_logo.png" alt="est8Ledger" class="h-10 w-auto mb-5" width="136" height="40">
                     <p class="text-secondary-400 leading-relaxed text-sm mb-6 max-w-xs">
-                        Blockchain-secured rental security deposit management. Escrow, digital tenancy agreements,
-                        and tamper-proof inspections that build trust between landlords and tenants across East Africa.
+                        Est8Ledger is the trust infrastructure for rental security deposits protecting tenant funds, giving landlords confidence, and making deposit returns faster, fairer, and transparent.
                     </p>
                     <div class="flex gap-2.5">
                         <a href="https://www.linkedin.com/company/est8ledger/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-secondary-300 hover:text-white hover:bg-primary-700 hover:border-primary-700 transition-colors" aria-label="est8Ledger on LinkedIn">
