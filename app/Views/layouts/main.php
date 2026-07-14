@@ -598,11 +598,8 @@
                     <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Contact</a>
                 </div>
                 <div class="hidden lg:flex items-center gap-3">
-                    <a href="https://app.est8ledger.com" class="text-secondary-700 hover:text-primary-700 transition-colors font-medium text-sm px-3 py-2">
-                        Sign In
-                    </a>
-                    <a href="https://app.est8ledger.com" class="btn-primary text-white px-5 py-2.5 rounded-lg text-sm font-semibold inline-flex items-center">
-                        Launch App
+                    <a href="https://app.est8ledger.com" class="btn-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold inline-flex items-center">
+                        PM Platform
                         <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
                     </a>
                 </div>
@@ -621,80 +618,14 @@
                     <a href="/faqs" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">FAQs</a>
                     <a href="/blogs" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Blog</a>
                     <a href="/contact-us" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Contact</a>
-                    <a href="https://app.est8ledger.com" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Sign In</a>
-                    <a href="https://app.est8ledger.com" class="btn-primary text-white px-4 py-3 rounded-lg font-semibold mt-2 mx-1 text-center inline-flex items-center justify-center">
-                        Launch App
+                    <a href="https://app.est8ledger.com" class="btn-primary text-white px-4 py-3 rounded-xl font-semibold mt-2 mx-1 text-center inline-flex items-center justify-center">
+                        PM Platform
                         <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
                     </a>
                 </div>
             </div>
         </nav>
     </header>
-
-    <!-- Demo Request Modal -->
-    <div id="demoModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
-        <div class="flex items-center justify-center min-h-screen p-4">
-            <div class="bg-white rounded-lg max-w-md w-full p-6">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-bold text-secondary-900">Join the est8Ledger Waiting List</h2>
-                    <button onclick="closeDemoModal()" class="text-secondary-400 hover:text-secondary-600 p-1">
-                        <i class="bi bi-x-lg text-xl"></i>
-                    </button>
-                </div>
-
-                <p class="text-secondary-600 mb-6">Be among the first to experience secure, transparent Rental Security Deposit management when we launch.</p>
-
-                <form id="demoForm" action="/join-waitinglist" method="POST">
-                    <?= csrf_field() ?>
-
-                    <div class="mb-5">
-                        <label for="name" class="block text-sm font-semibold text-secondary-700 mb-2">Full Name *</label>
-                        <input type="text" id="name" name="name" required
-                               class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
-                    </div>
-
-                    <div class="mb-5">
-                        <label for="email" class="block text-sm font-semibold text-secondary-700 mb-2">Email Address *</label>
-                        <input type="email" id="email" name="email" required
-                               class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
-                    </div>
-
-                    <div class="mb-5">
-                        <label for="user_type" class="block text-sm font-semibold text-secondary-700 mb-2">Professional Role *</label>
-                        <select id="user_type" name="user_type" required
-                                class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
-                            <option value="">Select your role</option>
-                            <option value="landlord">Property Owner</option>
-                            <option value="property_manager">Property Manager</option>
-                            <option value="tenant">Tenant</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-5">
-                        <label for="phone" class="block text-sm font-semibold text-secondary-700 mb-2">Phone Number</label>
-                        <input type="tel" id="phone" name="phone"
-                               class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
-                    </div>
-
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-semibold text-secondary-700 mb-2">What else do we need to address? (Optional)</label>
-                        <textarea id="message" name="message" rows="3" placeholder="Tell us about your specific needs, challenges, or questions about Rental Security Deposit management..."
-                                  class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"></textarea>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <button type="submit" class="flex-1 btn-primary px-4 py-3 rounded-lg font-semibold text-white">
-                            Join Waiting List
-                        </button>
-                        <button type="button" onclick="closeDemoModal()" class="px-4 py-3 btn-secondary rounded-lg font-medium">
-                            Cancel
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- Main Content -->
     <main>
@@ -709,11 +640,11 @@
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
                     <div class="text-center lg:text-left">
                         <h3 class="text-2xl font-extrabold text-white">Ready to make deposits dispute-proof?</h3>
-                        <p class="text-secondary-300 mt-1">Launch the est8Ledger app and manage rental deposits with full transparency.</p>
+                        <p class="text-secondary-300 mt-1">Manage rental deposits with full transparency on the est8Ledger PM Platform.</p>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-3 shrink-0">
                         <a href="https://app.est8ledger.com" class="btn-accent px-6 py-3 rounded-xl inline-flex items-center justify-center">
-                            Launch App
+                            PM Platform
                             <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
                         </a>
                         <a href="/contact-us" class="px-6 py-3 rounded-xl font-semibold text-white border border-white/25 hover:bg-white/10 transition inline-flex items-center justify-center">
@@ -756,7 +687,7 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="/#solution" class="text-secondary-300 hover:text-white transition-colors">Solution</a></li>
                         <li><a href="/#how-it-works" class="text-secondary-300 hover:text-white transition-colors">How it Works</a></li>
-                        <li><a href="https://app.est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Launch App</a></li>
+                        <li><a href="https://app.est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">PM Platform</a></li>
                         <li><a href="https://app.est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Sign In</a></li>
                     </ul>
                 </div>
@@ -814,22 +745,6 @@
     </footer>
 
     <script>
-        function openDemoModal() {
-            document.getElementById('demoModal').classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-            
-            // Track modal open
-            GA4Tracker.trackModalInteraction('waiting_list_modal', 'open');
-        }
-
-        function closeDemoModal() {
-            document.getElementById('demoModal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
-
-            // Track modal close
-            GA4Tracker.trackModalInteraction('waiting_list_modal', 'close');
-        }
-
         function closeMobileMenu() {
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
@@ -838,24 +753,6 @@
             if (menuIcon) { menuIcon.classList.remove('bi-x'); menuIcon.classList.add('bi-list'); }
             if (btn) btn.setAttribute('aria-expanded', 'false');
         }
-
-        // Close modal when clicking outside
-        document.getElementById('demoModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeDemoModal();
-                GA4Tracker.trackModalInteraction('waiting_list_modal', 'close_outside_click');
-            }
-        });
-
-        // Track form submission
-        document.getElementById('demoForm').addEventListener('submit', function(e) {
-            const formData = new FormData(this);
-            GA4Tracker.trackFormSubmission('waiting_list', 'demoForm', {
-                user_type: formData.get('user_type'),
-                has_phone: formData.get('phone') ? 'yes' : 'no',
-                has_message: formData.get('message') ? 'yes' : 'no'
-            });
-        });
 
         // Mobile menu functionality with tracking
         document.addEventListener('DOMContentLoaded', function() {

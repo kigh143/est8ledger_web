@@ -187,7 +187,7 @@
                 <p class="text-white/85">Manage your rental deposits the transparent, dispute-proof way.</p>
             </div>
             <a href="https://app.est8ledger.com" class="btn-accent px-8 py-3.5 rounded-xl inline-flex items-center justify-center shrink-0 relative z-10">
-                Launch App <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
+                PM Platform <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
             </a>
         </div>
     </div>

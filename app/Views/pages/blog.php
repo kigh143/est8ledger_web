@@ -203,7 +203,7 @@
                 <i class="bi bi-arrow-left mr-2"></i> Back to all articles
             </a>
             <a href="https://app.est8ledger.com" class="btn-primary text-white px-6 py-3 rounded-xl inline-flex items-center justify-center">
-                Launch App <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
+                PM Platform <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
             </a>
         </div>
     </div>

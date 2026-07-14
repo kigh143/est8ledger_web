@@ -71,30 +71,38 @@
                 </div>
 
                 <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-secondary-900 leading-[1.08] mb-6 text-balance">
-                    End rental
+                    Ending Rental
                     <span class="relative whitespace-nowrap">
-                        <span class="relative z-10">security deposit</span>
+                        <span class="relative z-10">Security Deposit</span>
                         <span class="absolute left-0 bottom-1 h-3 w-full bg-accent-300/70 rounded -z-0" aria-hidden="true"></span>
                     </span>
-                    disputes for good
+                    Disputes for good
                 </h1>
 
                 <p class="text-lg text-secondary-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                     est8Ledger holds deposits in <span class="font-semibold text-secondary-900">secure escrow</span>,
                     captures <span class="font-semibold text-secondary-900">tamper-proof move-in &amp; move-out inspections</span>,
-                    and signs <span class="font-semibold text-secondary-900">digital tenancy agreements</span> —
+                    and signs <span class="font-semibold text-secondary-900">digital tenancy agreements</span>,
                     so landlords and tenants finally trust the same evidence.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                    <button onclick="openDemoModal()" class="btn-primary text-white px-7 py-3.5 rounded-xl font-semibold text-base inline-flex items-center justify-center">
-                        Join the Waitlist
-                        <i class="bi bi-arrow-right ml-2"></i>
-                    </button>
-                    <button onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})" class="btn-secondary px-7 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
-                        <i class="bi bi-play-circle mr-2"></i>
-                        See How It Works
-                    </button>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
+                    <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" target="_blank" rel="noopener"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-secondary-900 text-white font-semibold text-sm shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                        <i class="bi bi-apple text-xl"></i>
+                        <span class="text-left leading-tight">
+                            <span class="block text-[10px] font-normal text-white/70">Download on the</span>
+                            <span class="block">App Store</span>
+                        </span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.rentalynk.est8ledger&hl=en" target="_blank" rel="noopener"
+                       class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-white text-secondary-900 font-semibold text-sm border border-secondary-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">
+                        <i class="bi bi-google-play text-lg"></i>
+                        <span class="text-left leading-tight">
+                            <span class="block text-[10px] font-normal text-secondary-500">Get it on</span>
+                            <span class="block">Google Play</span>
+                        </span>
+                    </a>
                 </div>
 
                 <!-- Inline trust signals -->
@@ -105,18 +113,18 @@
                 </div>
             </div>
 
-            <!-- App mockup -->
+            <!-- Hero illustration -->
             <div class="relative">
                 <div class="absolute -inset-6 bg-gradient-to-tr from-primary-200/40 to-accent-200/40 blur-3xl rounded-full -z-10" aria-hidden="true"></div>
-                <div class="relative mx-auto max-w-sm">
-                    <div class="rounded-[2rem] border border-secondary-200 bg-white shadow-2xl p-2">
-                        <img src="/app_mock_ups/active_tenancy.png"
-                             alt="est8Ledger mobile app showing an active tenancy with deposit status and inspection records"
-                             class="w-full h-auto rounded-[1.6rem]"
-                             width="640" height="1280" fetchpriority="high">
+                <div class="relative mx-auto max-w-lg lg:max-w-xl">
+                    <div class="rounded-[2rem] overflow-hidden shadow-2xl">
+                        <img src="/homepageImage.png"
+                             alt="Illustration of a landlord and tenant securely managing a rental security deposit through est8Ledger, protected by escrow, a signed digital agreement, and a shared record of trust"
+                             class="w-full h-auto"
+                             width="1536" height="1024" fetchpriority="high">
                     </div>
                     <!-- Floating stat card -->
-                    <div class="hidden sm:flex absolute -left-6 bottom-16 bg-white rounded-xl shadow-xl border border-secondary-100 px-4 py-3 items-center gap-3">
+                    <div class="hidden sm:flex absolute -left-6 bottom-6 bg-white rounded-xl shadow-xl border border-secondary-100 px-4 py-3 items-center gap-3">
                         <div class="w-10 h-10 rounded-lg bg-accent-100 flex items-center justify-center">
                             <i class="bi bi-cash-coin text-accent-700"></i>
                         </div>
@@ -125,7 +133,7 @@
                             <p class="text-sm font-bold text-secondary-900">Secured in escrow</p>
                         </div>
                     </div>
-                    <div class="hidden sm:flex absolute -right-4 top-12 bg-white rounded-xl shadow-xl border border-secondary-100 px-4 py-3 items-center gap-3">
+                    <div class="hidden sm:flex absolute -right-4 top-6 bg-white rounded-xl shadow-xl border border-secondary-100 px-4 py-3 items-center gap-3">
                         <div class="w-10 h-10 rounded-lg bg-primary-50 flex items-center justify-center">
                             <i class="bi bi-camera text-primary-700"></i>
                         </div>
@@ -157,56 +165,87 @@
 </section>
 
 <!-- ============================ THE PROBLEM ============================ -->
-<section class="section-padding bg-neutral-50">
+<section class="section-padding bg-[#dcfd74]  overflow-hidden">
     <div class="container mx-auto px-4">
-        <div class="grid lg:grid-cols-2 gap-14 items-center">
-            <div class="order-2 lg:order-1 relative">
-                <div class="rounded-2xl overflow-hidden shadow-xl border border-secondary-100">
-                    <img src="/website_images/argument.jpeg"
-                         alt="A landlord and tenant arguing over a withheld rental security deposit"
-                         class="w-full h-auto object-cover" loading="lazy">
-                </div>
-                <div class="absolute -bottom-5 left-6 right-6 bg-white rounded-xl shadow-lg border border-secondary-100 p-4 flex items-center gap-3">
-                    <i class="bi bi-exclamation-octagon-fill text-red-500 text-2xl"></i>
-                    <p class="text-sm text-secondary-700 font-medium">Most disputes come down to one thing: <span class="font-bold">no shared proof.</span></p>
+        <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16 animate-on-scroll">
+            <div class="inline-flex items-center bg-red-500 text-white px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+                <i class="bi bi-exclamation-triangle-fill mr-2"></i>
+                The deposit problem
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-5 text-balance">
+                When the tenancy ends, the fight over the deposit begins
+            </h2>
+            <p class="text-lg text-secondary-600 leading-relaxed">
+                Deposits are paid in cash, held informally, and judged from memory. With no neutral record of the
+                property's condition, every refund turns into a standoff.
+            </p>
+        </div>
+
+        <?php
+        $problems = [
+            ['bi-arrow-counterclockwise', 'Should the deposit be returned at all?', 'Endless back-and-forth with no neutral referee.'],
+            ['bi-hammer', 'Damage, unpaid rent &amp; cleaning claims', 'Charges asserted without dated, verifiable evidence.'],
+            ['bi-cash-stack', 'Landlords withholding deposits unfairly', 'Money disappears with no breakdown or accountability.'],
+            ['bi-x-octagon', 'Tenants refusing legitimate deductions', 'Genuine damage gets disputed because trust is gone.'],
+            ['bi-camera-video-off', 'No evidence of move-in vs move-out condition', 'Nobody documented the property, so it is one word against another.'],
+            ['bi-emoji-frown', 'Broken trust between landlords &amp; tenants', 'Each side assumes the worst of the other.'],
+        ];
+        // Desktop-only placement: each card overlaps the image edge it's assigned to.
+        $positions = [
+            'top-4 -left-8 -rotate-3',
+            'top-4 -right-8 rotate-3',
+            'top-1/2 -translate-y-1/2 -left-12 rotate-2',
+            'top-1/2 -translate-y-1/2 -right-12 -rotate-2',
+            'bottom-4 -left-6 -rotate-1',
+            'bottom-4 -right-6 rotate-1',
+        ];
+        $imgAlt = 'A landlord and tenant arguing over a withheld rental security deposit';
+        ?>
+
+        <!-- Desktop/tablet-large: bigger image with scattered cards overlapping its edges -->
+        <div class="hidden lg:block relative max-w-4xl mx-auto py-4">
+            <div class="relative z-0 mx-auto w-full max-w-2xl animate-scale">
+                <div class="rounded-[2rem] overflow-hidden shadow-2xl border border-secondary-100">
+                    <img src="/website_images/argument.jpeg" alt="<?= $imgAlt ?>"
+                         class="w-full h-auto object-cover" width="1168" height="880" loading="lazy">
                 </div>
             </div>
 
-            <div class="order-1 lg:order-2">
-                <div class="inline-flex items-center bg-red-50 text-red-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
-                    <i class="bi bi-exclamation-triangle-fill mr-2"></i>
-                    The deposit problem
-                </div>
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-5 text-balance">
-                    When the tenancy ends, the fight over the deposit begins
-                </h2>
-                <p class="text-lg text-secondary-600 mb-8 leading-relaxed">
-                    Deposits are paid in cash, held informally, and judged from memory. With no neutral record of the
-                    property's condition, every refund turns into a standoff.
-                </p>
-
-                <ul class="space-y-4">
-                    <?php
-                    $problems = [
-                        ['bi-arrow-counterclockwise', 'Should the deposit be returned at all?', 'Endless back-and-forth with no neutral referee.'],
-                        ['bi-hammer', 'Damage, unpaid rent &amp; cleaning claims', 'Charges asserted without dated, verifiable evidence.'],
-                        ['bi-cash-stack', 'Landlords withholding deposits unfairly', 'Money disappears with no breakdown or accountability.'],
-                        ['bi-x-octagon', 'Tenants refusing legitimate deductions', 'Genuine damage gets disputed because trust is gone.'],
-                        ['bi-camera-video-off', 'No evidence of move-in vs move-out condition', 'Nobody documented the property — so it is one word against another.'],
-                        ['bi-emoji-frown', 'Broken trust between landlords &amp; tenants', 'Each side assumes the worst of the other.'],
-                    ];
-                    foreach ($problems as $p): ?>
-                    <li class="flex items-start gap-4">
-                        <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
-                            <i class="bi <?= $p[0] ?>"></i>
+            <div class="animate-stagger">
+                <?php foreach ($problems as $i => $p): ?>
+                <div class="absolute z-10 w-52 xl:w-60 <?= $positions[$i] ?>">
+                    <div class="stagger-item card-lift bg-white rounded-xl border border-secondary-100 shadow-lg p-4 flex items-start gap-3">
+                        <span class="flex-shrink-0 w-9 h-9 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
+                            <i class="bi <?= $p[0] ?> text-sm"></i>
                         </span>
                         <div>
-                            <p class="font-semibold text-secondary-900"><?= $p[1] ?></p>
-                            <p class="text-sm text-secondary-600"><?= $p[2] ?></p>
+                            <p class="font-semibold text-secondary-900 text-xs leading-snug"><?= $p[1] ?></p>
+                            <p class="text-[11px] text-secondary-600 mt-1 leading-snug"><?= $p[2] ?></p>
                         </div>
-                    </li>
-                    <?php endforeach; ?>
-                </ul>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Mobile/tablet: image on top, problems stacked cleanly below (no overlap) -->
+        <div class="lg:hidden">
+            <div class="mx-auto w-full max-w-sm sm:max-w-md rounded-[2rem] overflow-hidden shadow-xl border border-secondary-100 mb-8 animate-scale">
+                <img src="/website_images/argument.jpeg" alt="<?= $imgAlt ?>"
+                     class="w-full h-auto object-cover" width="1168" height="880" loading="lazy">
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto animate-stagger">
+                <?php foreach ($problems as $p): ?>
+                <div class="stagger-item card-lift bg-white rounded-xl border border-secondary-100 shadow-sm p-4 flex items-start gap-3">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-red-50 text-red-600 flex items-center justify-center">
+                        <i class="bi <?= $p[0] ?>"></i>
+                    </span>
+                    <div>
+                        <p class="font-semibold text-secondary-900 text-sm"><?= $p[1] ?></p>
+                        <p class="text-xs text-secondary-600 mt-1"><?= $p[2] ?></p>
+                    </div>
+                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -225,14 +264,14 @@
             </h2>
             <p class="text-lg text-secondary-600">
                 est8Ledger replaces cash-in-hand deposits and faded memories with escrow, digital agreements, and
-                tamper-proof records — a single source of truth from move-in to refund.
+                tamper-proof records; a single source of truth from move-in to refund.
             </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-stagger">
             <?php
             $pillars = [
-                ['bi-safe2', 'Secure escrow', 'Deposits are held in regulated escrow — not in a landlord\'s pocket — and released only per the signed agreement and inspection results.'],
+                ['bi-safe2', 'Secure escrow', 'Deposits are held in regulated escrow not in a landlord\'s pocket  and released only per the signed agreement and inspection results.'],
                 ['bi-file-earmark-text', 'Digital tenancy agreements', 'Terms, deposit amount, and deduction rules are signed digitally and stored, so expectations are clear from day one.'],
                 ['bi-camera2', 'Verified inspections', 'Geo-tagged, timestamped photo inspections at move-in and move-out create an objective before-and-after record.'],
                 ['bi-link-45deg', 'Tamper-proof ledger', 'Every agreement, inspection, and payout is written to a blockchain ledger that cannot be secretly altered.'],
@@ -277,7 +316,7 @@
                 How it works
             </div>
             <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-5 text-balance">
-                Your deposit's journey — documented at every step
+                Your deposit's journey documented at every step
             </h2>
             <p class="text-lg text-secondary-600">
                 Six clear stages take a deposit from agreement to refund, with verifiable evidence captured along the way.
@@ -287,9 +326,9 @@
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 animate-stagger">
             <?php
             $steps = [
-                ['1', 'bi-file-earmark-text', 'Prepare &amp; sign agreement', 'A digital tenancy agreement sets standardized terms, the deposit amount, and clear deduction rules — signed by both parties.', ['Legal compliance', 'Digital signatures', 'Standardized terms']],
+                ['1', 'bi-file-earmark-text', 'Prepare &amp; sign agreement', 'A digital tenancy agreement sets standardized terms, the deposit amount, and clear deduction rules, signed by both parties.', ['Legal compliance', 'Digital signatures', 'Standardized terms']],
                 ['2', 'bi-camera', 'Move-in inspection', 'Geo-tagged, timestamped photos record the exact condition of the property, creating the baseline both sides agree on.', ['Photo documentation', 'Condition baseline', 'Shared records']],
-                ['3', 'bi-shield-lock', 'Secure the deposit', 'Funds move into regulated escrow and are recorded on the blockchain — protected and accessible only through authorized steps.', ['Regulated escrow', 'Blockchain verified', 'No unilateral access']],
+                ['3', 'bi-shield-lock', 'Secure the deposit', 'Funds move into regulated escrow and are recorded on the blockchain, protected and accessible only through authorized steps.', ['Regulated escrow', 'Blockchain verified', 'No unilateral access']],
                 ['4', 'bi-graph-up-arrow', 'Optional investment', 'By mutual agreement, the deposit can earn returns in low-risk money markets, with profit shared transparently.', ['Profit to tenant', 'Profit to landlord', 'Fully optional']],
                 ['5', 'bi-search', 'Move-out inspection', 'A move-out inspection is compared directly against the move-in baseline, so deductions are based on evidence.', ['Before/after compare', 'Photo evidence', 'Transparent assessment']],
                 ['6', 'bi-cash-coin', 'Fast, fair refund', 'The deposit is returned based on documented results, with an auditable record of exactly how the figure was reached.', ['Clear calculations', 'Secure payout', 'Complete audit trail']],
@@ -335,24 +374,24 @@
                 </h2>
                 <p class="text-lg text-white/85 mb-8 leading-relaxed">
                     Built on the XRP Ledger (XRPL), every agreement, inspection, and payout is cryptographically recorded.
-                    Once it's on the ledger, it can't be secretly edited or deleted — that's what turns "trust me" into proof.
+                    Once it's on the ledger, it can't be secretly edited or deleted. That's what turns "trust me" into proof.
                 </p>
                 <div class="grid sm:grid-cols-2 gap-4 mb-8">
                     <div class="flex items-start gap-3">
                         <i class="bi bi-patch-check-fill text-accent-400 text-xl mt-0.5"></i>
-                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Immutable evidence</span> — inspections &amp; agreements can't be altered after the fact.</p>
+                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Immutable evidence:</span> inspections &amp; agreements can't be altered after the fact.</p>
                     </div>
                     <div class="flex items-start gap-3">
                         <i class="bi bi-eye-fill text-accent-400 text-xl mt-0.5"></i>
-                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Shared visibility</span> — both parties see the same source of truth.</p>
+                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Shared visibility:</span> both parties see the same source of truth.</p>
                     </div>
                     <div class="flex items-start gap-3">
                         <i class="bi bi-lightning-charge-fill text-accent-400 text-xl mt-0.5"></i>
-                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Fast settlement</span> — low-cost, near-instant transactions.</p>
+                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Fast settlement:</span> low-cost, near-instant transactions.</p>
                     </div>
                     <div class="flex items-start gap-3">
                         <i class="bi bi-clipboard-check-fill text-accent-400 text-xl mt-0.5"></i>
-                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Full audit trail</span> — every step is accountable and traceable.</p>
+                        <p class="text-white/90 text-sm"><span class="font-semibold text-white">Full audit trail:</span> every step is accountable and traceable.</p>
                     </div>
                 </div>
             </div>
@@ -388,15 +427,13 @@
                 Built for both sides
             </div>
             <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-5 text-balance">Why landlords and tenants choose est8Ledger</h2>
-            <p class="text-lg text-secondary-600">One platform that protects everyone's interests — no winners and losers, just fair outcomes.</p>
+            <p class="text-lg text-secondary-600">One platform that protects everyone's interests no winners and losers, just fair outcomes.</p>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-8 animate-stagger">
             <!-- Landlords -->
             <div class="stagger-item card-lift bg-white rounded-2xl border border-secondary-200 overflow-hidden">
-                <div class="h-44 overflow-hidden bg-secondary-100">
-                    <img src="/app_mock_ups/property_dashbaord.png" alt="Property management dashboard for landlords" class="w-full h-full object-cover object-top" loading="lazy">
-                </div>
+                
                 <div class="p-8">
                     <div class="flex items-center mb-6">
                         <div class="bg-primary-700 w-14 h-14 rounded-xl flex items-center justify-center mr-4">
@@ -432,9 +469,7 @@
 
             <!-- Tenants -->
             <div class="stagger-item card-lift bg-white rounded-2xl border border-secondary-200 overflow-hidden">
-                <div class="h-44 overflow-hidden bg-secondary-100">
-                    <img src="/app_mock_ups/active_tenancy.png" alt="Active tenancy and deposit tracking for tenants" class="w-full h-full object-cover object-top" loading="lazy">
-                </div>
+                
                 <div class="p-8">
                     <div class="flex items-center mb-6">
                         <div class="bg-accent-500 w-14 h-14 rounded-xl flex items-center justify-center mr-4">
@@ -466,16 +501,6 @@
                         <?php endforeach; ?>
                     </ul>
                 </div>
-            </div>
-        </div>
-
-        <!-- Feature mockups -->
-        <div class="grid md:grid-cols-2 gap-6 mt-10 animate-stagger">
-            <div class="stagger-item rounded-2xl overflow-hidden border border-secondary-200 shadow-sm card-lift">
-                <img src="/app_mock_ups/property_inspections.png" alt="Property inspection records with photo evidence" class="w-full h-72 object-cover object-top" loading="lazy">
-            </div>
-            <div class="stagger-item rounded-2xl overflow-hidden border border-secondary-200 shadow-sm card-lift">
-                <img src="/app_mock_ups/signed_agreement.png" alt="Signed digital tenancy agreement" class="w-full h-72 object-cover object-top" loading="lazy">
             </div>
         </div>
     </div>
@@ -565,21 +590,21 @@
                     Be first to manage deposits the fair way
                 </h2>
                 <p class="text-lg text-white/85 mb-8">
-                    Join the waitlist and be among the first landlords and tenants to put rental security deposits
-                    on a transparent, dispute-proof platform.
+                    Download est8Ledger today and be among the first landlords and tenants to put rental security
+                    deposits on a transparent, dispute-proof platform.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="openDemoModal()" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
-                        Join the Waitlist
-                        <i class="bi bi-arrow-right ml-2"></i>
-                    </button>
+                    <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" target="_blank" rel="noopener" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
+                        <i class="bi bi-apple mr-2 text-xl"></i>
+                        Download on the App Store
+                    </a>
                     <a href="/contact-us" class="px-8 py-3.5 rounded-xl text-base font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition inline-flex items-center justify-center">
                         Contact Us
                     </a>
                 </div>
                 <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-8 text-sm text-white/70">
-                    <span class="inline-flex items-center"><i class="bi bi-apple mr-2"></i>Available on iOS</span>
-                    <span class="inline-flex items-center"><i class="bi bi-google-play mr-2"></i>Available on Android</span>
+                    <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" target="_blank" rel="noopener" class="inline-flex items-center hover:text-white transition-colors"><i class="bi bi-apple mr-2"></i>Available on iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.rentalynk.est8ledger&hl=en" target="_blank" rel="noopener" class="inline-flex items-center hover:text-white transition-colors"><i class="bi bi-google-play mr-2"></i>Available on Android</a>
                 </div>
             </div>
         </div>

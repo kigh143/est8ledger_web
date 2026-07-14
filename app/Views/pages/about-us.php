@@ -33,7 +33,7 @@
                 <div class="space-y-4 text-secondary-600 text-lg leading-relaxed">
                     <p>
                         It began with Rentalynk, a property-finder app we built to make house hunting simple. But as we
-                        talked to users, a pattern emerged — tenants weren't just looking for homes, they were looking
+                        talked to users, a pattern emerged  tenants weren't just looking for homes, they were looking
                         for fairness. One question kept coming up:
                     </p>
                     <blockquote class="border-l-4 border-accent-500 bg-neutral-50 rounded-r-xl px-5 py-4 text-secondary-900 font-semibold italic">
@@ -43,12 +43,12 @@
                     <p>
                         The rental listing market was crowded, but trust between tenants and landlords was still broken.
                         Disputes, unclear deductions, and lost payments were everywhere. So we took a new path and built
-                        <span class="font-semibold text-secondary-900">est8Ledger</span> — using blockchain to give both
+                        <span class="font-semibold text-secondary-900">est8Ledger</span>  using blockchain to give both
                         sides a transparent, tamper-proof way to manage deposits.
                     </p>
                     <p>
                         Rentalynk has grown into a software company for real estate professionals, while est8Ledger stands
-                        on its own — dedicated to rental relationships built on accountability and mutual trust.
+                        on its own  dedicated to rental relationships built on accountability and mutual trust.
                     </p>
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="relative animate-on-scroll">
                 <div class="absolute -inset-6 bg-gradient-to-tr from-primary-200/40 to-accent-200/40 blur-3xl rounded-full -z-10" aria-hidden="true"></div>
                 <div class="rounded-2xl border border-secondary-200 bg-white shadow-2xl p-2">
-                    <img src="/app_mock_ups/tenancy_details.png" alt="est8Ledger platform interface showing tenancy and deposit details" class="w-full rounded-xl" loading="lazy">
+                    <img src="/website_images/aboutus.jpg" alt="est8Ledger platform interface showing tenancy and deposit details" class="w-full rounded-xl" loading="lazy">
                 </div>
             </div>
         </div>
@@ -204,10 +204,10 @@
                 <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 text-balance">Ready to transform your rental experience?</h2>
                 <p class="text-lg text-white/85 mb-8">Join landlords and tenants across East Africa eliminating deposit disputes with est8Ledger.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="openDemoModal()" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
-                        Join the Waitlist
-                        <i class="bi bi-arrow-right ml-2"></i>
-                    </button>
+                    <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" target="_blank" rel="noopener" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
+                        <i class="bi bi-apple mr-2 text-xl"></i>
+                        Download the App
+                    </a>
                     <a href="/contact-us" class="px-8 py-3.5 rounded-xl text-base font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition inline-flex items-center justify-center">
                         Contact Us
                     </a>

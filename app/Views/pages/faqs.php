@@ -77,9 +77,10 @@
                         <i class="bi bi-chat-dots mr-2"></i>
                         Contact Us
                     </a>
-                    <button onclick="openDemoModal()" class="px-8 py-3.5 rounded-xl text-base font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition inline-flex items-center justify-center">
-                        Join the Waitlist
-                    </button>
+                    <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" target="_blank" rel="noopener" class="px-8 py-3.5 rounded-xl text-base font-semibold text-white border-2 border-white/30 hover:bg-white/10 transition inline-flex items-center justify-center">
+                        <i class="bi bi-apple mr-2 text-xl"></i>
+                        Download the App
+                    </a>
                 </div>
             </div>
         </div>

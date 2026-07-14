@@ -40,10 +40,10 @@
             <!-- Phone -->
             <a href="tel:+447930068728" class="stagger-item card-lift block bg-white rounded-2xl border border-secondary-200 p-8 text-center group">
                 <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:bg-accent-200 transition-colors">
-                    <i class="bi bi-telephone-fill text-2xl text-accent-800"></i>
+                    <i class="bi bi-whatsapp text-2xl text-accent-800"></i>
                 </div>
-                <h2 class="text-lg font-bold text-secondary-900 mb-1">Call us</h2>
-                <p class="text-sm text-secondary-500 mb-3">Mon–Fri, 9am–5pm EAT</p>
+                <h2 class="text-lg font-bold text-secondary-900 mb-1">Whatsapp us</h2>
+                <p class="text-sm text-secondary-500 mb-3">All Week Long</p>
                 <span class="text-primary-700 font-semibold">+44 7930 068728</span>
             </a>
 
@@ -117,11 +117,11 @@
             </div>
             <div class="relative z-10 max-w-2xl mx-auto">
                 <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 text-balance">Prefer to just get started?</h2>
-                <p class="text-lg text-white/85 mb-8">Join the waitlist and be among the first to manage rental deposits the fair, transparent way.</p>
-                <button onclick="openDemoModal()" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
-                    Join the Waitlist
-                    <i class="bi bi-arrow-right ml-2"></i>
-                </button>
+                <p class="text-lg text-white/85 mb-8">Download the app and start managing rental deposits the fair, transparent way.</p>
+                <a href="https://apps.apple.com/us/app/est8ledger/id6759548753" target="_blank" rel="noopener" class="btn-accent px-8 py-3.5 rounded-xl text-base inline-flex items-center justify-center">
+                    <i class="bi bi-apple mr-2 text-xl"></i>
+                    Download the App
+                </a>
             </div>
         </div>
     </div>
