@@ -21,7 +21,7 @@
   "@type": "Service",
   "serviceType": "Rental Security Deposit Escrow & Management",
   "name": "est8Ledger Rental Security Deposit Protection",
-  "description": "Blockchain-secured escrow, digital tenancy agreements, and tamper-proof move-in and move-out inspections that prevent rental security deposit disputes between landlords and tenants.",
+  "description": "Est8Ledger is the trust infrastructure for rental security deposits protecting tenant funds, giving landlords confidence, and making deposit returns faster, fairer, and transparent.",
   "provider": {
     "@type": "Organization",
     "name": "est8Ledger",
@@ -31,6 +31,7 @@
     { "@type": "Country", "name": "Uganda" },
     { "@type": "Country", "name": "Kenya" },
     { "@type": "Country", "name": "Tanzania" }
+    { "@type": "Country", "name": "Rwanda" }
   ],
   "audience": {
     "@type": "Audience",
@@ -80,10 +81,7 @@
                 </h1>
 
                 <p class="text-lg text-secondary-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    est8Ledger holds deposits in <span class="font-semibold text-secondary-900">secure escrow</span>,
-                    captures <span class="font-semibold text-secondary-900">tamper-proof move-in &amp; move-out inspections</span>,
-                    and signs <span class="font-semibold text-secondary-900">digital tenancy agreements</span>,
-                    so landlords and tenants finally trust the same evidence.
+                 Est8Ledger is the trust infrastructure for rental security deposits making deposit returns faster, fairer, and transparent.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">

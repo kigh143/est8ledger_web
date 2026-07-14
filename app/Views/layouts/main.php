@@ -305,6 +305,19 @@
             overflow: hidden;
         }
 
+        /* Active nav link indicator (current page / in-view section) */
+        .nav-link.is-active {
+            color: #3f0ee3 !important;
+            background-color: #f1edfe !important;
+            font-weight: 600 !important;
+        }
+
+        .mobile-nav-link.is-active {
+            color: #3f0ee3 !important;
+            background-color: #f1edfe !important;
+            font-weight: 600 !important;
+        }
+
         /* Smooth scrolling for anchor links */
         html {
             scroll-behavior: smooth;
@@ -584,18 +597,19 @@
 <body class="bg-neutral-50">
     <!-- Professional Header -->
     <header class="bg-white/90 backdrop-blur-md border-b border-secondary-200/70 sticky top-0 z-50">
+        <?php $currentPath = trim(uri_string(), '/'); ?>
         <nav class="container mx-auto px-4 py-3" aria-label="Primary">
             <div class="flex justify-between items-center gap-4">
                 <a href="/" class="flex items-center shrink-0" aria-label="est8Ledger home">
                     <img src="/long_logo.png" alt="est8Ledger" class="h-8 w-auto" width="109" height="32">
                 </a>
-                <div class="hidden lg:flex space-x-7 items-center">
-                    <a href="/#how-it-works" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">How it Works</a>
-                    <a href="/#solution" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Solution</a>
-                    <a href="/about-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">About</a>
-                    <a href="/faqs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">FAQs</a>
-                    <a href="/blogs" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Blog</a>
-                    <a href="/contact-us" class="text-secondary-600 hover:text-primary-700 transition-colors font-medium text-sm">Contact</a>
+                <div class="hidden lg:flex space-x-1 items-center">
+                    <a href="/#how-it-works" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">How it Works</a>
+                    <a href="/#solution" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">Solution</a>
+                    <a href="/about-us" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'about-us' ? ' is-active' : '' ?>"<?= $currentPath === 'about-us' ? ' aria-current="page"' : '' ?>>About</a>
+                    <a href="/faqs" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'faqs' ? ' is-active' : '' ?>"<?= $currentPath === 'faqs' ? ' aria-current="page"' : '' ?>>FAQs</a>
+                    <a href="/blogs" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= str_starts_with($currentPath, 'blog') ? ' is-active' : '' ?>"<?= str_starts_with($currentPath, 'blog') ? ' aria-current="page"' : '' ?>>Blog</a>
+                    <a href="/contact-us" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'contact-us' ? ' is-active' : '' ?>"<?= $currentPath === 'contact-us' ? ' aria-current="page"' : '' ?>>Contact</a>
                 </div>
                 <div class="hidden lg:flex items-center gap-3">
                     <a href="https://app.est8ledger.com" class="btn-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold inline-flex items-center">
@@ -611,13 +625,13 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden lg:hidden mt-3 pb-4 border-t border-secondary-200">
                 <div class="flex flex-col space-y-1 pt-3">
-                    <a href="/" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Home</a>
-                    <a href="/#how-it-works" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">How it Works</a>
-                    <a href="/#solution" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Solution</a>
-                    <a href="/about-us" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">About</a>
-                    <a href="/faqs" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">FAQs</a>
-                    <a href="/blogs" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Blog</a>
-                    <a href="/contact-us" class="text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Contact</a>
+                    <a href="/" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === '' ? ' is-active' : '' ?>"<?= $currentPath === '' ? ' aria-current="page"' : '' ?>>Home</a>
+                    <a href="/#how-it-works" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">How it Works</a>
+                    <a href="/#solution" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Solution</a>
+                    <a href="/about-us" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'about-us' ? ' is-active' : '' ?>"<?= $currentPath === 'about-us' ? ' aria-current="page"' : '' ?>>About</a>
+                    <a href="/faqs" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'faqs' ? ' is-active' : '' ?>"<?= $currentPath === 'faqs' ? ' aria-current="page"' : '' ?>>FAQs</a>
+                    <a href="/blogs" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= str_starts_with($currentPath, 'blog') ? ' is-active' : '' ?>"<?= str_starts_with($currentPath, 'blog') ? ' aria-current="page"' : '' ?>>Blog</a>
+                    <a href="/contact-us" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'contact-us' ? ' is-active' : '' ?>"<?= $currentPath === 'contact-us' ? ' aria-current="page"' : '' ?>>Contact</a>
                     <a href="https://app.est8ledger.com" class="btn-primary text-white px-4 py-3 rounded-xl font-semibold mt-2 mx-1 text-center inline-flex items-center justify-center">
                         PM Platform
                         <i class="bi bi-box-arrow-up-right ml-2 text-xs"></i>
@@ -793,6 +807,43 @@
                     GA4Tracker.trackNavigation(linkText, destination, 'main_nav');
                 });
             });
+
+            // Active state for in-page section links (How it Works / Solution)
+            (function() {
+                const sectionLinkHrefs = ['/#how-it-works', '/#solution'];
+                const setActiveHref = (href) => {
+                    document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
+                        if (!sectionLinkHrefs.includes(link.getAttribute('href'))) return;
+                        const isActive = link.getAttribute('href') === href;
+                        link.classList.toggle('is-active', isActive);
+                        if (isActive) {
+                            link.setAttribute('aria-current', 'true');
+                        } else {
+                            link.removeAttribute('aria-current');
+                        }
+                    });
+                };
+
+                // Instant feedback on click, ahead of the browser's scroll-into-view
+                document.querySelectorAll('a[href="/#how-it-works"], a[href="/#solution"]').forEach(link => {
+                    link.addEventListener('click', () => setActiveHref(link.getAttribute('href')));
+                });
+
+                // Keep it accurate while scrolling the homepage
+                const howItWorksSection = document.getElementById('how-it-works');
+                const solutionSection = document.getElementById('solution');
+                if (howItWorksSection && solutionSection && 'IntersectionObserver' in window) {
+                    const sectionObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                setActiveHref(`/#${entry.target.id}`);
+                            }
+                        });
+                    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+                    sectionObserver.observe(howItWorksSection);
+                    sectionObserver.observe(solutionSection);
+                }
+            })();
 
             // Track CTA buttons
             document.querySelectorAll('.btn-primary, .cta-button').forEach(button => {
