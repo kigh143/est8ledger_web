@@ -135,6 +135,49 @@ class Home extends BaseController
         return view('pages/faqs', $data);
     }
 
+    public function moveOut(): string
+    {
+        $faqs = [
+            [
+                'question' => 'How do I get my full rental deposit back when moving out in Uganda?',
+                'answer' => 'Document the property\'s condition with dated, photo-backed evidence at move-out and compare it against your move-in record. Most deposit refund disputes in Uganda happen because there is no shared proof of condition, so a joint, timestamped move-out inspection that both you and your landlord approve is the clearest way to support a full refund.'
+            ],
+            [
+                'question' => 'Can my landlord refuse to refund my deposit?',
+                'answer' => 'Not without justification. Under Uganda\'s Landlord and Tenant Act 2022, deductions must relate to actual damage beyond fair wear and tear, unpaid rent, or unpaid bills. If there is no documented evidence of damage, there is no fair basis to withhold your deposit.'
+            ],
+            [
+                'question' => 'How much notice do I need to give before vacating a rented house?',
+                'answer' => 'Notice periods are set by your tenancy agreement, but Uganda\'s Landlord and Tenant Act 2022 generally expects at least one month\'s written notice unless your lease states otherwise. Always check what your signed agreement requires before you give notice to vacate.'
+            ],
+            [
+                'question' => 'How do you tell wear-and-tear apart from real damage?',
+                'answer' => 'During your guided move-out inspection, each item you photograph is flagged as either normal wear and tear (like faded paint or a worn carpet) or genuine damage (like a hole in the wall or a stain). That distinction is recorded alongside the evidence, so deductions are based on what actually needs repair.'
+            ],
+            [
+                'question' => 'Does my landlord need to download anything?',
+                'answer' => 'No. Your landlord gets a simple link to view and approve the agreement and the move-out inspection. No app download or account is required on their end.'
+            ],
+            [
+                'question' => 'Does this cost anything?',
+                'answer' => 'No. Adding your agreement, inviting your landlord, and completing a fair move-out inspection is free.'
+            ],
+            [
+                'question' => 'What happens to my deposit?',
+                'answer' => 'That part is optional. If you and your landlord want to, you can place the deposit in regulated escrow on est8Ledger for extra protection, but you can complete a fair move-out record without it.'
+            ],
+        ];
+
+        $data = [
+            'title'       => 'Moving Out? How to Get Your Rental Deposit Back',
+            'description' => 'Moving out of your rented house in Uganda, Kenya, or Tanzania? Get a fair, timestamped move-out inspection with est8Ledger, free, in minutes, so you get your full deposit back without a dispute with your landlord.',
+            'keywords'    => 'move out inspection Uganda, how to get my deposit back, rental deposit refund Uganda, landlord refusing to refund deposit, moving out of a rented house checklist, notice to vacate Uganda, vacating a rented house, tenant rights Uganda deposit, security deposit dispute Kampala, end of tenancy inspection, fair wear and tear vs damage, landlord and tenant act Uganda deposit, move out checklist East Africa, rental deposit refund Kenya, rental deposit refund Tanzania',
+            'faqs'        => $faqs,
+        ];
+
+        return view('pages/move-out', $data);
+    }
+
     public function contactUs(): string
     {
         $data = [

@@ -26,6 +26,7 @@ $routes->get('/terms-of-use', 'Home::termsOfUse');
 $routes->get('/about-us', 'Home::aboutUs');
 $routes->get('/faqs', 'Home::faqs');
 $routes->get('/contact-us', 'Home::contactUs');
+$routes->get('/move-out', 'Home::moveOut');
 
 // Contact form route
 $routes->post('/contact', 'ContactController::submit');

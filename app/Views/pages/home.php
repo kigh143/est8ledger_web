@@ -504,6 +504,52 @@
     </div>
 </section>
 
+<!-- ============================ ACTIVE TENANT: PREPARE FOR MOVE-OUT ============================ -->
+<section class="section-padding bg-white">
+    <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center bg-neutral-50 border border-secondary-200 rounded-3xl p-8 sm:p-10 lg:p-14 animate-on-scroll">
+            <div>
+                <div class="inline-flex items-center bg-red-50 border border-red-100 text-red-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-5">
+                    <i class="bi bi-exclamation-triangle-fill mr-2"></i>
+                    Already a tenant? Moving out soon?
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-secondary-900 mb-5 text-balance">
+                    Don't lose your deposit to a dispute you can't prove
+                </h2>
+                <p class="text-lg text-secondary-600 mb-8 leading-relaxed">
+                    Get a fair, timestamped move-out record free, in minutes. Load your agreement, add your
+                    landlord, and complete a move-out inspection you both approve.
+                </p>
+                <a href="/move-out" class="btn-primary text-white px-7 py-3.5 rounded-full text-base font-semibold inline-flex items-center justify-center">
+                    Prepare for my move-out
+                    <i class="bi bi-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid gap-4">
+                <?php
+                $moveOutSteps = [
+                    ['bi-file-earmark-arrow-up', 'Add your agreement', 'Upload or enter your existing lease — even a photo works.'],
+                    ['bi-person-plus', 'Invite your landlord', 'One tap sends a link. No app download needed for them.'],
+                    ['bi-camera2', 'Do a fair move-out inspection', 'Timestamped, photo-backed, and approved by both of you.'],
+                ];
+                foreach ($moveOutSteps as $i => $m): ?>
+                <div class="bg-white rounded-xl border border-secondary-200 shadow-sm p-4 flex items-center gap-4">
+                    <span class="flex-shrink-0 w-10 h-10 rounded-lg bg-primary-50 text-primary-700 flex items-center justify-center font-bold">
+                        <?= $i + 1 ?>
+                    </span>
+                    <div>
+                        <p class="font-semibold text-secondary-900 text-sm"><?= $m[1] ?></p>
+                        <p class="text-xs text-secondary-600 mt-0.5"><?= $m[2] ?></p>
+                    </div>
+                    <i class="bi <?= $m[0] ?> text-xl text-primary-300 ml-auto flex-shrink-0"></i>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ============================ TRUST & SECURITY ============================ -->
 <section class="section-padding bg-neutral-50">
     <div class="container mx-auto px-4">
