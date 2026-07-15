@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://est8ledger.com/</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-07-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,21 +15,28 @@
     <!-- Main Pages -->
     <url>
         <loc>https://est8ledger.com/about-us</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-07-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
+        <loc>https://est8ledger.com/move-out</loc>
+        <lastmod>2026-07-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>https://est8ledger.com/faqs</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-07-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://est8ledger.com/contact-us</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-07-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -37,82 +44,88 @@
     <!-- Blog -->
     <url>
         <loc>https://est8ledger.com/blogs</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-07-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://est8ledger.com/blog/hidden-costs-security-deposits-landlord-perspective-uganda</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/future-of-rentals-uganda-est8Ledger</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/tenant-mistrust-uganda-security-deposits-driving-vacancies</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/security-deposit-disputes-uganda-tenants-landlords-clashing</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/case-study-est8Ledger-security-deposit-dispute-kampala</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/boosting-tenant-confidence-uganda-security-deposit</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/protecting-rental-investment-uganda-reduce-risk-attract-tenants</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/transforming-uganda-rental-market-technology-security-deposits</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/move-in-move-out-inspections-uganda-fair-rental-market</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/blog/transparency-security-deposits-uganda-rental-market</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2025-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- Surveys -->
     <url>
-        <loc>https://est8ledger.com/survey/tenants</loc>
-        <lastmod>2026-06-15</lastmod>
+        <loc>https://est8ledger.com/surveys</loc>
+        <lastmod>2025-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://est8ledger.com/survey/landlords</loc>
-        <lastmod>2026-06-15</lastmod>
+        <loc>https://est8ledger.com/survey/tenants-survey</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://est8ledger.com/survey/landlords-survey</loc>
+        <lastmod>2025-10-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -120,23 +133,23 @@
     <!-- Legal Pages -->
     <url>
         <loc>https://est8ledger.com/terms-of-use</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-03-12</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
         <loc>https://est8ledger.com/privacy-policy</loc>
-        <lastmod>2026-06-15</lastmod>
+        <lastmod>2026-03-12</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>
 
     <!-- Resources -->
     <url>
-        <loc>https://est8ledger.com/landlord-and-tenant-act-2022.pdf</loc>
-        <lastmod>2026-06-15</lastmod>
+        <loc>https://est8ledger.com/landlord-and-tenant-act-2022</loc>
+        <lastmod>2026-07-16</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.6</priority>
     </url>
 
 </urlset>
