@@ -607,7 +607,8 @@
                     <a href="/#how-it-works" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">How it Works</a>
                     <a href="/#solution" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">Solution</a>
                     <a href="/about-us" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'about-us' ? ' is-active' : '' ?>"<?= $currentPath === 'about-us' ? ' aria-current="page"' : '' ?>>About</a>
-                    <a href="/faqs" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'faqs' ? ' is-active' : '' ?>"<?= $currentPath === 'faqs' ? ' aria-current="page"' : '' ?>>FAQs</a>
+                    <a href="/move-out" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'move-out' ? ' is-active' : '' ?>"<?= $currentPath === 'move-out' ? ' aria-current="page"' : '' ?>>Moving Out</a>
+                    <a href="/landlord-and-tenant-act-2022" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'landlord-and-tenant-act-2022' ? ' is-active' : '' ?>"<?= $currentPath === 'landlord-and-tenant-act-2022' ? ' aria-current="page"' : '' ?>>Tenancy Act</a>
                     <a href="/blogs" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= str_starts_with($currentPath, 'blog') ? ' is-active' : '' ?>"<?= str_starts_with($currentPath, 'blog') ? ' aria-current="page"' : '' ?>>Blog</a>
                     <a href="/contact-us" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'contact-us' ? ' is-active' : '' ?>"<?= $currentPath === 'contact-us' ? ' aria-current="page"' : '' ?>>Contact</a>
                 </div>
@@ -629,7 +630,8 @@
                     <a href="/#how-it-works" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">How it Works</a>
                     <a href="/#solution" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3">Solution</a>
                     <a href="/about-us" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'about-us' ? ' is-active' : '' ?>"<?= $currentPath === 'about-us' ? ' aria-current="page"' : '' ?>>About</a>
-                    <a href="/faqs" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'faqs' ? ' is-active' : '' ?>"<?= $currentPath === 'faqs' ? ' aria-current="page"' : '' ?>>FAQs</a>
+                    <a href="/move-out" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'move-out' ? ' is-active' : '' ?>"<?= $currentPath === 'move-out' ? ' aria-current="page"' : '' ?>>Moving Out</a>
+                    <a href="/landlord-and-tenant-act-2022" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'landlord-and-tenant-act-2022' ? ' is-active' : '' ?>"<?= $currentPath === 'landlord-and-tenant-act-2022' ? ' aria-current="page"' : '' ?>>Tenancy Act</a>
                     <a href="/blogs" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= str_starts_with($currentPath, 'blog') ? ' is-active' : '' ?>"<?= str_starts_with($currentPath, 'blog') ? ' aria-current="page"' : '' ?>>Blog</a>
                     <a href="/contact-us" class="mobile-nav-link text-secondary-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-colors font-medium py-2.5 px-3<?= $currentPath === 'contact-us' ? ' is-active' : '' ?>"<?= $currentPath === 'contact-us' ? ' aria-current="page"' : '' ?>>Contact</a>
                     <a href="https://app.est8ledger.com" class="btn-primary text-white px-4 py-3 rounded-xl font-semibold mt-2 mx-1 text-center inline-flex items-center justify-center">
@@ -722,7 +724,7 @@
                     <ul class="space-y-3 text-sm">
                         <li><a href="/privacy-policy" class="text-secondary-300 hover:text-white transition-colors">Privacy Policy</a></li>
                         <li><a href="/terms-of-use" class="text-secondary-300 hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="/landlord-and-tenant-act-2022.pdf" class="text-secondary-300 hover:text-white transition-colors">Tenancy Act 2022</a></li>
+                        <li><a href="/landlord-and-tenant-act-2022" class="text-secondary-300 hover:text-white transition-colors">Tenancy Act 2022</a></li>
                         <li><a href="mailto:info@est8ledger.com" class="text-secondary-300 hover:text-white transition-colors">Support</a></li>
                     </ul>
                 </div>

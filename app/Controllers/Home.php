@@ -178,6 +178,37 @@ class Home extends BaseController
         return view('pages/move-out', $data);
     }
 
+    public function landlordTenantAct(): string
+    {
+        $sections = json_decode(
+            file_get_contents(APPPATH . 'Content/landlord-tenant-act-2022.json'),
+            true
+        ) ?? [];
+
+        $parts = [];
+        foreach ($sections as $section) {
+            $roman = $section['part_roman'];
+            if (!isset($parts[$roman])) {
+                $parts[$roman] = [
+                    'roman'    => $roman,
+                    'title'    => $section['part_title'],
+                    'sections' => [],
+                ];
+            }
+            $parts[$roman]['sections'][] = $section;
+        }
+        $parts = array_values($parts);
+
+        $data = [
+            'title'       => 'The Landlord and Tenant Act, 2022 (Uganda): Full Text and Search',
+            'description' => "Search the full text of Uganda's Landlord and Tenant Act, 2022 (Act 9 of 2022): security deposits, rent, repairs, notice to vacate, termination, and eviction, section by section.",
+            'keywords'    => 'landlord and tenant act uganda, uganda tenancy act 2022, tenant rights uganda law, security deposit law uganda, notice to vacate law uganda, rent act uganda, uganda rental law, eviction law uganda, tenancy agreement uganda law, act 9 of 2022',
+            'parts'       => $parts,
+        ];
+
+        return view('pages/landlord-tenant-act', $data);
+    }
+
     public function contactUs(): string
     {
         $data = [
