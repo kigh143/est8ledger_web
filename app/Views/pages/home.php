@@ -65,7 +65,7 @@
     <div class="container mx-auto px-4 pt-16 pb-20 lg:pt-24 lg:pb-28">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <!-- Copy -->
-            <div class="text-center lg:text-left">
+            <div class="min-w-0 text-center lg:text-left">
                 <div class="inline-flex items-center bg-primary-50 border border-primary-100 text-primary-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
                     <span class="w-2 h-2 rounded-full bg-accent-500 mr-2"></span>
                     Blockchain-secured deposit escrow
@@ -73,7 +73,7 @@
 
                 <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-secondary-900 leading-[1.08] mb-6 text-balance">
                     Ending Rental
-                    <span class="relative whitespace-nowrap">
+                    <span class="relative whitespace-normal sm:whitespace-nowrap">
                         <span class="relative z-10">Security Deposit</span>
                         <span class="absolute left-0 bottom-1 h-3 w-full bg-accent-300/70 rounded -z-0" aria-hidden="true"></span>
                     </span>

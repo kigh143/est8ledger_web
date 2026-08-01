@@ -130,12 +130,12 @@
 
             <!-- Hero illustration -->
             <div class="relative">
-                <!-- <div class="relative mx-auto max-w-md sm:max-w-lg lg:max-w-xl w-full rounded-[2rem] overflow-hidden">        -->
-                        <img src="/collectrent.png"
-                             alt="Illustration of a landlord's house with a rent collection calendar marked every 10th, a signed tenancy agreement, and coins, representing on-time rent payouts through est8Ledger"
-                             class="w-full h-full"
-                            fetchpriority="high">
-                <!-- </div> -->
+                <div class="relative mx-auto max-w-xs sm:max-w-sm lg:max-w-none lg:w-full rounded-[2rem] overflow-hidden">
+                    <img src="/collectrent.png"
+                         alt="Illustration of a landlord's house with a rent collection calendar marked every 10th, a signed tenancy agreement, and coins, representing on-time rent payouts through est8Ledger"
+                         class="w-full h-auto"
+                         width="1536" height="1024" fetchpriority="high">
+                </div>
             </div>
         </div>
     </div>
