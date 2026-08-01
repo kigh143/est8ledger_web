@@ -215,6 +215,7 @@ class Home extends BaseController
             'title'       => 'Landlord Rent Collection Service - Get Paid Every 10th',
             'description' => 'Est8Ledger collects and manages your rent so you don\'t have to chase tenants. Tenant onboarding, digital tenancy agreements, inspections, and a landlord dashboard, with your payout every 10th of the month. Message us on WhatsApp to get started.',
             'keywords'    => 'landlord rent collection Uganda, rent collection service Uganda, outsource rent collection, property management Uganda, rental income management platform, tenant management service Uganda, rent collection agency Kampala, get paid rent every month, rental dashboard Uganda, arrears management landlord, digital tenancy agreement Uganda',
+            'og_image'    => base_url('/collectionpage.jpg'),
             'faqs'        => $faqs,
         ];
 
