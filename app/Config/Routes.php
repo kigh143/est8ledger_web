@@ -27,6 +27,7 @@ $routes->get('/about-us', 'Home::aboutUs');
 $routes->get('/faqs', 'Home::faqs');
 $routes->get('/contact-us', 'Home::contactUs');
 $routes->get('/move-out', 'Home::moveOut');
+$routes->get('/rent-collection', 'Home::rentCollection');
 $routes->get('/landlord-and-tenant-act-2022', 'Home::landlordTenantAct');
 
 // Contact form route

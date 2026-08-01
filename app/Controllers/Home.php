@@ -178,6 +178,49 @@ class Home extends BaseController
         return view('pages/move-out', $data);
     }
 
+    public function rentCollection(): string
+    {
+        $faqs = [
+            [
+                'question' => 'How does Est8Ledger\'s rent collection service work?',
+                'answer' => 'Your tenant pays their rent, Est8Ledger collects and manages it on your behalf, handling onboarding, follow-ups, and inspections, and you receive your payout every 10th of the month. Your Est8Ledger dashboard shows you exactly what is happening at every step.'
+            ],
+            [
+                'question' => 'When will I actually receive my rental income?',
+                'answer' => 'You are paid every 10th of the month, so you know exactly when your rental income is coming instead of waiting on individual tenants to pay.'
+            ],
+            [
+                'question' => 'What\'s the difference between Rent Collection and Managed Rent?',
+                'answer' => 'Rent Collection (10%) covers rent collection, tenant onboarding, digital tenancy agreements, rent tracking, payment records, move-in and move-out inspections, your landlord dashboard, and automated tenant reminders. Managed Rent (12%) includes all of that plus more hands-on tenant management, rent follow-ups and arrears management, tenant support, property activity monitoring, eviction process coordination where required, and dedicated support.'
+            ],
+            [
+                'question' => 'Will I still know what\'s happening with my property?',
+                'answer' => 'Yes. You don\'t have to take our word for it, your dashboard gives you full visibility into your properties, occupancy, rent, tenants, inspections, and payments, so you can log in and see it for yourself at any time.'
+            ],
+            [
+                'question' => 'What happens if a tenant falls behind on rent?',
+                'answer' => 'Under the Managed Rent plan, we handle rent follow-ups and arrears management directly with the tenant, and can coordinate the eviction process where required, so you\'re never the one making the awkward calls.'
+            ],
+            [
+                'question' => 'Does this work if I only have one rental unit?',
+                'answer' => 'Yes. Whether you own a single rental unit or a growing property portfolio, Est8Ledger gives you the same infrastructure to manage your rental income with more visibility and less manual work.'
+            ],
+            [
+                'question' => 'How do I get started?',
+                'answer' => 'Message us on WhatsApp with a few details about your property and tenants, and we\'ll walk you through onboarding onto the plan that fits you best.'
+            ],
+        ];
+
+        $data = [
+            'title'       => 'Landlord Rent Collection Service - Get Paid Every 10th',
+            'description' => 'Est8Ledger collects and manages your rent so you don\'t have to chase tenants. Tenant onboarding, digital tenancy agreements, inspections, and a landlord dashboard, with your payout every 10th of the month. Message us on WhatsApp to get started.',
+            'keywords'    => 'landlord rent collection Uganda, rent collection service Uganda, outsource rent collection, property management Uganda, rental income management platform, tenant management service Uganda, rent collection agency Kampala, get paid rent every month, rental dashboard Uganda, arrears management landlord, digital tenancy agreement Uganda',
+            'faqs'        => $faqs,
+        ];
+
+        return view('pages/rent-collection', $data);
+    }
+
     public function landlordTenantAct(): string
     {
         $sections = json_decode(
