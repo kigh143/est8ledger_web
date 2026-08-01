@@ -1,54 +1,54 @@
 <?= $this->extend('layouts/main') ?>
 
 <?php
-$waNumber = '447930068728';
-$wa = fn (string $message): string => 'https://wa.me/' . $waNumber . '?text=' . rawurlencode($message);
-$mail = fn (string $subject, string $body): string => 'mailto:info@est8ledger.com?subject=' . rawurlencode($subject) . '&body=' . rawurlencode($body);
+    $waNumber = '447930068728';
+    $wa = fn (string $message): string => 'https://wa.me/' . $waNumber . '?text=' . rawurlencode($message);
+    $mail = fn (string $subject, string $body): string => 'mailto:info@est8ledger.com?subject=' . rawurlencode($subject) . '&body=' . rawurlencode($body);
 ?>
 
 <?= $this->section('css') ?>
 <?php if (!empty($faqs)): ?>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    <?php foreach ($faqs as $i => $faq): ?>
     {
-      "@type": "Question",
-      "name": <?= json_encode($faq['question']) ?>,
-      "acceptedAnswer": { "@type": "Answer", "text": <?= json_encode($faq['answer']) ?> }
-    }<?= $i < count($faqs) - 1 ? ',' : '' ?>
-    <?php endforeach; ?>
-  ]
-}
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        <?php foreach ($faqs as $i => $faq): ?>
+        {
+        "@type": "Question",
+        "name": <?= json_encode($faq['question']) ?>,
+        "acceptedAnswer": { "@type": "Answer", "text": <?= json_encode($faq['answer']) ?> }
+        }<?= $i < count($faqs) - 1 ? ',' : '' ?>
+        <?php endforeach; ?>
+    ]
+    }
 </script>
 <?php endif; ?>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Landlord Rent Collection and Property Management",
-  "provider": {
-    "@type": "Organization",
-    "name": "est8Ledger",
-    "url": "https://est8ledger.com"
-  },
-  "areaServed": "Uganda",
-  "description": "est8Ledger collects and manages rent on behalf of landlords, handling tenant onboarding, rent follow-ups, and inspections, with landlord payouts every 10th of the month.",
-  "offers": [
     {
-      "@type": "Offer",
-      "name": "Rent Collection",
-      "description": "Rent collection, tenant onboarding, digital tenancy agreements, rent tracking, payment records, move-in and move-out inspections, landlord dashboard, and automated tenant reminders."
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Landlord Rent Collection and Property Management",
+    "provider": {
+        "@type": "Organization",
+        "name": "est8Ledger",
+        "url": "https://est8ledger.com"
     },
-    {
-      "@type": "Offer",
-      "name": "Managed Rent",
-      "description": "Everything in Rent Collection, plus hands-on tenant management, rent follow-ups and arrears management, tenant support, property activity monitoring, eviction process coordination where required, and dedicated support."
+    "areaServed": "Uganda",
+    "description": "est8Ledger collects and manages rent on behalf of landlords, handling tenant onboarding, rent follow-ups, and inspections, with landlord payouts every 10th of the month.",
+    "offers": [
+        {
+        "@type": "Offer",
+        "name": "Rent Collection",
+        "description": "Rent collection, tenant onboarding, digital tenancy agreements, rent tracking, payment records, move-in and move-out inspections, landlord dashboard, and automated tenant reminders."
+        },
+        {
+        "@type": "Offer",
+        "name": "Managed Rent",
+        "description": "Everything in Rent Collection, plus hands-on tenant management, rent follow-ups and arrears management, tenant support, property activity monitoring, eviction process coordination where required, and dedicated support."
+        }
+    ]
     }
-  ]
-}
 </script>
 <style>
     /* Drastic visual pass for the rent collection sales page */
@@ -76,44 +76,6 @@ $mail = fn (string $subject, string $body): string => 'mailto:info@est8ledger.co
         transform: translateX(-50%);
         white-space: nowrap;
     }
-    .rc-whatsapp-fab {
-        position: fixed;
-        right: 1.25rem;
-        bottom: 1.25rem;
-        z-index: 45;
-        width: 60px;
-        height: 60px;
-        border-radius: 9999px;
-        background: #25D366;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.75rem;
-        box-shadow: 0 12px 28px -8px rgba(37, 211, 102, 0.6);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .rc-whatsapp-fab:hover {
-        transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 16px 32px -8px rgba(37, 211, 102, 0.7);
-    }
-    .rc-whatsapp-fab::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 9999px;
-        background: #25D366;
-        opacity: 0.55;
-        animation: rc-pulse 2.2s ease-out infinite;
-        z-index: -1;
-    }
-    @keyframes rc-pulse {
-        0% { transform: scale(1); opacity: 0.55; }
-        100% { transform: scale(1.7); opacity: 0; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-        .rc-whatsapp-fab::before { animation: none; display: none; }
-    }
 </style>
 <?= $this->endSection() ?>
 
@@ -121,8 +83,8 @@ $mail = fn (string $subject, string $body): string => 'mailto:info@est8ledger.co
 
 <!-- ============================ HERO ============================ -->
 <section class="relative gradient-hero overflow-hidden">
-    <div class="container mx-auto px-4 pt-16 pb-20 lg:pt-24 lg:pb-24">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+    <div class="container mx-auto px-4 pt-8 pb-20 lg:pt-24 lg:pb-24">
+        <div class="grid lg:grid-cols-[2fr_2fr] gap-4 lg:gap-10 items-center">
             <div class="text-center lg:text-left">
                 <div class="inline-flex items-center bg-accent-100 border border-accent-200 text-accent-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
                     <i class="bi bi-cash-coin mr-2"></i>
@@ -148,34 +110,34 @@ $mail = fn (string $subject, string $body): string => 'mailto:info@est8ledger.co
                        class="cta-button inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full btn-primary text-white text-base"
                        data-cta="email_us">
                         <i class="bi bi-envelope-fill"></i>
-                        Email Us Today
+                        Email Us
                     </a>
                     <a href="<?= esc($wa("Hi Est8Ledger, I'd like to talk to someone about your landlord rent collection service."), 'attr') ?>"
                        target="_blank" rel="noopener"
                        class="cta-button inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#25D366] text-white font-semibold text-base shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all"
                        data-cta="whatsapp_hero">
                         <i class="bi bi-whatsapp text-xl"></i>
-                        Talk to Us on WhatsApp
+                         WhatsApps Us
                     </a>
                 </div>
 
                 <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 text-sm text-secondary-600">
-                    <span class="inline-flex items-center"><i class="bi bi-calendar2-check text-accent-600 mr-2"></i>Paid every 10th</span>
-                    <span class="inline-flex items-center"><i class="bi bi-eye text-accent-600 mr-2"></i>Full dashboard visibility</span>
-                    <span class="inline-flex items-center"><i class="bi bi-telephone-x text-accent-600 mr-2"></i>Zero tenant chasing</span>
+                    <span class="inline-flex items-center text-sm"><i class="bi bi-calendar2-check text-accent-600 mr-2"></i>Paid every 10th</span>
+                    <span class="inline-flex items-center text-sm"><i class="bi bi-eye text-accent-600 mr-2"></i>Full Transparency</span>
+                    <span class="inline-flex items-center text-sm"><i class="bi bi-telephone-x text-accent-600 mr-2"></i>Zero tenant chasing</span>
                 </div>
             </div>
 
             <!-- Hero illustration -->
             <div class="relative">
-                <div class="relative mx-auto max-w-lg sm:max-w-xl lg:max-w-none w-full rounded-[2rem] overflow-hidden">
-                    <picture>
-                        <source srcset="/collectrent.png" type="image/png">
+                <div class="relative mx-auto max-w-md sm:max-w-lg lg:max-w-xl w-full rounded-[2rem] overflow-hidden">
+                    <!-- <picture>
+                        <source srcset="/collectrent.png" type="image/png"> -->
                         <img src="/collectrent.png"
                              alt="Illustration of a landlord's house with a rent collection calendar marked every 10th, a signed tenancy agreement, and coins, representing on-time rent payouts through est8Ledger"
-                             class="w-full h-auto"
-                             width="1536" height="1024" fetchpriority="high">
-                    </picture>
+                             class="w-full h-full"
+                            fetchpriority="high">
+                    <!-- </picture> -->
                 </div>
             </div>
         </div>
@@ -531,13 +493,6 @@ $mail = fn (string $subject, string $body): string => 'mailto:info@est8ledger.co
         </div>
     </div>
 </section>
-
-<!-- Floating WhatsApp button -->
-<a href="<?= esc($wa("Hi Est8Ledger, I'd like to learn more about your landlord rent collection service."), 'attr') ?>"
-   target="_blank" rel="noopener" aria-label="Message est8Ledger on WhatsApp"
-   class="rc-whatsapp-fab cta-button" data-cta="whatsapp_fab">
-    <i class="bi bi-whatsapp"></i>
-</a>
 
 <?= $this->endSection() ?>
 

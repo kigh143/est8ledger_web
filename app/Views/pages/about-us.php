@@ -110,20 +110,29 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-stagger">
             <?php
             // Members render in leadership order. 'accent' flags the founder card highlight.
+            // 'photo' => [webp, fallback] renders an actual headshot; omit to fall back to initials.
             $team = [
-                ['Katende Hakim G', 'Founder &amp; CEO', 'KH', 'bi-rocket-takeoff-fill', true],
-                ['AbuBaker Ssemugoma', 'Chief Technology Officer', 'AS', 'bi-cpu-fill', false],
+                ['Katende Hakim G', 'Founder &amp; CEO', 'KH', 'bi-rocket-takeoff-fill', true, ['/team/katende.webp', '/team/katende.jpeg']],
                 ['Eduku Patrick', 'Chief Financial Officer', 'EP', 'bi-graph-up-arrow', false],
-                ['Kisaakye Allan K', 'Chief Marketing Officer', 'KA', 'bi-megaphone-fill', false],
+                ['Kisaakye Allan K', 'Chief Marketing Officer', 'KA', 'bi-megaphone-fill', false, ['/team/allan.webp', '/team/allan.png']],
             ];
             foreach ($team as $m):
                 $highlight = $m[4];
+                $photo = $m[5] ?? null;
             ?>
             <div class="stagger-item card-lift bg-white rounded-2xl border <?= $highlight ? 'border-primary-200 ring-1 ring-primary-100' : 'border-secondary-200' ?> p-7 text-center">
                 <div class="relative mx-auto w-24 h-24 mb-5">
+                    <?php if ($photo): ?>
+                    <picture>
+                        <source srcset="<?= esc($photo[0]) ?>" type="image/webp">
+                        <img src="<?= esc($photo[1]) ?>" alt="<?= esc($m[0]) ?>, <?= esc(html_entity_decode(strip_tags($m[1]))) ?> at est8Ledger"
+                             class="w-24 h-24 rounded-2xl object-cover" width="96" height="96" loading="lazy">
+                    </picture>
+                    <?php else: ?>
                     <div class="w-24 h-24 rounded-2xl <?= $highlight ? 'bg-gradient-to-br from-primary-600 to-primary-800' : 'bg-gradient-to-br from-secondary-700 to-secondary-900' ?> text-white flex items-center justify-center text-2xl font-extrabold tracking-wide">
                         <?= $m[2] ?>
                     </div>
+                    <?php endif; ?>
                     <span class="absolute -bottom-2 -right-2 w-9 h-9 rounded-xl bg-accent-500 text-accent-900 flex items-center justify-center shadow-md">
                         <i class="bi <?= $m[3] ?> text-sm"></i>
                     </span>

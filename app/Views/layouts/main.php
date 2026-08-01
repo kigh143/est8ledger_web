@@ -591,6 +591,51 @@
         details.faq > summary::-webkit-details-marker { display: none; }
         details.faq[open] .faq-icon { transform: rotate(180deg); }
         .faq-icon { transition: transform 0.2s ease; }
+
+        /* Site-wide floating WhatsApp button */
+        .site-whatsapp-fab {
+            position: fixed;
+            right: 1.25rem;
+            bottom: 1.25rem;
+            z-index: 45;
+            width: 60px;
+            height: 60px;
+            border-radius: 9999px;
+            background: #25D366;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            box-shadow: 0 12px 28px -8px rgba(37, 211, 102, 0.6);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .site-whatsapp-fab:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 16px 32px -8px rgba(37, 211, 102, 0.7);
+            color: #ffffff;
+        }
+        .site-whatsapp-fab::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background: #25D366;
+            opacity: 0.55;
+            animation: site-whatsapp-pulse 2.2s ease-out infinite;
+            z-index: -1;
+        }
+        @keyframes site-whatsapp-pulse {
+            0% { transform: scale(1); opacity: 0.55; }
+            100% { transform: scale(1.7); opacity: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .site-whatsapp-fab::before { animation: none; display: none; }
+        }
+        /* Keep clear of the mobile bottom safe area */
+        @supports (bottom: env(safe-area-inset-bottom)) {
+            .site-whatsapp-fab { bottom: calc(1.25rem + env(safe-area-inset-bottom)); }
+        }
     </style>
     <?= $this->renderSection('css') ?>
 </head>
@@ -605,7 +650,7 @@
                 </a>
                 <div class="hidden lg:flex space-x-1 items-center">
                     <a href="/#how-it-works" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">How it Works</a>
-                    <a href="/#solution" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">Solution</a>
+                    <a href="/#solution" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm">Our Solution</a>
                     <a href="/about-us" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'about-us' ? ' is-active' : '' ?>"<?= $currentPath === 'about-us' ? ' aria-current="page"' : '' ?>>About</a>
                     <a href="/rent-collection" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'rent-collection' ? ' is-active' : '' ?>"<?= $currentPath === 'rent-collection' ? ' aria-current="page"' : '' ?>>Rent Collection</a>
                     <a href="/landlord-and-tenant-act-2022" class="nav-link px-3 py-1.5 rounded-full text-secondary-600 hover:text-primary-700 hover:bg-primary-50 transition-colors font-medium text-sm<?= $currentPath === 'landlord-and-tenant-act-2022' ? ' is-active' : '' ?>"<?= $currentPath === 'landlord-and-tenant-act-2022' ? ' aria-current="page"' : '' ?>>Tenancy Act</a>
@@ -647,6 +692,13 @@
     <main>
         <?= $this->renderSection('content') ?>
     </main>
+
+    <!-- Site-wide floating WhatsApp chat button -->
+    <a href="https://wa.me/447930068728?text=<?= rawurlencode('Hi Est8Ledger, I have a question.') ?>"
+       target="_blank" rel="noopener" aria-label="Chat with est8Ledger on WhatsApp"
+       class="site-whatsapp-fab" data-cta="whatsapp_site_fab">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
     <!-- Professional Footer -->
     <footer class="bg-secondary-900 text-white mt-20">
@@ -854,6 +906,14 @@
                     GA4Tracker.trackCTAClick(buttonText, buttonLocation);
                 });
             });
+
+            // Track the site-wide WhatsApp FAB
+            const whatsappFab = document.querySelector('.site-whatsapp-fab');
+            if (whatsappFab) {
+                whatsappFab.addEventListener('click', function() {
+                    GA4Tracker.trackCTAClick('whatsapp_site_fab', document.body.dataset.pageType || 'unknown', 'link');
+                });
+            }
 
             // Track contact form submission
             const contactForm = document.querySelector('form[action="/contact"]');
