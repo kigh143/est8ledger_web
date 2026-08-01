@@ -83,7 +83,7 @@
 
 <!-- ============================ HERO ============================ -->
 <section class="relative gradient-hero overflow-hidden">
-    <div class="container mx-auto px-4 pt-8 pb-20 lg:pt-24 lg:pb-24">
+    <div class="container mx-auto px-4 pt-8 pb-20 lg:pt-12 lg:pb-24">
         <div class="grid lg:grid-cols-[2fr_2fr] gap-4 lg:gap-10 items-center">
             <div class="text-center lg:text-left">
                 <div class="inline-flex items-center bg-accent-100 border border-accent-200 text-accent-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
@@ -130,15 +130,12 @@
 
             <!-- Hero illustration -->
             <div class="relative">
-                <div class="relative mx-auto max-w-md sm:max-w-lg lg:max-w-xl w-full rounded-[2rem] overflow-hidden">
-                    <!-- <picture>
-                        <source srcset="/collectrent.png" type="image/png"> -->
+                <!-- <div class="relative mx-auto max-w-md sm:max-w-lg lg:max-w-xl w-full rounded-[2rem] overflow-hidden">        -->
                         <img src="/collectrent.png"
                              alt="Illustration of a landlord's house with a rent collection calendar marked every 10th, a signed tenancy agreement, and coins, representing on-time rent payouts through est8Ledger"
                              class="w-full h-full"
                             fetchpriority="high">
-                    <!-- </picture> -->
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>
