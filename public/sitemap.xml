@@ -48,6 +48,14 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Property listings -->
+    <url>
+        <loc>https://est8ledger.com/listings</loc>
+        <lastmod>2026-09-29</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Blog -->
     <url>
         <loc>https://est8ledger.com/blogs</loc>

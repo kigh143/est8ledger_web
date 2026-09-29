@@ -75,3 +75,9 @@
 admin.username = admin
 admin.password = your_secure_password_here
 admin.session_timeout = 3600
+
+#--------------------------------------------------------------------
+# EST8LEDGER API (property listings)
+#--------------------------------------------------------------------
+
+# est8ledger.apiURL = https://api.est8ledger.com/api

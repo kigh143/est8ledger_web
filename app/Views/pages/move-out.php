@@ -46,6 +46,33 @@
   ]
 }
 </script>
+<script>
+(function () {
+    // UK/USA visitors are redirected to the region-specific move-out site.
+    var TARGET_URL = 'https://movinout.est8ledger.com/';
+    var REDIRECT_COUNTRIES = ['GB', 'US'];
+
+    if (sessionStorage.getItem('e8l_geo_skip_redirect') === '1') return;
+
+    var controller = new AbortController();
+    var timeout = setTimeout(function () { controller.abort(); }, 2500);
+
+    fetch('https://ipapi.co/json/', { signal: controller.signal })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            clearTimeout(timeout);
+            if (data && REDIRECT_COUNTRIES.indexOf(data.country_code) !== -1) {
+                window.location.replace(TARGET_URL);
+            } else {
+                sessionStorage.setItem('e8l_geo_skip_redirect', '1');
+            }
+        })
+        .catch(function () {
+            clearTimeout(timeout);
+            // Fail open: keep the visitor on this page if geolocation lookup fails.
+        });
+})();
+</script>
 <?= $this->endSection() ?>
 
 <?= $this->section('content') ?>

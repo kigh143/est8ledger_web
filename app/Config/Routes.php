@@ -7,6 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
+// Property listings (data from the est8Ledger API)
+$routes->get('/listings', 'ListingsController::index');
+$routes->get('/listings/(:num)', 'ListingsController::show/$1');
+
 // Blog routes
 $routes->get('/blogs', 'BlogController::index');
 $routes->get('/blog/(:segment)', 'BlogController::show/$1');
